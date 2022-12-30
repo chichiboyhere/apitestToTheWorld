@@ -1,0 +1,118 @@
+.navigation-menu.expanded ul {
+    display: block;
+}
+
+.navigation-menu ul {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+   /* width: 100%;
+    height: calc(100vh - 60px);*/
+    width: 40%;
+    height: fit-content;
+    background-color: white;  /*#0b65c6;*/
+    border-top: 1px solid black;
+    display: none;
+    border-radius: 8px;
+    padding: 10px;
+    /*color: white;*/
+    font-weight: bold;
+    z-index: 10;
+  }
+
+.navigation-menu li {
+    text-align: center;
+    margin: 0;
+}
+.navigation-menu li:hover{
+    color: blue
+}
+
+.logoImg{
+    max-width: 200px;
+}
+
+.loggoutButton {
+    font: inherit;
+    border: 1px solid #0B65C6;
+    background: #0B65C6;
+    color: white;
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+.loggoutButton:hover,
+.loggoutButton:active {
+  background: #8fbff3;
+  border-color: #8fbff3;
+}
+
+.loggoutButton:focus {
+  outline: none;
+}
+
+.dropdown{
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn{
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color:white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn{
+  background-color: red;
+}
+
+.dropdown-content{
+  display: none;
+  position:absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0,0, 0.2);
+  z-index: 1
+}
+
+.drop-content_mobile{
+  text-indent: 20px;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  z-index: 1
+}
+.dropdown-content-mobile__li{
+  float: none;
+  color: black;
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content__li{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content__li:hover{
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+.wrapper{
+  font-weight: bolder;
+}

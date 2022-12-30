@@ -1,0 +1,104 @@
+.container{
+    padding: 5px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.problem{
+    font-size: 72px;
+    color:blue;
+}
+.test input{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+.test h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.test h2{
+    font-size: 20px;
+}
+
+.test h3{
+    font-size: 18px;
+}
+
+.showSaved{
+    border: 2px solid green;
+    background-color: teal;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    animation: showSaved-appear 1s ease-out forwards;
+}
+
+  
+  @keyframes showSaved-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+.errorMessage{
+  border: 2px solid red;
+  background-color: palevioletred; 
+}
+
+.loadingMessage{
+  border: 2px solid yellow;
+  background-color: goldenrod;
+  
+}
+
+.successMessage{
+  border: 2px solid green;
+  background-color: rgb(112, 216, 155); 
+}
+
+.finalresults {
+  font-weight: bold;
+  margin: 0 auto;
+  width: 85%;
+  height: auto;
+  margin-top: 64px;
+  background-color: gray;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+
+.finalresults button{
+  background-color: red; 
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .finalresults button{
+    flex-direction:column;
+    display: block;
+    border: 5px solid #e78888;
+    align-items: center;
+    width: 100%;
+    font-weight: 800;
+    border-radius: 20px;
+  }
+}

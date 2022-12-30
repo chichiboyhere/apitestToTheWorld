@@ -1,0 +1,76 @@
+.resultDisplay {
+    background-color: #a892ee;
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  }
+  
+  .resultDisplay button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #40005d;
+    background-color: #40005d;
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+  }
+  
+  .resultDisplay button:hover,
+  .resultDisplay button:active {
+    background-color: #510674;
+    border-color: #510674;
+  }
+  
+  .resultDisplay button.alternative {
+    color: #220131;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  
+  .resultDisplay button.alternative:hover,
+  .resultDisplay button.alternative:active {
+    background-color: #ddb3f8;
+  }
+
+  .resultsList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .results-list__fallback {
+    color: white;
+    text-align: center;
+  }
+
+  .canceller{
+    cursor: pointer;
+    color: aliceblue;
+    font-weight: 200;
+    font-size: 50px;
+    /*float:right*/
+  }
+
+  .sorting {
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #b2d4d4;
+    margin-bottom: 2rem;
+  }
+  
+  .sorting button {
+    font: inherit;
+    color: teal;
+    border: 1px solid teal;
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+  }
+  
+  .sorting button:hover {
+    background-color: #c2fafa;
+  }

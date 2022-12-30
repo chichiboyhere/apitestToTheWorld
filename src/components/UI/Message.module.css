@@ -1,0 +1,14 @@
+
+.basicStyle{
+    border-radius: 8px;
+    color: white;
+    padding: 5px
+}
+
+.cancel{
+    padding: 5px;
+    border: 2px solid green;
+    color: white;
+    background-color: blue;
+    float: right;
+}
