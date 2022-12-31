@@ -3,17 +3,17 @@
 }
 
 .navigation-menu ul {
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 70px;
     right: 0;
    /* width: 100%;
     height: calc(100vh - 60px);*/
-    width: 40%;
+    width: 75%;
     height: fit-content;
     background-color: white;  /*#0b65c6;*/
     border-top: 1px solid black;
-    display: none;
     border-radius: 8px;
     padding: 10px;
     /*color: white;*/
@@ -94,7 +94,7 @@
   padding: 6px 8px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: center;
 }
 
 .dropdown-content__li{
@@ -115,4 +115,5 @@
 }
 .wrapper{
   font-weight: bolder;
+  font-size: larger;
 }

@@ -8,21 +8,44 @@ import {
 } from "./NavbarElements";
 import "../StyleNavDropDown.css";
 import assets from "../../assets";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faCaretDown} from "@fortawesome/free-solid-svg-icons";
+import {faCaretUp} from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   
   const [isNavExpanded, setIsNavExpanded] = useState(false);
- 
+  const [menuOpenVerbal, setMenuOpenVerbal] = useState(false)
+  const [menuOpenQuantitative, setMenuOpenQuantitative] = useState(false);
+  const [menuOpenQTest, setMenuOpenQTest] = useState(false)
   
 
-  
+  const handleNavigation =()=>{
+    setIsNavExpanded(false);
+    setMenuOpenVerbal(false);
+    setMenuOpenQuantitative(false);
+    setMenuOpenQTest(false);
+  }
+
+  const menuOpenHandlerQuantitative =()=>{
+    setMenuOpenQuantitative(!menuOpenQuantitative);
+  }
+
+  const menuOpenHandlerVerbal =()=>{
+    setMenuOpenVerbal(!menuOpenVerbal)
+  }
+
+  const menuOpenHandlerQTest =()=>{
+    setMenuOpenQTest(!menuOpenQTest)
+  }
+
+
   return (
     <>
       <Nav>
         <div>
         <NavLink to="/">
-          <img src={assets.apitestLogo} className="logoImg"/>
+          <img src={assets.apitestLogo} className="logoImg" alt="Site logo"/>
         </NavLink>
         <Bars
           onClick={() => {
@@ -34,43 +57,41 @@ const Navbar = () => {
             className={
               isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
             }
-            onClick={() => {
-              setIsNavExpanded(false);
-            }}
+            
           >
             <ul>
               <li>
-                <Link to="/my-app" className="wrapper">Mental Game</Link>
+                <Link to="/my-app" className="wrapper" onClick={handleNavigation}>Mental Game</Link>
               </li>
               <li>
-                  <div className="wrapper">Verbal Tests</div>
-                  <div className="drop-content_mobile">
-                    <Link to="/verbalTestOne" className="dropdown-content-mobile__li">#1 Test</Link>
-                    <Link to="/verbalTestTwo"  className="dropdown-content-mobile__li">#2 Test</Link>
-                    <Link to="/verbalTestThree"  className="dropdown-content-mobile__li">#3 Test</Link>
-                  </div>   
+                  <div className="wrapper" onClick={menuOpenHandlerVerbal}>Verbal Quizzes {menuOpenVerbal?<FontAwesomeIcon icon={faCaretUp}></FontAwesomeIcon>: <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon>}</div>
+                  {menuOpenVerbal &&  <div className="drop-content_mobile" onClick={handleNavigation}>
+                    <Link to="/verbalTestOne" className="dropdown-content-mobile__li">#1 Test</Link><hr></hr>
+                    <Link to="/verbalTestTwo"  className="dropdown-content-mobile__li">#2 Test</Link><hr></hr>
+                    <Link to="/verbalTestThree"  className="dropdown-content-mobile__li">#3 Test</Link><hr></hr>
+                  </div>}   
                 
               </li>
               
               <li>
-                 <div className="wrapper">Quantitative Quizzes</div>
-                 <div className="drop-content_mobile">
-                    <Link to="/quantitativeTestOne" className="dropdown-content-mobile__li">Number Bases(I)</Link>
-                    <Link to="/quantitativeTestTwo"  className="dropdown-content-mobile__li">Number Bases(II)</Link>
-                    <Link to="/quantitativeTestThree"  className="dropdown-content-mobile__li">Number Bases(III)</Link>
-                    <Link to="/quantitativeTestFour"  className="dropdown-content-mobile__li">Number Bases(IV)</Link>
-                    <Link to="/quantitativeTestFive"  className="dropdown-content-mobile__li">Number Bases(V)</Link>
-                  </div>
+                 <div className="wrapper" onClick={menuOpenHandlerQuantitative}>Quantitative Quizzes {menuOpenQuantitative?<FontAwesomeIcon icon={faCaretUp}></FontAwesomeIcon>: <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon>}</div>
+                {menuOpenQuantitative && <div className="drop-content_mobile" onClick={handleNavigation}>
+                    <Link to="/quantitativeTestOne" className="dropdown-content-mobile__li">Number Bases(I)</Link> <hr></hr>
+                    <Link to="/quantitativeTestTwo"  className="dropdown-content-mobile__li">Number Bases(II)</Link><hr></hr>
+                    <Link to="/quantitativeTestThree"  className="dropdown-content-mobile__li">Number Bases(III)</Link><hr></hr>
+                    <Link to="/quantitativeTestFour"  className="dropdown-content-mobile__li">Number Bases(IV)</Link><hr></hr>
+                    <Link to="/quantitativeTestFive"  className="dropdown-content-mobile__li">Number Bases(V)</Link><hr></hr>
+                  </div>}
               </li>
               <li>
-                  <div className="wrapper">Tests</div>
-                  <div>
-                  <Link to="/numerationTest" className="drop-content_mobile">Number and Numeration</Link>
-                  </div>
+                  <div className="wrapper"  onClick={menuOpenHandlerQTest}>Quantitative Tests {menuOpenQTest?<FontAwesomeIcon icon={faCaretUp}></FontAwesomeIcon>: <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon>}</div>
+                  {menuOpenQTest && <div onClick={handleNavigation}>
+                  <Link to="/numerationTest" className="dropdown-content-mobile__li">Number and Numeration</Link>
+                  </div>}
               </li>
               
               <li>
-                <Link to="/contact" className="wrapper">Contact</Link>
+                <Link to="/contact" className="wrapper" onClick={handleNavigation}>Contact</Link>
               </li>
               
             </ul>
@@ -103,7 +124,7 @@ const Navbar = () => {
               
               <div className="dropdown">
                   <button className="dropbtn">Quantitative Quizzes
-                    <i className="fa fa-caret-down"></i>
+                    <FontAwesomeIcon icon={{faCaretDown} }></FontAwesomeIcon>
                   </button>
                   <div className="dropdown-content">
                     <Link to="/quantitativeTestOne" className="dropdown-content__li">Number Bases(I)</Link>
@@ -115,7 +136,7 @@ const Navbar = () => {
               </div>
               <div className="dropdown">
                   <button className="dropbtn">Tests
-                    <i className="fa fa-caret-down"></i>
+                    <FontAwesomeIcon icon={{faCaretDown} }></FontAwesomeIcon>
                   </button>
                   <div className="dropdown-content">
                   <Link to="/numerationTest" className="dropdown-content__li">Number and Numeration</Link>

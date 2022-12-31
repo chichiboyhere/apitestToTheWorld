@@ -203,17 +203,6 @@ const NumberBasesSummation = () => {
     }
   };
 
-  /* Resets the game back to default */
-  const restartGame = () => {
-    setScore(0);
-    setCurrentQuestion(0);
-    setShowResults(false);
-    setShowTime(true);
-    setIsActive(false);
-    setTime(0);
-    setStartTest(false);
-    
-  };
 
   const getCorrection = () => {
     setIsCorrection(true);
@@ -224,7 +213,7 @@ const NumberBasesSummation = () => {
           <>
             <div className={classes.stopwatch}>
               <Timer time={time} />
-              <Text text={'Number Bases(Put them all together)'}/>
+              <Text text={'Number Bases V (Put them all together)'}/>
               <ControlButtons
                 active={isActive}
                 isPaused={isPaused} 

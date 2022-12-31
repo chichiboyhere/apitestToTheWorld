@@ -195,16 +195,6 @@ const NumberBasesConversion = () => {
     }
   };
 
-  /* Resets the game back to default */
-  const restartGame = () => {
-    setScore(0);
-    setCurrentQuestion(0);
-    setShowResults(false);
-    setShowTime(true);
-    setIsActive(false);
-    setTime(0);
-    setStartTest(false);
-  };
 
   const getCorrection = () => {
     setIsCorrection(true);
@@ -215,7 +205,7 @@ const NumberBasesConversion = () => {
         <>
           <div className={classes.stopwatch}>
             <Timer time={time} />
-            <Text text={"Number Bases(Conversion Between Bases)"} />
+            <Text text={"Number Bases III (Conversion Between Bases)"} />
             <ControlButtons
               active={isActive}
               isPaused={isPaused}

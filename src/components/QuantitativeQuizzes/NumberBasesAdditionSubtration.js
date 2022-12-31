@@ -205,7 +205,7 @@ const NumberBasesAdditionSubtration = () => {
         <>
           <div className={classes.stopwatch}>
             <Timer time={time} />
-            <Text text={"Number Bases(Addition and Subtraction)"} />
+            <Text text={"Number Bases I (Addition and Subtraction)"} />
             <ControlButtons
               active={isActive}
               isPaused={isPaused}

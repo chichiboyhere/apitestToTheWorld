@@ -203,18 +203,6 @@ const NumberBasesMultiplicationDivision = () => {
     }
   };
 
-  /* Resets the game back to default */
-  const restartGame = () => {
-    setScore(0);
-    setCurrentQuestion(0);
-    setShowResults(false);
-    setShowTime(true);
-    setIsActive(false);
-    setTime(0);
-    setStartTest(false);
-    
-  };
-
   const getCorrection = () => {
     setIsCorrection(true);
   };
@@ -225,7 +213,7 @@ const NumberBasesMultiplicationDivision = () => {
           <>
             <div className={classes.stopwatch}>
               <Timer time={time} />
-              <Text text={'Number Bases(Multiplication and Division)'}/>
+              <Text text={'Number Bases II (Multiplication and Division)'}/>
               <ControlButtons
                 active={isActive}
                 isPaused={isPaused} 
