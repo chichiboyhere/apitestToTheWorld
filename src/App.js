@@ -12,7 +12,7 @@ import NumberBasesMultiplicationDivision from "./components/QuantitativeQuizzes/
 import NumberBasesConversion from "./components/QuantitativeQuizzes/NumberBasesConversion";
 import NumberBasesFractions from "./components/QuantitativeQuizzes/NumberBasesFractions";
 import NumberBasesSummation from "./components/QuantitativeQuizzes/NumberBasesSummation";
-
+import Fractions from "./components/QuantitativeQuizzes/Fractions";
 
 function App() {
   return (
@@ -28,6 +28,7 @@ function App() {
         <Route path='/quantitativeTestThree' component={NumberBasesConversion} />
         <Route path='/quantitativeTestFour' component={NumberBasesFractions} />
         <Route path='/quantitativeTestFive' component={NumberBasesSummation} />
+        <Route path='/quantitativeTestSix' component={Fractions} />
         <Route path='/numerationTest' component={StartTest} />
         <Route path='/contact' component={ContactPage} />
     </Layout>
