@@ -82,6 +82,7 @@ const Navbar = () => {
                     <Link to="/quantitativeTestFour"  className="dropdown-content-mobile__li">Number Bases(IV)</Link><hr></hr>
                     <Link to="/quantitativeTestFive"  className="dropdown-content-mobile__li">Number Bases(V)</Link><hr></hr>
                     <Link to="/quantitativeTestSix"  className="dropdown-content-mobile__li">Fractions</Link><hr></hr>
+                    <Link to="/quantitativeTestSeven"  className="dropdown-content-mobile__li">Decimals & Approx.</Link><hr></hr>
                   </div>}
               </li>
               <li>
@@ -134,6 +135,7 @@ const Navbar = () => {
                     <Link to="/quantitativeTestFour"  className="dropdown-content__li"> Number Bases(IV)</Link>
                     <Link to="/quantitativeTestFive"  className="dropdown-content__li">  Number Bases(V)</Link>
                     <Link to="/quantitativeTestSix"  className="dropdown-content__li">  Fractions</Link>
+                    <Link to="/quantitativeTestSeven"  className="dropdown-content__li">Decimals & Approx.</Link>
                   </div>
               </div>
               <div className="dropdown">
