@@ -13,36 +13,36 @@ import Message from "../UI/Message";
 const questions = [
     {
       id: "Q1",
-      text: `\\text{Express } \\sqrt{31.42 \\times 60.32 } \\text{ correct to 2 s.f} \\\\ \\text{and 1 d.p and find the sum } \\\\ \\text{of the two outcomes correct to} \\\\ \\text{the nearest whole number}`,
+      text: `\\text{A student measures a piece of rope}\\\\ \\text{and found that it was 1.26m long.}\\\\ \\text{If the actual length of the rope was 1.25m,}\\\\ \\text{what was the percentage error} \\\\ \\text{in the measurement? } \\text{ (UTME)}`,
       options: [
-        { id: 0, text: "81", isCorrect: false },
-        { id: 1, text: "83", isCorrect: false },
-        { id: 2, text: "85", isCorrect: false },
-        { id: 3, text: "88", isCorrect: true },
+        { id: 0, text: "0.25%", isCorrect: false },
+        { id: 1, text: "0.01%", isCorrect: false },
+        { id: 2, text: "0.80%", isCorrect: true },
+        { id: 3, text: "0.40%", isCorrect: false },
       ],
-      answer: "88",
-      working: `\\sqrt{31.42 \\times 60.32 } = \\sqrt{1895.2544} \\\\= 43.5345 \\\\= 44 \\text{ (correct to 2 s.f) } \\\\= 43.5 \\text{(correct to 1 d.p) } \\\\  \\therefore \\text{ their sum } = 44 + 43.5 = 87.5 \\\\= 88 \\text{(correct to the nearest whole number) } `
+      answer: "0.80%",
+      working: `\\text{% error } = \\frac{\\text{error}}{\\text{true measurement}} \\times 100  `
     },
     {
       id: "Q2",
-      text: `\\text{Write down the number }0.0052048 \\\\ \\text{correct to three significant figures.}  \\text{ (UME)}`,
+      text: `\\text{The radius of a circle is given} \\\\ \\text{as 5cm subject to an error of 0.1cm.} \\\\ \\text{ What is the percentage error in the} \\\\ \\text{ area of the circle?} \\text{ (UME)}`,
       options: [
-        { id: 0, text: "0.005", isCorrect: false },
-        { id: 1, text: "0.0052", isCorrect: false },
-        { id: 2, text: "0.00520", isCorrect: true },
-        { id: 3, text: "5.2048", isCorrect: false },
+        { id: 0, text: "\\frac{1}{25}", isCorrect: false },
+        { id: 1, text: "\\frac{1}{4}", isCorrect: false },
+        { id: 2, text: "4", isCorrect: true },
+        { id: 3, text: "25", isCorrect: false },
       ],
       answer: "0.00520",
       working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
     },
     {
       id: "Q3",
-      text: `\\text{Evaluate correct to 4 decimal places } \\\\ 827.51 \\times 0.015 \\text{  (UME)}`,
+      text: `\\text{The length of a notebook 15cm, was} \\\\ \\text{measured as 16.8cm. Calculate the} \\\\ \\text{ percentage error to 2 significant figures.}\\\\ \\text{  (UME)}`,
       options: [
-        { id: 0, text: "8.8415", isCorrect: false },
-        { id: 1, text: "12.4127", isCorrect: true },
-        { id: 2, text: "124.1265", isCorrect: false },
-        { id: 3, text: "12.4120", isCorrect: false },
+        { id: 0, text: "12.00 %", isCorrect: false },
+        { id: 1, text: "11.00 %", isCorrect: true },
+        { id: 2, text: " 10.71 %", isCorrect: false },
+        { id: 3, text: "0.12 %", isCorrect: false },
       ],
       answer: "12.4127",
       working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
@@ -132,9 +132,8 @@ const questions = [
       working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`
     },
   ];
-  
 
-const DecimalsAndApprox = () => {
+const PercentageError = () => {
     const [isActive, setIsActive] = useState(false);
     const [isPaused, setIsPaused] = useState(true);
     const [time, setTime] = useState(0);
@@ -207,7 +206,7 @@ const DecimalsAndApprox = () => {
           <>
             <div className={classes.stopwatch}>
               <Timer time={time} />
-              <Text text={"Decimals and Approximations"} />
+              <Text text={"Percentages I(Percentage Error)"} />
               <ControlButtons
                 active={isActive}
                 isPaused={isPaused}
@@ -287,4 +286,5 @@ const DecimalsAndApprox = () => {
   };
 
 
-export default DecimalsAndApprox
+
+export default PercentageError

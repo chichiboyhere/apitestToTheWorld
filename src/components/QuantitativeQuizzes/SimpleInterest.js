@@ -13,24 +13,24 @@ import Message from "../UI/Message";
 const questions = [
     {
       id: "Q1",
-      text: `\\text{Express } \\sqrt{31.42 \\times 60.32 } \\text{ correct to 2 s.f} \\\\ \\text{and 1 d.p and find the sum } \\\\ \\text{of the two outcomes correct to} \\\\ \\text{the nearest whole number}`,
+      text: `\\text{If N225.00 yields N27.00 in x years} \\\\ \\text{ simple interest at the rate of 4% per}\\\\ \\text{ annum, find x } \\text{ (UME)}`,
       options: [
-        { id: 0, text: "81", isCorrect: false },
-        { id: 1, text: "83", isCorrect: false },
-        { id: 2, text: "85", isCorrect: false },
-        { id: 3, text: "88", isCorrect: true },
+        { id: 0, text: "3", isCorrect: false },
+        { id: 1, text: "4", isCorrect: false },
+        { id: 2, text: "12", isCorrect: false },
+        { id: 3, text: "7", isCorrect: true },
       ],
       answer: "88",
       working: `\\sqrt{31.42 \\times 60.32 } = \\sqrt{1895.2544} \\\\= 43.5345 \\\\= 44 \\text{ (correct to 2 s.f) } \\\\= 43.5 \\text{(correct to 1 d.p) } \\\\  \\therefore \\text{ their sum } = 44 + 43.5 = 87.5 \\\\= 88 \\text{(correct to the nearest whole number) } `
     },
     {
       id: "Q2",
-      text: `\\text{Write down the number }0.0052048 \\\\ \\text{correct to three significant figures.}  \\text{ (UME)}`,
+      text: `\\text{Find the principal which amounts} \\\\ \\text{to N5,500 at a simple interest in} \\\\ \\text{ 5 years at 2% per annum.} \\text{ (UME)}`,
       options: [
-        { id: 0, text: "0.005", isCorrect: false },
-        { id: 1, text: "0.0052", isCorrect: false },
-        { id: 2, text: "0.00520", isCorrect: true },
-        { id: 3, text: "5.2048", isCorrect: false },
+        { id: 0, text: "N4,900", isCorrect: false },
+        { id: 1, text: "N5,000", isCorrect: false },
+        { id: 2, text: "N4,700", isCorrect: true },
+        { id: 3, text: "N4,800", isCorrect: false },
       ],
       answer: "0.00520",
       working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
@@ -134,7 +134,7 @@ const questions = [
   ];
   
 
-const DecimalsAndApprox = () => {
+const SimpleInterest = () => {
     const [isActive, setIsActive] = useState(false);
     const [isPaused, setIsPaused] = useState(true);
     const [time, setTime] = useState(0);
@@ -207,7 +207,7 @@ const DecimalsAndApprox = () => {
           <>
             <div className={classes.stopwatch}>
               <Timer time={time} />
-              <Text text={"Decimals and Approximations"} />
+              <Text text={"Percentages II(Simple Interest)"} />
               <ControlButtons
                 active={isActive}
                 isPaused={isPaused}
@@ -287,4 +287,4 @@ const DecimalsAndApprox = () => {
   };
 
 
-export default DecimalsAndApprox
+export default SimpleInterest

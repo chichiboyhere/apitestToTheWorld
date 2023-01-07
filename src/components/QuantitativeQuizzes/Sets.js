@@ -13,60 +13,60 @@ import Message from "../UI/Message";
 const questions = [
     {
       id: "Q1",
-      text: `\\text{Express } \\sqrt{31.42 \\times 60.32 } \\text{ correct to 2 s.f} \\\\ \\text{and 1 d.p and find the sum } \\\\ \\text{of the two outcomes correct to} \\\\ \\text{the nearest whole number}`,
+      text: `\\text{If X = {all prime factors of 44}} \\\\ \\text{and Y = {all prime factors of 60,}} \\\\ \\text{the elements of } X \\cup Y \\text{ and} \\\\ X \\cap Y \\text{ respectively are} \\text{ (UME)}`,
       options: [
-        { id: 0, text: "81", isCorrect: false },
-        { id: 1, text: "83", isCorrect: false },
-        { id: 2, text: "85", isCorrect: false },
-        { id: 3, text: "88", isCorrect: true },
+        { id: 0, text: "\\text{{2, 4, 3, 5, 11} and {4}}", isCorrect: false },
+        { id: 1, text: "\\text{{4, 3, 5, 11} and {3, 4}}", isCorrect: false },
+        { id: 2, text: "\\text{{2, 5, 11} and {2}}", isCorrect: false },
+        { id: 3, text: "\\text{{2, 3, 5, 11} and {2}}", isCorrect: true },
       ],
       answer: "88",
       working: `\\sqrt{31.42 \\times 60.32 } = \\sqrt{1895.2544} \\\\= 43.5345 \\\\= 44 \\text{ (correct to 2 s.f) } \\\\= 43.5 \\text{(correct to 1 d.p) } \\\\  \\therefore \\text{ their sum } = 44 + 43.5 = 87.5 \\\\= 88 \\text{(correct to the nearest whole number) } `
     },
     {
       id: "Q2",
-      text: `\\text{Write down the number }0.0052048 \\\\ \\text{correct to three significant figures.}  \\text{ (UME)}`,
+      text: `\\text{Four members of a school first eleven} \\\\ \\text{cricket team are also members of the} \\\\ \\text{ first fourteen rugby team. How many boys} \\\\ \\text{ play for at least one of the two teams?} \\\\ \\text{  (UME)}`,
       options: [
-        { id: 0, text: "0.005", isCorrect: false },
-        { id: 1, text: "0.0052", isCorrect: false },
-        { id: 2, text: "0.00520", isCorrect: true },
-        { id: 3, text: "5.2048", isCorrect: false },
+        { id: 0, text: "25", isCorrect: false },
+        { id: 1, text: "21", isCorrect: false },
+        { id: 2, text: "16", isCorrect: true },
+        { id: 3, text: "3", isCorrect: false },
       ],
       answer: "0.00520",
       working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
     },
     {
       id: "Q3",
-      text: `\\text{Evaluate correct to 4 decimal places } \\\\ 827.51 \\times 0.015 \\text{  (UME)}`,
+      text: `\\text{If S = } {x : x^2 = 9, x > 4} \\text{, then S}  \\\\ \\text{is equal to (UME)} `,
       options: [
-        { id: 0, text: "8.8415", isCorrect: false },
-        { id: 1, text: "12.4127", isCorrect: true },
-        { id: 2, text: "124.1265", isCorrect: false },
-        { id: 3, text: "12.4120", isCorrect: false },
+        { id: 0, text: "4", isCorrect: false },
+        { id: 1, text: "{0}", isCorrect: true },
+        { id: 2, text: " \\varnothing", isCorrect: false },
+        { id: 3, text: "{\\varnothing}", isCorrect: false },
       ],
       answer: "12.4127",
       working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
     },
     {
       id: "Q4",
-      text: `\\text{Evaluate } \\frac{31.4 \\times 38.02}{40.3 \\times 29.62 }`,
+      text: `\\text{If U = {s, p, i, e, n, d, o, u, r}\\\\  \\text{, X = {s, p, e, n, d}} \\text{,Y = {s, e, n, o, u}, \\text{,Z = {p, n, o, u, r}} \\\\ \\text{find } X \\cap \\bigl( X \\cup Y\\bigr) \\text{ (UME)}`,
       options: [
-        { id: 0, text: "1", isCorrect: true },
-        { id: 1, text: "2", isCorrect: false },
-        { id: 2, text: "877", isCorrect: false },
-        { id: 3, text: "1001", isCorrect: false },
+        { id: 0, text: "\\text{{p, o, u, r}}", isCorrect: true },
+        { id: 1, text: "\\text{{s, p, d, r}}", isCorrect: false },
+        { id: 2, text: "\\text{{s, p, n, e}}", isCorrect: false },
+        { id: 3, text: "\\text{{n, d, u}}", isCorrect: false },
       ],
       answer: "1",
       working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
     },
     {
       id: "Q5",
-      text: `\\frac{0.000 045}{150000} = p \\times 10^q  \\text{ where } \\\\ 1 \\leqslant  p < 10  \\text{and q is a whole number.} \\\\ \\text{ Find } p^q`,
+      text: `\\text{A survey of 100 students in an} \\\\ \\text{institution shows that 80 students speak} \\\\  \\text{ Hausa and 20 students speak Igbo, while} \\\\ \\text{ only 9 students speak both language.} \\\\  \\text{ How many students speak} \\\\  \\text{ neither Hausa nor Igbo?} \\text{ (UME)}`,
       options: [
-        { id: 0, text: "3^{-11}", isCorrect: false },
-        { id: 1, text: "\\frac{1}{3^{11}}", isCorrect: false },
-        { id: 2, text: "\\frac{1}{3^{10}}", isCorrect: true },
-        { id: 3, text: "3^{-9}", isCorrect: false },
+        { id: 0, text: "0", isCorrect: false },
+        { id: 1, text: "9", isCorrect: false },
+        { id: 2, text: "11", isCorrect: true },
+        { id: 3, text: "20", isCorrect: false },
       ],
       answer: "\\frac{1}{3^{10}}",
       working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`
@@ -134,7 +134,7 @@ const questions = [
   ];
   
 
-const DecimalsAndApprox = () => {
+const Sets = () => {
     const [isActive, setIsActive] = useState(false);
     const [isPaused, setIsPaused] = useState(true);
     const [time, setTime] = useState(0);
@@ -207,7 +207,7 @@ const DecimalsAndApprox = () => {
           <>
             <div className={classes.stopwatch}>
               <Timer time={time} />
-              <Text text={"Decimals and Approximations"} />
+              <Text text={"Sets"} />
               <ControlButtons
                 active={isActive}
                 isPaused={isPaused}
@@ -287,4 +287,4 @@ const DecimalsAndApprox = () => {
   };
 
 
-export default DecimalsAndApprox
+export default Sets

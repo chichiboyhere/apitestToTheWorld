@@ -13,7 +13,7 @@ import Message from "../UI/Message";
 const questions = [
     {
       id: "Q1",
-      text: `\\text{Express } \\sqrt{31.42 \\times 60.32 } \\text{ correct to 2 s.f} \\\\ \\text{and 1 d.p and find the sum } \\\\ \\text{of the two outcomes correct to} \\\\ \\text{the nearest whole number}`,
+      text: `\\text{A worker's present salary is} \\\\ \\text{N24,000 per annum. His annual} \\\\ \\text{increment is 10% of his basic salary.} \\\\ \\text{ What would be his annual salary at} \\\\ \\text{the beginning of the third year?} \\\\ \\text{ (UME)}`,
       options: [
         { id: 0, text: "81", isCorrect: false },
         { id: 1, text: "83", isCorrect: false },
@@ -134,7 +134,7 @@ const questions = [
   ];
   
 
-const DecimalsAndApprox = () => {
+const PercentagesMisc = () => {
     const [isActive, setIsActive] = useState(false);
     const [isPaused, setIsPaused] = useState(true);
     const [time, setTime] = useState(0);
@@ -207,7 +207,7 @@ const DecimalsAndApprox = () => {
           <>
             <div className={classes.stopwatch}>
               <Timer time={time} />
-              <Text text={"Decimals and Approximations"} />
+              <Text text={"Percentages IV (Miscellaneous Problems)"} />
               <ControlButtons
                 active={isActive}
                 isPaused={isPaused}
@@ -287,4 +287,4 @@ const DecimalsAndApprox = () => {
   };
 
 
-export default DecimalsAndApprox
+export default PercentagesMisc

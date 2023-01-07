@@ -13,48 +13,48 @@ import Message from "../UI/Message";
 const questions = [
     {
       id: "Q1",
-      text: `\\text{Express } \\sqrt{31.42 \\times 60.32 } \\text{ correct to 2 s.f} \\\\ \\text{and 1 d.p and find the sum } \\\\ \\text{of the two outcomes correct to} \\\\ \\text{the nearest whole number}`,
+      text: `\\text{If } 2log_3y + log_3x^2 = 4\\text{ then y is} \\\\ \\text{ (UME)}`,
       options: [
-        { id: 0, text: "81", isCorrect: false },
-        { id: 1, text: "83", isCorrect: false },
-        { id: 2, text: "85", isCorrect: false },
-        { id: 3, text: "88", isCorrect: true },
+        { id: 0, text: "4 - log_3x", isCorrect: false },
+        { id: 1, text: "\\frac{4}{log_3x}", isCorrect: false },
+        { id: 2, text: "\\frac{4}{x}", isCorrect: false },
+        { id: 3, text: "\\pm\\frac{9}{x}", isCorrect: true },
       ],
       answer: "88",
       working: `\\sqrt{31.42 \\times 60.32 } = \\sqrt{1895.2544} \\\\= 43.5345 \\\\= 44 \\text{ (correct to 2 s.f) } \\\\= 43.5 \\text{(correct to 1 d.p) } \\\\  \\therefore \\text{ their sum } = 44 + 43.5 = 87.5 \\\\= 88 \\text{(correct to the nearest whole number) } `
     },
     {
       id: "Q2",
-      text: `\\text{Write down the number }0.0052048 \\\\ \\text{correct to three significant figures.}  \\text{ (UME)}`,
+      text: `\\text{Solve without using tables }  \\\\ log_5(62.5) - log_5\\frac{1}{2} \\text{ (UME)}`,
       options: [
-        { id: 0, text: "0.005", isCorrect: false },
-        { id: 1, text: "0.0052", isCorrect: false },
-        { id: 2, text: "0.00520", isCorrect: true },
-        { id: 3, text: "5.2048", isCorrect: false },
+        { id: 0, text: "3", isCorrect: false },
+        { id: 1, text: "4", isCorrect: false },
+        { id: 2, text: "5", isCorrect: true },
+        { id: 3, text: "8", isCorrect: false },
       ],
       answer: "0.00520",
       working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
     },
     {
       id: "Q3",
-      text: `\\text{Evaluate correct to 4 decimal places } \\\\ 827.51 \\times 0.015 \\text{  (UME)}`,
+      text: `\\text{Evaluate }  \\frac{log_5(0.04)}{log_318−log_32} \\text{  (UME)}`,
       options: [
-        { id: 0, text: "8.8415", isCorrect: false },
-        { id: 1, text: "12.4127", isCorrect: true },
-        { id: 2, text: "124.1265", isCorrect: false },
-        { id: 3, text: "12.4120", isCorrect: false },
+        { id: 0, text: "1", isCorrect: false },
+        { id: 1, text: "-1", isCorrect: true },
+        { id: 2, text: "\\frac{2}{3}", isCorrect: false },
+        { id: 3, text: "-\\frac{2}{3}", isCorrect: false },
       ],
       answer: "12.4127",
       working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
     },
     {
       id: "Q4",
-      text: `\\text{Evaluate } \\frac{31.4 \\times 38.02}{40.3 \\times 29.62 }`,
+      text: `\\text{Given that } log_a2 = 0.693 \\text{ and } log_a3 = 1.097,\\\\ \\text{ find } log_a 13.5 \\text{  (UME)}`,
       options: [
-        { id: 0, text: "1", isCorrect: true },
-        { id: 1, text: "2", isCorrect: false },
-        { id: 2, text: "877", isCorrect: false },
-        { id: 3, text: "1001", isCorrect: false },
+        { id: 0, text: "1.404", isCorrect: true },
+        { id: 1, text: "1.790", isCorrect: false },
+        { id: 2, text: "2.598", isCorrect: false },
+        { id: 3, text: "2.790", isCorrect: false },
       ],
       answer: "1",
       working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
@@ -134,7 +134,7 @@ const questions = [
   ];
   
 
-const DecimalsAndApprox = () => {
+const Logarithm = () => {
     const [isActive, setIsActive] = useState(false);
     const [isPaused, setIsPaused] = useState(true);
     const [time, setTime] = useState(0);
@@ -207,7 +207,7 @@ const DecimalsAndApprox = () => {
           <>
             <div className={classes.stopwatch}>
               <Timer time={time} />
-              <Text text={"Decimals and Approximations"} />
+              <Text text={"Logarithm"} />
               <ControlButtons
                 active={isActive}
                 isPaused={isPaused}
@@ -287,4 +287,4 @@ const DecimalsAndApprox = () => {
   };
 
 
-export default DecimalsAndApprox
+export default Logarithm

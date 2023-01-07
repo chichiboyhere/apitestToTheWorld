@@ -13,60 +13,60 @@ import Message from "../UI/Message";
 const questions = [
     {
       id: "Q1",
-      text: `\\text{Express } \\sqrt{31.42 \\times 60.32 } \\text{ correct to 2 s.f} \\\\ \\text{and 1 d.p and find the sum } \\\\ \\text{of the two outcomes correct to} \\\\ \\text{the nearest whole number}`,
+      text: `\\text{Simplify } 5\\sqrt{18} - 3\\sqrt{72} + 4\\sqrt{50} \\\\ \\text{ (UME)}`,
       options: [
-        { id: 0, text: "81", isCorrect: false },
-        { id: 1, text: "83", isCorrect: false },
-        { id: 2, text: "85", isCorrect: false },
-        { id: 3, text: "88", isCorrect: true },
+        { id: 0, text: "17\\sqrt{4}", isCorrect: false },
+        { id: 1, text: "4\\sqrt{17}", isCorrect: false },
+        { id: 2, text: "17\\sqrt{2}", isCorrect: false },
+        { id: 3, text: "12\\sqrt{4}", isCorrect: true },
       ],
       answer: "88",
       working: `\\sqrt{31.42 \\times 60.32 } = \\sqrt{1895.2544} \\\\= 43.5345 \\\\= 44 \\text{ (correct to 2 s.f) } \\\\= 43.5 \\text{(correct to 1 d.p) } \\\\  \\therefore \\text{ their sum } = 44 + 43.5 = 87.5 \\\\= 88 \\text{(correct to the nearest whole number) } `
     },
     {
       id: "Q2",
-      text: `\\text{Write down the number }0.0052048 \\\\ \\text{correct to three significant figures.}  \\text{ (UME)}`,
+      text: `\\text{Simplify } \\sqrt{48} - \\frac{9}{\\sqrt{3}} + \\sqrt{75} \\text{ (UME)}`,
       options: [
-        { id: 0, text: "0.005", isCorrect: false },
-        { id: 1, text: "0.0052", isCorrect: false },
-        { id: 2, text: "0.00520", isCorrect: true },
-        { id: 3, text: "5.2048", isCorrect: false },
+        { id: 0, text: "5\\sqrt{3}", isCorrect: false },
+        { id: 1, text: "6\\sqrt{3}", isCorrect: false },
+        { id: 2, text: "8\\sqrt{3}", isCorrect: true },
+        { id: 3, text: "18\\sqrt{3}", isCorrect: false },
       ],
       answer: "0.00520",
       working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
     },
     {
       id: "Q3",
-      text: `\\text{Evaluate correct to 4 decimal places } \\\\ 827.51 \\times 0.015 \\text{  (UME)}`,
+      text: `\\text{Given that } \\sqrt{2}=1.414\\text{, find without} \\\\ \\text{using tables, the value of } \\frac{1}{\\sqrt{2}}  \\\\ \\text{(UME)}`,
       options: [
-        { id: 0, text: "8.8415", isCorrect: false },
-        { id: 1, text: "12.4127", isCorrect: true },
-        { id: 2, text: "124.1265", isCorrect: false },
-        { id: 3, text: "12.4120", isCorrect: false },
+        { id: 0, text: "0.141", isCorrect: false },
+        { id: 1, text: "0.301", isCorrect: true },
+        { id: 2, text: "0.667", isCorrect: false },
+        { id: 3, text: "0.707", isCorrect: false },
       ],
       answer: "12.4127",
       working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
     },
     {
       id: "Q4",
-      text: `\\text{Evaluate } \\frac{31.4 \\times 38.02}{40.3 \\times 29.62 }`,
+      text: `\\text{Given that } p = 1 + \\sqrt{2} \\\\ \\text{ and } q = 1 - \\sqrt{2} \\\\ \\text{ evaluate } \\frac{p^2 - q^2}{2pq} \\text{(UME)}`,
       options: [
-        { id: 0, text: "1", isCorrect: true },
-        { id: 1, text: "2", isCorrect: false },
-        { id: 2, text: "877", isCorrect: false },
-        { id: 3, text: "1001", isCorrect: false },
+        { id: 0, text: "2\\bigl(2 + \\sqrt{2}\\bigr)", isCorrect: true },
+        { id: 1, text: "-2\\bigl(2 + \\sqrt{2}\\bigr)", isCorrect: false },
+        { id: 2, text: "2\\sqrt{2}", isCorrect: false },
+        { id: 3, text: "-2\\sqrt{2}", isCorrect: false },
       ],
       answer: "1",
       working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
     },
     {
       id: "Q5",
-      text: `\\frac{0.000 045}{150000} = p \\times 10^q  \\text{ where } \\\\ 1 \\leqslant  p < 10  \\text{and q is a whole number.} \\\\ \\text{ Find } p^q`,
+      text: `\\text{Simplify }\\frac{2\\sqrt{3}+3\\sqrt{5}}{3\\sqrt{5}-2\\sqrt{3}} \\text{(UME)}`,
       options: [
-        { id: 0, text: "3^{-11}", isCorrect: false },
-        { id: 1, text: "\\frac{1}{3^{11}}", isCorrect: false },
-        { id: 2, text: "\\frac{1}{3^{10}}", isCorrect: true },
-        { id: 3, text: "3^{-9}", isCorrect: false },
+        { id: 0, text: "\\frac{19 +4\\sqrt{25}}{11}", isCorrect: false },
+        { id: 1, text: "\\frac{19 +4\\sqrt{15}}{11}", isCorrect: false },
+        { id: 2, text: "\\frac{19 +2\\sqrt{15}}{11}", isCorrect: true },
+        { id: 3, text: "\\frac{19 +2\\sqrt{15}}{19}", isCorrect: false },
       ],
       answer: "\\frac{1}{3^{10}}",
       working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`
@@ -134,7 +134,7 @@ const questions = [
   ];
   
 
-const DecimalsAndApprox = () => {
+const Surd = () => {
     const [isActive, setIsActive] = useState(false);
     const [isPaused, setIsPaused] = useState(true);
     const [time, setTime] = useState(0);
@@ -207,7 +207,7 @@ const DecimalsAndApprox = () => {
           <>
             <div className={classes.stopwatch}>
               <Timer time={time} />
-              <Text text={"Decimals and Approximations"} />
+              <Text text={"Surd"} />
               <ControlButtons
                 active={isActive}
                 isPaused={isPaused}
@@ -287,4 +287,4 @@ const DecimalsAndApprox = () => {
   };
 
 
-export default DecimalsAndApprox
+export default Surd
