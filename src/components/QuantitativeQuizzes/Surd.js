@@ -73,60 +73,60 @@ const questions = [
     },
     {
       id: "Q6",
-      text: `\\text{Find correct to three significant } \\\\ \\text{figures, the value of } \\sqrt{41830} \\text{ (UME) }`,
+      text: `\\text{Find the value of k if } \\\\ \\frac{k}{\\sqrt{3} + \\sqrt{2}} = k\\sqrt{3} - \\sqrt{2}`,
       options: [
-        { id: 0, text: "205", isCorrect: true },
-        { id: 1, text: "647", isCorrect: false },
-        { id: 2, text: "2050", isCorrect: false },
-        { id: 3, text: "6470", isCorrect: false },
+        { id: 0, text: "1", isCorrect: true },
+        { id: 1, text: "1", isCorrect: false },
+        { id: 2, text: "1", isCorrect: false },
+        { id: 3, text: "solve", isCorrect: false },
       ],
       answer: "205",
-      working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
+      working:` `
     },
     {
       id: "Q7",
-      text: `\\text{What is the difference between 0.007685} \\\\ \\text{correct to three significant figures} \\\\ \\text{and 0.007685 correct to four places } \\\\ \\text{of decimal?} `,
+      text: `\\text{Find the value of x if } \\\\ \\frac{\\sqrt{2}}{x + \\sqrt{2}  = \\frac{1}{x  - \\sqrt{2} \\text{(UME)}`,
       options: [
-        { id: 0, text: "10^{-5}", isCorrect: true },
-        { id: 1, text: "7 \\times 10^{-4}", isCorrect: false },
-        { id: 2, text: "8 \\times 10^{-5}", isCorrect: false },
-        { id: 3, text: "10^{-6}", isCorrect: false },
+        { id: 0, text: "3\\sqrt{2} + 4", isCorrect: true },
+        { id: 1, text: "3\\sqrt{2} - 4", isCorrect: false },
+        { id: 2, text: "3 - 2\\sqrt{2}", isCorrect: false },
+        { id: 3, text: "4 + 2\\sqrt{2}", isCorrect: false },
       ],
       answer: "10^{-5}",
       working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
     },
     {
       id: "Q8",
-      text: `\\text{Evaluate } \\frac{0.04 \\times 0.123}{0.34 \\times 72000 }\\\\ \\text{Leave your answer in standard} \\\\ \\text{form correct to 2 significant} \\\\ \\text{figures} `,
+      text: `\\text{If } \\frac{2\\sqrt{3} - \\sqrt{2}}{\\sqrt{3} + 2\\sqrt{2}} m + n\\sqrt{6}\\\\ \\text{What is the value of m and n respectively?} \\\\  \\text{(UME)} `,
       options: [
-        { id: 0, text: "2.0 \\times 10^{-3} ", isCorrect: false },
-        { id: 1, text: "2.0 \\times 10^{-5} ", isCorrect: false },
-        { id: 2, text: "2.0 \\times 10^{-7} ", isCorrect: true },
-        { id: 3, text: "2.0 \\times 10^{-9} ", isCorrect: false },
+        { id: 0, text: "1, -2 ", isCorrect: false },
+        { id: 1, text: " -2, 1 ", isCorrect: false },
+        { id: 2, text: "-\\frac{2}{5}, 1", isCorrect: true },
+        { id: 3, text: "2, \\frac{3}{5}", isCorrect: false },
       ],
       answer: "2.0 \\times 10^{-7} ",
       working:`\\frac{0.04 \\times 0.123}{0.34 \\times 72000 } \\\\= \\frac{0.00492}{24480 } \\\\= 0.000 000 201 \\\\= 0.000 000 20 \\text{ (to 2 s.f)} \\\\= 2.0 \\times 10^{-7}  \\text{( standard form)} `
     },
     {
       id: "Q9",
-      text: `\\text{Express the product of 41.56 and 4.12 }  \\\\  \\text{to 4 s.f and 2 d.p and find the } \\\\ \\text{difference between the two outcomes  } \\\\ \\text{in standard form}`,
+      text: `\\text{Simplify }  \\bigl( \\sqrt{0.7}+ \\sqrt{70} \\bigr)^2 `,
       options: [
-        { id: 0, text: "1.72 \\times 10^{-2}", isCorrect: false },
-        { id: 1, text: "1.7 \\times 10^{-2}", isCorrect: false },
-        { id: 2, text: "2.2 \\times 10^{-2}", isCorrect: false },
-        { id: 3, text: "2 \\times 10^{-2}", isCorrect: true },
+        { id: 0, text: "84.7", isCorrect: false },
+        { id: 1, text: "70.7", isCorrect: false },
+        { id: 2, text: "217.7", isCorrect: false },
+        { id: 3, text: "168.7", isCorrect: true },
       ],
       answer: "2 \\times 10^{-2}",
       working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `
     },
     {
       id: "Q10",
-      text: `\\frac{0.000335}{145000} = x \\times 10^y  \\text{ where } \\\\ 1 \\leqslant x < 10  \\text{ and y is a whole number.} \\\\ \\text{ Find the values of x and y.}`,
+      text: ` \\text{Simplify } \\frac{ \\sqrt{98} - \\sqrt{50}}{ \\sqrt{32}} \\text{ (UME)}`,
       options: [
-        { id: 0, text: "x = 2.13 \\text{ and } y = -9", isCorrect: false },
-        { id: 1, text: "x = 2.31 \\text{ and } y = -9", isCorrect: true },
-        { id: 2, text: "x = 2.31 \\text{ and } y = -10", isCorrect: false },
-        { id: 3, text: "x = 2.11 \\text{ and } y = -11", isCorrect: false },
+        { id: 0, text: "chk jamb", isCorrect: false },
+        { id: 1, text: "x = 1 \\text{ and } y = -9", isCorrect: true },
+        { id: 2, text: "x = 1/2 \\text{ and } y = -10", isCorrect: false },
+        { id: 3, text: "x = 1/4 \\text{ and } y = -11", isCorrect: false },
       ],
       answer: "x = 2.31 \\text{ and } y = -9",
       working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`

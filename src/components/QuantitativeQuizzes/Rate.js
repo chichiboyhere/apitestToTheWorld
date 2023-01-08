@@ -13,31 +13,32 @@ import Message from "../UI/Message";
 const questions = [
     {
       id: "Q1",
-      text: `\\text{Express } \\sqrt{31.42 \\times 60.32 } \\text{ correct to 2 s.f} \\\\ \\text{and 1 d.p and find the sum } \\\\ \\text{of the two outcomes correct to} \\\\ \\text{the nearest whole number}`,
+      text: `\\text{A car travels at an average speed} \\\\ \\text{of 75km/h. Find its speed in} \\\\ \\text{ metres per second. (NECO)} `,
       options: [
-        { id: 0, text: "81", isCorrect: false },
-        { id: 1, text: "83", isCorrect: false },
-        { id: 2, text: "85", isCorrect: false },
-        { id: 3, text: "88", isCorrect: true },
+        { id: 0, text: "270m/s", isCorrect: false },
+        { id: 1, text: "208m/s", isCorrect: false },
+        { id: 2, text: "27.0m/s", isCorrect: false },
+        { id: 3, text: "20.8m/s", isCorrect: true },
+        
       ],
-      answer: "88",
+      answer: "20.8m/s",
       working: `\\sqrt{31.42 \\times 60.32 } = \\sqrt{1895.2544} \\\\= 43.5345 \\\\= 44 \\text{ (correct to 2 s.f) } \\\\= 43.5 \\text{(correct to 1 d.p) } \\\\  \\therefore \\text{ their sum } = 44 + 43.5 = 87.5 \\\\= 88 \\text{(correct to the nearest whole number) } `
     },
     {
       id: "Q2",
-      text: `\\text{Write down the number }0.0052048 \\\\ \\text{correct to three significant figures.}  \\text{ (UME)}`,
+      text: `\\text{A train moving at a uniform speed} \\\\ \\text{covers 36km in 21 minutes. How} \\\\ \\text{long does it take to cover 60km? }  \\\\ \\text{ (WASSCE)}`,
       options: [
-        { id: 0, text: "0.005", isCorrect: false },
-        { id: 1, text: "0.0052", isCorrect: false },
-        { id: 2, text: "0.00520", isCorrect: true },
-        { id: 3, text: "5.2048", isCorrect: false },
+        { id: 0, text: "35 mins", isCorrect: false },
+        { id: 1, text: "40 mins", isCorrect: false },
+        { id: 2, text: "45 mins", isCorrect: true },
+        { id: 3, text: "90 mins", isCorrect: false },
       ],
       answer: "0.00520",
       working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
     },
     {
       id: "Q3",
-      text: `\\text{Evaluate correct to 4 decimal places } \\\\ 827.51 \\times 0.015 \\text{  (UME)}`,
+      text: `\\text{A train travels 60km in M minutes. If its average speed is 400km per hour, find the value of M } \\\\ \\text{  (WASSCE)}`,
       options: [
         { id: 0, text: "8.8415", isCorrect: false },
         { id: 1, text: "12.4127", isCorrect: true },
@@ -49,7 +50,7 @@ const questions = [
     },
     {
       id: "Q4",
-      text: `\\text{Evaluate } \\frac{31.4 \\times 38.02}{40.3 \\times 29.62 }`,
+      text: `\\text{A man travels at a rate of 25m/sec. If he travels for 10½hrs, how many kilometres has he covered? NECO }`,
       options: [
         { id: 0, text: "1", isCorrect: true },
         { id: 1, text: "2", isCorrect: false },

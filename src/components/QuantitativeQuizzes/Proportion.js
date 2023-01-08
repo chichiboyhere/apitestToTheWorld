@@ -13,48 +13,48 @@ import Message from "../UI/Message";
 const questions = [
     {
       id: "Q1",
-      text: `\\text{Express } \\sqrt{31.42 \\times 60.32 } \\text{ correct to 2 s.f} \\\\ \\text{and 1 d.p and find the sum } \\\\ \\text{of the two outcomes correct to} \\\\ \\text{the nearest whole number}`,
+      text: `\\text{The time taken to do a piece of work is inversely proportional to the number of men employed. If it takes 30 men to do a piece of work in 6 days, how many men are required to do the work in 4 days?} UME`,
       options: [
-        { id: 0, text: "81", isCorrect: false },
-        { id: 1, text: "83", isCorrect: false },
-        { id: 2, text: "85", isCorrect: false },
-        { id: 3, text: "88", isCorrect: true },
+        { id: 0, text: "20", isCorrect: false },
+        { id: 1, text: "35", isCorrect: false },
+        { id: 2, text: "45", isCorrect: false },
+        { id: 3, text: "60", isCorrect: true },
       ],
       answer: "88",
-      working: `\\sqrt{31.42 \\times 60.32 } = \\sqrt{1895.2544} \\\\= 43.5345 \\\\= 44 \\text{ (correct to 2 s.f) } \\\\= 43.5 \\text{(correct to 1 d.p) } \\\\  \\therefore \\text{ their sum } = 44 + 43.5 = 87.5 \\\\= 88 \\text{(correct to the nearest whole number) } `
+      working: ``
     },
     {
       id: "Q2",
-      text: `\\text{Write down the number }0.0052048 \\\\ \\text{correct to three significant figures.}  \\text{ (UME)}`,
+      text: `\\text{Mohammed is 8 years older than Joy }  \\\\ \\text{now. In five years’ time he will be}\\\\ \\text{ twice as old as Joy.} \\\\ \\text{ How old is Joy now? }  \\text{ (NECO)}`,
       options: [
-        { id: 0, text: "0.005", isCorrect: false },
-        { id: 1, text: "0.0052", isCorrect: false },
-        { id: 2, text: "0.00520", isCorrect: true },
-        { id: 3, text: "5.2048", isCorrect: false },
+        { id: 0, text: "1 1/2years", isCorrect: false },
+        { id: 1, text: "3years", isCorrect: false },
+        { id: 2, text: "4 1/2years", isCorrect: true },
+        { id: 3, text: "6 years  E. 8 years", isCorrect: false },
       ],
       answer: "0.00520",
       working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
     },
     {
       id: "Q3",
-      text: `\\text{Evaluate correct to 4 decimal places } \\\\ 827.51 \\times 0.015 \\text{  (UME)}`,
+      text: `\\text{I am x years old and my brother} \\\\ \\text{is 3 years older how old} \\\\ \\text{was my brother last year}  \\text{  (WASSCE)}`,
       options: [
-        { id: 0, text: "8.8415", isCorrect: false },
-        { id: 1, text: "12.4127", isCorrect: true },
-        { id: 2, text: "124.1265", isCorrect: false },
-        { id: 3, text: "12.4120", isCorrect: false },
+        { id: 0, text: "(x - 4) years", isCorrect: false },
+        { id: 1, text: "(x + 2) years", isCorrect: true },
+        { id: 2, text: "(3x - 1) years", isCorrect: false },
+        { id: 3, text: "(3x + 1) years", isCorrect: false },
       ],
       answer: "12.4127",
       working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
     },
     {
       id: "Q4",
-      text: `\\text{Evaluate } \\frac{31.4 \\times 38.02}{40.3 \\times 29.62 }`,
+      text: `\\text{A car uses one litre of petrol for every 14km. If one of petrol cost N63.00, how far can the car go with N900.00 worth of petrol? } WASSCE`,
       options: [
-        { id: 0, text: "1", isCorrect: true },
-        { id: 1, text: "2", isCorrect: false },
-        { id: 2, text: "877", isCorrect: false },
-        { id: 3, text: "1001", isCorrect: false },
+        { id: 0, text: "420km", isCorrect: true },
+        { id: 1, text: "405km", isCorrect: false },
+        { id: 2, text: "210km", isCorrect: false },
+        { id: 3, text: "200km", isCorrect: false },
       ],
       answer: "1",
       working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `

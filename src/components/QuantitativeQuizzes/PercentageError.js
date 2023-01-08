@@ -49,14 +49,15 @@ const questions = [
     },
     {
       id: "Q4",
-      text: `\\text{Evaluate } \\frac{31.4 \\times 38.02}{40.3 \\times 29.62 }`,
+      text: `\\text{A sales boy gave a change of N75.00} \\\\ \\text{to a buyer instead of N80.00,} \\\\ \\text{calculate his percentage error,} \\\\ \\text{correct to one decimal place?} \\\\ \\text{(NECO)}`,
       options: [
-        { id: 0, text: "1", isCorrect: true },
-        { id: 1, text: "2", isCorrect: false },
-        { id: 2, text: "877", isCorrect: false },
-        { id: 3, text: "1001", isCorrect: false },
+        { id: 0, text: "6.00%", isCorrect: true },
+        { id: 1, text: "6.20%", isCorrect: false },
+        { id: 2, text: "6.30%", isCorrect: false },
+        { id: 3, text: "6.60%", isCorrect: false },
+       
       ],
-      answer: "1",
+      answer: "6.30%",
       working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
     },
     {

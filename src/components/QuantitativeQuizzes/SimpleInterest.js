@@ -37,36 +37,38 @@ const questions = [
     },
     {
       id: "Q3",
-      text: `\\text{Evaluate correct to 4 decimal places } \\\\ 827.51 \\times 0.015 \\text{  (UME)}`,
+      text: `\\text{If the interest on N150.00 for} 2\\frac{1}{2} \\\\ \\text{years is N4.50, find the interest on} \\\\ \\text{N250.00 for 6 months at the same rate } \\\\  \\text{  (UME)}`,
       options: [
-        { id: 0, text: "8.8415", isCorrect: false },
-        { id: 1, text: "12.4127", isCorrect: true },
-        { id: 2, text: "124.1265", isCorrect: false },
-        { id: 3, text: "12.4120", isCorrect: false },
+        { id: 0, text: "N1.50", isCorrect: false },
+        { id: 1, text: "N7.50", isCorrect: true },
+        { id: 2, text: "N15.00", isCorrect: false },
+        { id: 3, text: "N18.00", isCorrect: false },
       ],
       answer: "12.4127",
       working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
     },
     {
       id: "Q4",
-      text: `\\text{Evaluate } \\frac{31.4 \\times 38.02}{40.3 \\times 29.62 }`,
+      text: `\\text{calculate the simple interest on N7,500 for 8 years at 5% per annum } UME`,
       options: [
-        { id: 0, text: "1", isCorrect: true },
-        { id: 1, text: "2", isCorrect: false },
-        { id: 2, text: "877", isCorrect: false },
-        { id: 3, text: "1001", isCorrect: false },
+        { id: 0, text: "N3,000", isCorrect: true },
+        { id: 1, text: "N600", isCorrect: false },
+        { id: 2, text: "N300", isCorrect: false },
+        { id: 3, text: "N150", isCorrect: false },
       ],
       answer: "1",
       working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
     },
     {
       id: "Q5",
-      text: `\\frac{0.000 045}{150000} = p \\times 10^q  \\text{ where } \\\\ 1 \\leqslant  p < 10  \\text{and q is a whole number.} \\\\ \\text{ Find } p^q`,
+      text: ` \\text{At what rate will the interest on N400 increases to N24 in 3 years reckoning in simple interest?
+
+      } UME`,
       options: [
-        { id: 0, text: "3^{-11}", isCorrect: false },
-        { id: 1, text: "\\frac{1}{3^{11}}", isCorrect: false },
-        { id: 2, text: "\\frac{1}{3^{10}}", isCorrect: true },
-        { id: 3, text: "3^{-9}", isCorrect: false },
+        { id: 0, text: "3%", isCorrect: false },
+        { id: 1, text: "2%", isCorrect: false },
+        { id: 2, text: "5%", isCorrect: true },
+        { id: 3, text: "4%", isCorrect: false },
       ],
       answer: "\\frac{1}{3^{10}}",
       working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`

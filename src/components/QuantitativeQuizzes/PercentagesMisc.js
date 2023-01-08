@@ -25,55 +25,55 @@ const questions = [
     },
     {
       id: "Q2",
-      text: `\\text{Write down the number }0.0052048 \\\\ \\text{correct to three significant figures.}  \\text{ (UME)}`,
+      text: `\\text{If the population of a town} \\\\ \\text{was 240,000 in January 1998 and }\\\\ \\text{it increased by 2% each year, what} \\\\ \\text{would be the population of the town} \\\\ \\text{ in January, 2000?}\\text{ (UME)}`,
       options: [
-        { id: 0, text: "0.005", isCorrect: false },
-        { id: 1, text: "0.0052", isCorrect: false },
-        { id: 2, text: "0.00520", isCorrect: true },
-        { id: 3, text: "5.2048", isCorrect: false },
+        { id: 0, text: "480,000", isCorrect: false },
+        { id: 1, text: "249,696", isCorrect: false },
+        { id: 2, text: "249,600", isCorrect: true },
+        { id: 3, text: "244,800", isCorrect: false },
       ],
       answer: "0.00520",
       working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
     },
     {
       id: "Q3",
-      text: `\\text{Evaluate correct to 4 decimal places } \\\\ 827.51 \\times 0.015 \\text{  (UME)}`,
+      text: `\\text{A man wishes to keep his money} \\\\ \\text{in a savings deposit at 25% compound} \\\\ \\text{ interest so that after three years} \\\\ \\text{ he can buy a car for N150,000.} \\\\ \\text{ How much does he need to deposit? } \\\\  \\text{  (UME)}`,
       options: [
-        { id: 0, text: "8.8415", isCorrect: false },
-        { id: 1, text: "12.4127", isCorrect: true },
-        { id: 2, text: "124.1265", isCorrect: false },
-        { id: 3, text: "12.4120", isCorrect: false },
+        { id: 0, text: "N112,000.50", isCorrect: false },
+        { id: 1, text: "N96,000.00", isCorrect: true },
+        { id: 2, text: "N85,714.28", isCorrect: false },
+        { id: 3, text: "N76,800.00", isCorrect: false },
       ],
       answer: "12.4127",
       working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
     },
     {
       id: "Q4",
-      text: `\\text{Evaluate } \\frac{31.4 \\times 38.02}{40.3 \\times 29.62 }`,
+      text: `\\text{A cinema hall contains a certain} \\\\ \\text{number of people. If }22\\frac{1}{2}% \\text{ are} \\\\ \\text{children,} 47\\frac{1}{2}% \\text{ are men and 84 are women,}\\\\  \\text{find the number of men in the hall.} \\\\ \\text{(UME)} `,
       options: [
-        { id: 0, text: "1", isCorrect: true },
-        { id: 1, text: "2", isCorrect: false },
-        { id: 2, text: "877", isCorrect: false },
-        { id: 3, text: "1001", isCorrect: false },
+        { id: 0, text: "63", isCorrect: true },
+        { id: 1, text: "84", isCorrect: false },
+        { id: 2, text: "113", isCorrect: false },
+        { id: 3, text: "133", isCorrect: false },
       ],
       answer: "1",
       working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
     },
     {
       id: "Q5",
-      text: `\\frac{0.000 045}{150000} = p \\times 10^q  \\text{ where } \\\\ 1 \\leqslant  p < 10  \\text{and q is a whole number.} \\\\ \\text{ Find } p^q`,
+      text: `\\text{If x% of 240 equals 12, find x.} \\\\ \\text{(WASSCE)}`,
       options: [
-        { id: 0, text: "3^{-11}", isCorrect: false },
-        { id: 1, text: "\\frac{1}{3^{11}}", isCorrect: false },
-        { id: 2, text: "\\frac{1}{3^{10}}", isCorrect: true },
-        { id: 3, text: "3^{-9}", isCorrect: false },
+        { id: 0, text: "x = 1", isCorrect: false },
+        { id: 1, text: "x = 3", isCorrect: false },
+        { id: 2, text: "x = 5", isCorrect: true },
+        { id: 3, text: "x = 7", isCorrect: false },
       ],
       answer: "\\frac{1}{3^{10}}",
       working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`
     },
     {
       id: "Q6",
-      text: `\\text{Find correct to three significant } \\\\ \\text{figures, the value of } \\sqrt{41830} \\text{ (UME) }`,
+      text: `\\text{If 85% of x is N3230, what is the value of x?} \\text{ (WASSCE) }`,
       options: [
         { id: 0, text: "205", isCorrect: true },
         { id: 1, text: "647", isCorrect: false },

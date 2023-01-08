@@ -13,60 +13,60 @@ import Message from "../UI/Message";
 const questions = [
     {
       id: "Q1",
-      text: `\\text{Express } \\sqrt{31.42 \\times 60.32 } \\text{ correct to 2 s.f} \\\\ \\text{and 1 d.p and find the sum } \\\\ \\text{of the two outcomes correct to} \\\\ \\text{the nearest whole number}`,
+      text: `\\text{If m:n = 13:11, find} \\\\ m^2 - n^2 : (m + n)^2}  \\text{UME}`,
       options: [
-        { id: 0, text: "81", isCorrect: false },
-        { id: 1, text: "83", isCorrect: false },
-        { id: 2, text: "85", isCorrect: false },
-        { id: 3, text: "88", isCorrect: true },
+        { id: 0, text: "1:11", isCorrect: false },
+        { id: 1, text: "1:13", isCorrect: false },
+        { id: 2, text: "1:10", isCorrect: false },
+        { id: 3, text: "1:12", isCorrect: true },
       ],
       answer: "88",
-      working: `\\sqrt{31.42 \\times 60.32 } = \\sqrt{1895.2544} \\\\= 43.5345 \\\\= 44 \\text{ (correct to 2 s.f) } \\\\= 43.5 \\text{(correct to 1 d.p) } \\\\  \\therefore \\text{ their sum } = 44 + 43.5 = 87.5 \\\\= 88 \\text{(correct to the nearest whole number) } `
+      working: ` `
     },
     {
       id: "Q2",
-      text: `\\text{Write down the number }0.0052048 \\\\ \\text{correct to three significant figures.}  \\text{ (UME)}`,
+      text: `\\text{ N140,000 is shared between Abu,} \\\\ \\text{ Kayode and Uche. Abu has twice as } \\\\ \\text{much as Kayode, and Kayode has twice as } \\\\ \\text{much as Uche. What is Kayode's share?} \\\\ \\text{(WASSCE) }`,
       options: [
-        { id: 0, text: "0.005", isCorrect: false },
-        { id: 1, text: "0.0052", isCorrect: false },
-        { id: 2, text: "0.00520", isCorrect: true },
-        { id: 3, text: "5.2048", isCorrect: false },
+        { id: 0, text: "N80,000", isCorrect: false },
+        { id: 1, text: "N40,000", isCorrect: false },
+        { id: 2, text: "N20,000", isCorrect: true },
+        { id: 3, text: "N10,000", isCorrect: false },
       ],
       answer: "0.00520",
       working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
     },
     {
       id: "Q3",
-      text: `\\text{Evaluate correct to 4 decimal places } \\\\ 827.51 \\times 0.015 \\text{  (UME)}`,
+      text: `\\text{If the ratio x:y = 3:5 and} \\\\ \\text{y:z = 4:7, find the ratio x:y:z }  \\text{ (WASSCE)}`,
       options: [
-        { id: 0, text: "8.8415", isCorrect: false },
-        { id: 1, text: "12.4127", isCorrect: true },
-        { id: 2, text: "124.1265", isCorrect: false },
-        { id: 3, text: "12.4120", isCorrect: false },
+        { id: 0, text: "15 : 28 : 84", isCorrect: false },
+        { id: 1, text: "12 : 20 : 35", isCorrect: true },
+        { id: 2, text: "3 : 5 : 4", isCorrect: false },
+        { id: 3, text: "5 : 4 : 7", isCorrect: false },
       ],
       answer: "12.4127",
       working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
     },
     {
       id: "Q4",
-      text: `\\text{Evaluate } \\frac{31.4 \\times 38.02}{40.3 \\times 29.62 }`,
+      text: `\\text{The sum of the ages of Musa and Lawal is 28 years. After sharing a certain sum of money in the ratio of their ages, Musa gets N600 and Lawal N800. How old is Lawal?} (UME)`,
       options: [
-        { id: 0, text: "1", isCorrect: true },
-        { id: 1, text: "2", isCorrect: false },
-        { id: 2, text: "877", isCorrect: false },
-        { id: 3, text: "1001", isCorrect: false },
+        { id: 0, text: "14 years", isCorrect: true },
+        { id: 1, text: "20 years", isCorrect: false },
+        { id: 2, text: "12 years", isCorrect: false },
+        { id: 3, text: "16 years", isCorrect: false },
       ],
       answer: "1",
       working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
     },
     {
       id: "Q5",
-      text: `\\frac{0.000 045}{150000} = p \\times 10^q  \\text{ where } \\\\ 1 \\leqslant  p < 10  \\text{and q is a whole number.} \\\\ \\text{ Find } p^q`,
+      text: `\\text{A farmer planted 5000 grains of maize and harvested 5000 cobs, each bearing 500 grains. What is the ratio of the number of grains sowed to the number harvested? } \\\\  \\text{ (UME) } `,
       options: [
-        { id: 0, text: "3^{-11}", isCorrect: false },
-        { id: 1, text: "\\frac{1}{3^{11}}", isCorrect: false },
-        { id: 2, text: "\\frac{1}{3^{10}}", isCorrect: true },
-        { id: 3, text: "3^{-9}", isCorrect: false },
+        { id: 0, text: "1 : 250 000", isCorrect: false },
+        { id: 1, text: "1 : 25 000", isCorrect: false },
+        { id: 2, text: "1 : 500", isCorrect: true },
+        { id: 3, text: "1 : 5 000", isCorrect: false },
       ],
       answer: "\\frac{1}{3^{10}}",
       working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`

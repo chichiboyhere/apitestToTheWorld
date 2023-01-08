@@ -13,7 +13,7 @@ import Message from "../UI/Message";
 const questions = [
     {
       id: "Q1",
-      text: `\\text{A car dealer bought a second-hand}  \\\\ \\text{car for N250,000 and spent N70,000} \\\\ \\text{ refurbishing it. He then sold the} \\\\ \\text{ car for N400,000.} \\\\ \\text{ What is the percentage gain?} \\text{ (UME)}`,
+      text: `\\text{A car dealer bought a second-hand}  \\\\ \\text{car for N250,000 and spent N70,000} \\\\ \\text{refurbishing it.He then sold the} \\\\ \\text{ car for N400,000. What } \\\\ \\text{is the percentage gain?} \\text{ (UME)}`,
       options: [
         { id: 0, text: "60%", isCorrect: false },
         { id: 1, text: "32%", isCorrect: false },
@@ -25,19 +25,19 @@ const questions = [
     },
     {
       id: "Q2",
-      text: `\\text{Write down the number }0.0052048 \\\\ \\text{correct to three significant figures.}  \\text{ (UME)}`,
+      text: `\\text{A trader bought 100 oranges at 5}\\\\ \\text{ for N1.20, 20 oranges got spoilt } \\\\ \\text{and the remaining were sold at 4 for N1.50.} \\\\ \\text{ Find the percentage gain or loss.} \\\\ \\text{ (UME)}`,
       options: [
-        { id: 0, text: "0.005", isCorrect: false },
-        { id: 1, text: "0.0052", isCorrect: false },
-        { id: 2, text: "0.00520", isCorrect: true },
-        { id: 3, text: "5.2048", isCorrect: false },
+        { id: 0, text: "30% gain", isCorrect: false },
+        { id: 1, text: "25% gain", isCorrect: false },
+        { id: 2, text: "30% loss", isCorrect: true },
+        { id: 3, text: "25% loss", isCorrect: false },
       ],
       answer: "0.00520",
       working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
     },
     {
       id: "Q3",
-      text: `\\text{Evaluate correct to 4 decimal places } \\\\ 827.51 \\times 0.015 \\text{  (UME)}`,
+      text: `\\text{A woman buys 270 oranges for}  \\\\ \\text{N1800.00 and sells at 5 for N40.00.} \\\\ \\text{What is her profit? } \\text{ (UME)}`,
       options: [
         { id: 0, text: "8.8415", isCorrect: false },
         { id: 1, text: "12.4127", isCorrect: true },
@@ -49,7 +49,7 @@ const questions = [
     },
     {
       id: "Q4",
-      text: `\\text{Evaluate } \\frac{31.4 \\times 38.02}{40.3 \\times 29.62 }`,
+      text: `\\text{A man made a profit of 5% when he} \\\\ \\text{ sold an article for N60,000.00. } \\\\ \\text{How much would he have sell the article to} \\\\ \\text{ make a profit of 26%} \\text{UME}`,
       options: [
         { id: 0, text: "1", isCorrect: true },
         { id: 1, text: "2", isCorrect: false },
@@ -61,12 +61,12 @@ const questions = [
     },
     {
       id: "Q5",
-      text: `\\frac{0.000 045}{150000} = p \\times 10^q  \\text{ where } \\\\ 1 \\leqslant  p < 10  \\text{and q is a whole number.} \\\\ \\text{ Find } p^q`,
+      text: `\\text{A man bought a second-hand photocopying machine for N34,000. He serviced it at a cost of N2,000 and then sold it at a profit of 15%. What was the selling price?} UME`,
       options: [
-        { id: 0, text: "3^{-11}", isCorrect: false },
-        { id: 1, text: "\\frac{1}{3^{11}}", isCorrect: false },
-        { id: 2, text: "\\frac{1}{3^{10}}", isCorrect: true },
-        { id: 3, text: "3^{-9}", isCorrect: false },
+        { id: 0, text: "N37,550", isCorrect: false },
+        { id: 1, text: "N40,400", isCorrect: false },
+        { id: 2, text: "N41,400", isCorrect: true },
+        { id: 3, text: "N42,400", isCorrect: false },
       ],
       answer: "\\frac{1}{3^{10}}",
       working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`

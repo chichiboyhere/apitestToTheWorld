@@ -25,36 +25,36 @@ const questions = [
     },
     {
       id: "Q2",
-      text: `\\text{Write down the number }0.0052048 \\\\ \\text{correct to three significant figures.}  \\text{ (UME)}`,
+      text: `\\text{Without using tables, evaluate } \\\\ \\bigl( 343 \\bigr)^{\\frac{1}{3}} \\times \\bigl( 0.14 \\bigr)^{-1} \\times \\bigl(25\\bigr)^{-\\frac{1}{2}} \\text{ (UME)}`,
       options: [
-        { id: 0, text: "0.005", isCorrect: false },
-        { id: 1, text: "0.0052", isCorrect: false },
-        { id: 2, text: "0.00520", isCorrect: true },
-        { id: 3, text: "5.2048", isCorrect: false },
+        { id: 0, text: "10", isCorrect: false },
+        { id: 1, text: "12", isCorrect: false },
+        { id: 2, text: "8", isCorrect: true },
+        { id: 3, text: "7", isCorrect: false },
       ],
       answer: "0.00520",
       working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
     },
     {
       id: "Q3",
-      text: `\\text{Evaluate correct to 4 decimal places } \\\\ 827.51 \\times 0.015 \\text{  (UME)}`,
+      text: `\\text{Simplify (25)^−1/2 × (27)^1/3 + (121)^−1/2 × (625)^−1/4 }  \\text{  (UME)}`,
       options: [
-        { id: 0, text: "8.8415", isCorrect: false },
-        { id: 1, text: "12.4127", isCorrect: true },
-        { id: 2, text: "124.1265", isCorrect: false },
-        { id: 3, text: "12.4120", isCorrect: false },
+        { id: 0, text: "34/55", isCorrect: false },
+        { id: 1, text: "9/11", isCorrect: true },
+        { id: 2, text: "14/5", isCorrect: false },
+        { id: 3, text: "3/275", isCorrect: false },
       ],
       answer: "12.4127",
       working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
     },
     {
       id: "Q4",
-      text: `\\text{Evaluate } \\frac{31.4 \\times 38.02}{40.3 \\times 29.62 }`,
+      text: `\\text{simplify 16^{−1/2} × 4^{−1/2} × 27^{1/3} } UME`,
       options: [
-        { id: 0, text: "1", isCorrect: true },
-        { id: 1, text: "2", isCorrect: false },
-        { id: 2, text: "877", isCorrect: false },
-        { id: 3, text: "1001", isCorrect: false },
+        { id: 0, text: "3/8", isCorrect: true },
+        { id: 1, text: "2/3", isCorrect: false },
+        { id: 2, text: "3/4", isCorrect: false },
+        { id: 3, text: "3/2", isCorrect: false },
       ],
       answer: "1",
       working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `

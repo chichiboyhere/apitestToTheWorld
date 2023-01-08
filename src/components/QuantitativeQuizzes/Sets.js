@@ -73,48 +73,52 @@ const questions = [
     },
     {
       id: "Q6",
-      text: `\\text{Find correct to three significant } \\\\ \\text{figures, the value of } \\sqrt{41830} \\text{ (UME) }`,
+      text: `\\text{In a school, 220 students offer} \\\\ \\text{Biology or Mathematics or both. 125 offer} \\\\ \\text{ Biology and 110 mathematics. How} \\\\ \\text{ many offer Biology but not Mathematics?} \\\\  \\text{ (UME) }`,
       options: [
-        { id: 0, text: "205", isCorrect: true },
-        { id: 1, text: "647", isCorrect: false },
-        { id: 2, text: "2050", isCorrect: false },
-        { id: 3, text: "6470", isCorrect: false },
+        { id: 0, text: "95", isCorrect: true },
+        { id: 1, text: "80", isCorrect: false },
+        { id: 2, text: "125", isCorrect: false },
+        { id: 3, text: "110", isCorrect: false },
       ],
       answer: "205",
       working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
     },
     {
       id: "Q7",
-      text: `\\text{What is the difference between 0.007685} \\\\ \\text{correct to three significant figures} \\\\ \\text{and 0.007685 correct to four places } \\\\ \\text{of decimal?} `,
+      text: `\\text{In a class of 40 students, 32 offer} \\\\ \\text{ mathematics, 24 offer Physics, and 4} \\\\ \\text{ offer neither Mathematics nor Physics.} \\\\ \\text{ How many offer both Mathematics and Physics?}  \\\\  \\text{ (UME) }`,
       options: [
-        { id: 0, text: "10^{-5}", isCorrect: true },
-        { id: 1, text: "7 \\times 10^{-4}", isCorrect: false },
-        { id: 2, text: "8 \\times 10^{-5}", isCorrect: false },
-        { id: 3, text: "10^{-6}", isCorrect: false },
+        { id: 0, text: "20", isCorrect: true },
+        { id: 1, text: "16", isCorrect: false },
+        { id: 2, text: "4", isCorrect: false },
+        { id: 3, text: "8", isCorrect: false },
       ],
       answer: "10^{-5}",
       working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
     },
     {
       id: "Q8",
-      text: `\\text{Evaluate } \\frac{0.04 \\times 0.123}{0.34 \\times 72000 }\\\\ \\text{Leave your answer in standard} \\\\ \\text{form correct to 2 significant} \\\\ \\text{figures} `,
+      text: `\\text{Given:} \\\\
+      \\text{U = {Even numbers between 0 and 30}} \\\\
+      \\text{P = {Multiples of 6 between 0 and 30}} \\\\
+      \\text{Q = {Multiples of 4 between 0 and 30}} \\\\
+      \\text{Find } \\bigl( P \\cup Q \\bigr)^c \\text{ (UME)} `,
       options: [
-        { id: 0, text: "2.0 \\times 10^{-3} ", isCorrect: false },
-        { id: 1, text: "2.0 \\times 10^{-5} ", isCorrect: false },
-        { id: 2, text: "2.0 \\times 10^{-7} ", isCorrect: true },
-        { id: 3, text: "2.0 \\times 10^{-9} ", isCorrect: false },
+        { id: 0, text: "{2, 10, 14, 22, 26} ", isCorrect: false },
+        { id: 1, text: " {0, 10, 14, 22, 26}", isCorrect: false },
+        { id: 2, text: "{2,4, 14, 18, 26}", isCorrect: true },
+        { id: 3, text: "{0, 2, 6, 22, 26}", isCorrect: false },
       ],
       answer: "2.0 \\times 10^{-7} ",
       working:`\\frac{0.04 \\times 0.123}{0.34 \\times 72000 } \\\\= \\frac{0.00492}{24480 } \\\\= 0.000 000 201 \\\\= 0.000 000 20 \\text{ (to 2 s.f)} \\\\= 2.0 \\times 10^{-7}  \\text{( standard form)} `
     },
     {
       id: "Q9",
-      text: `\\text{Express the product of 41.56 and 4.12 }  \\\\  \\text{to 4 s.f and 2 d.p and find the } \\\\ \\text{difference between the two outcomes  } \\\\ \\text{in standard form}`,
+      text: `\\text{In a small village of 500 people,}  \\\\ \\text{350 speak the local language while} \\\\ \\text{ 200 speak pidgin English. What percentage} \\\\ \\text{of the population speak both. }  \\text{UME}`,
       options: [
-        { id: 0, text: "1.72 \\times 10^{-2}", isCorrect: false },
-        { id: 1, text: "1.7 \\times 10^{-2}", isCorrect: false },
-        { id: 2, text: "2.2 \\times 10^{-2}", isCorrect: false },
-        { id: 3, text: "2 \\times 10^{-2}", isCorrect: true },
+        { id: 0, text: "30%", isCorrect: false },
+        { id: 1, text: "10%", isCorrect: false },
+        { id: 2, text: "50%", isCorrect: false },
+        { id: 3, text: "14%", isCorrect: true },
       ],
       answer: "2 \\times 10^{-2}",
       working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `
