@@ -61,43 +61,43 @@ const questions = [
     },
     {
       id: "Q5",
-      text: `\\frac{0.000 045}{150000} = p \\times 10^q  \\text{ where } \\\\ 1 \\leqslant  p < 10  \\text{and q is a whole number.} \\\\ \\text{ Find } p^q`,
+      text: `Solve (27/125)^{-1/3} x (4/9)^{1/2}`,
       options: [
-        { id: 0, text: "3^{-11}", isCorrect: false },
-        { id: 1, text: "\\frac{1}{3^{11}}", isCorrect: false },
-        { id: 2, text: "\\frac{1}{3^{10}}", isCorrect: true },
-        { id: 3, text: "3^{-9}", isCorrect: false },
+        { id: 0, text: "10/9", isCorrect: false },
+        { id: 1, text: "9/10", isCorrect: false },
+        { id: 2, text: "2/5", isCorrect: true },
+        { id: 3, text: "12/125", isCorrect: false },
       ],
       answer: "\\frac{1}{3^{10}}",
       working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`
     },
     {
       id: "Q6",
-      text: `\\text{Find correct to three significant } \\\\ \\text{figures, the value of } \\sqrt{41830} \\text{ (UME) }`,
+      text: `\\text{Simplify 3^{−5n} / 9^{1−n} × 27^{n+1}`,
       options: [
-        { id: 0, text: "205", isCorrect: true },
-        { id: 1, text: "647", isCorrect: false },
-        { id: 2, text: "2050", isCorrect: false },
-        { id: 3, text: "6470", isCorrect: false },
+        { id: 0, text: "3^2", isCorrect: true },
+        { id: 1, text: "3^3", isCorrect: false },
+        { id: 2, text: "3^5", isCorrect: false },
+        { id: 3, text: "3", isCorrect: false },
       ],
       answer: "205",
       working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
     },
     {
       id: "Q7",
-      text: `\\text{What is the difference between 0.007685} \\\\ \\text{correct to three significant figures} \\\\ \\text{and 0.007685 correct to four places } \\\\ \\text{of decimal?} `,
+      text: `\\text{Simplify } \\frac{sqrt{8^2 \\times 4^{n+1}}}{2^{2n} \\times 16} \\\\ \\text{(WASSCE)} `,
       options: [
-        { id: 0, text: "10^{-5}", isCorrect: true },
-        { id: 1, text: "7 \\times 10^{-4}", isCorrect: false },
-        { id: 2, text: "8 \\times 10^{-5}", isCorrect: false },
-        { id: 3, text: "10^{-6}", isCorrect: false },
+        { id: 0, text: "16", isCorrect: true },
+        { id: 1, text: "8", isCorrect: false },
+        { id: 2, text: "4", isCorrect: false },
+        { id: 3, text: "1", isCorrect: false },
       ],
       answer: "10^{-5}",
       working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
     },
     {
       id: "Q8",
-      text: `\\text{Evaluate } \\frac{0.04 \\times 0.123}{0.34 \\times 72000 }\\\\ \\text{Leave your answer in standard} \\\\ \\text{form correct to 2 significant} \\\\ \\text{figures} `,
+      text: `\\text{Evaluate} \\frac{27^{\\frac{1}{3}} - 8^{\\frac{2}{3}}}{16^{\\frac{2}{4}×2 \\\\ \\text{(Do urs here)} `,
       options: [
         { id: 0, text: "2.0 \\times 10^{-3} ", isCorrect: false },
         { id: 1, text: "2.0 \\times 10^{-5} ", isCorrect: false },
@@ -109,12 +109,12 @@ const questions = [
     },
     {
       id: "Q9",
-      text: `\\text{Express the product of 41.56 and 4.12 }  \\\\  \\text{to 4 s.f and 2 d.p and find the } \\\\ \\text{difference between the two outcomes  } \\\\ \\text{in standard form}`,
+      text: `\\text{Simplify } \\frac{3^{n−1} \\times 27^{n+1} }{81^n}   \\\\ \\text{(WASSCE)}`,
       options: [
-        { id: 0, text: "1.72 \\times 10^{-2}", isCorrect: false },
-        { id: 1, text: "1.7 \\times 10^{-2}", isCorrect: false },
-        { id: 2, text: "2.2 \\times 10^{-2}", isCorrect: false },
-        { id: 3, text: "2 \\times 10^{-2}", isCorrect: true },
+        { id: 0, text: "3^{2n}", isCorrect: false },
+        { id: 1, text: "9", isCorrect: false },
+        { id: 2, text: "3^n", isCorrect: false },
+        { id: 3, text: "3^{n+1}", isCorrect: true },
       ],
       answer: "2 \\times 10^{-2}",
       working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `

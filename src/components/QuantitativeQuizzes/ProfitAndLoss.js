@@ -73,19 +73,19 @@ const questions = [
     },
     {
       id: "Q6",
-      text: `\\text{Find correct to three significant } \\\\ \\text{figures, the value of } \\sqrt{41830} \\text{ (UME) }`,
+      text: `\\text{A woman bought a grinder for N60,000. She sold it at a loss of 15%. How much did she sell it?} \\text{ (UME) }`,
       options: [
-        { id: 0, text: "205", isCorrect: true },
-        { id: 1, text: "647", isCorrect: false },
-        { id: 2, text: "2050", isCorrect: false },
-        { id: 3, text: "6470", isCorrect: false },
+        { id: 0, text: "N53,000", isCorrect: true },
+        { id: 1, text: "N52,000", isCorrect: false },
+        { id: 2, text: "N51,000", isCorrect: false },
+        { id: 3, text: "N50,000", isCorrect: false },
       ],
       answer: "205",
       working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
     },
     {
       id: "Q7",
-      text: `\\text{What is the difference between 0.007685} \\\\ \\text{correct to three significant figures} \\\\ \\text{and 0.007685 correct to four places } \\\\ \\text{of decimal?} `,
+      text: `\\text{A trader bought 100 oranges at 5 for N40.00 and 20 for N120.00. Find the profit or loss percent}  \\\\ \\text{(WASSCE)} `,
       options: [
         { id: 0, text: "10^{-5}", isCorrect: true },
         { id: 1, text: "7 \\times 10^{-4}", isCorrect: false },
@@ -97,19 +97,19 @@ const questions = [
     },
     {
       id: "Q8",
-      text: `\\text{Evaluate } \\frac{0.04 \\times 0.123}{0.34 \\times 72000 }\\\\ \\text{Leave your answer in standard} \\\\ \\text{form correct to 2 significant} \\\\ \\text{figures} `,
+      text: `\\text{A man sells his new brand car for N420,000 at a gain of 15%. What did it cost him?} \\\\ \\text{(UTME)} `,
       options: [
-        { id: 0, text: "2.0 \\times 10^{-3} ", isCorrect: false },
-        { id: 1, text: "2.0 \\times 10^{-5} ", isCorrect: false },
-        { id: 2, text: "2.0 \\times 10^{-7} ", isCorrect: true },
-        { id: 3, text: "2.0 \\times 10^{-9} ", isCorrect: false },
+        { id: 0, text: "N410,000", isCorrect: false },
+        { id: 1, text: "N365, 217", isCorrect: false },
+        { id: 2, text: "N157, 250", isCorrect: true },
+        { id: 3, text: "N257,000", isCorrect: false },
       ],
       answer: "2.0 \\times 10^{-7} ",
       working:`\\frac{0.04 \\times 0.123}{0.34 \\times 72000 } \\\\= \\frac{0.00492}{24480 } \\\\= 0.000 000 201 \\\\= 0.000 000 20 \\text{ (to 2 s.f)} \\\\= 2.0 \\times 10^{-7}  \\text{( standard form)} `
     },
     {
       id: "Q9",
-      text: `\\text{Express the product of 41.56 and 4.12 }  \\\\  \\text{to 4 s.f and 2 d.p and find the } \\\\ \\text{difference between the two outcomes  } \\\\ \\text{in standard form}`,
+      text: `\\text{A man bought a car for N800 and sold it for N520. Find his loss per cent}  \\\\ \\text{(UTME)}`,
       options: [
         { id: 0, text: "1.72 \\times 10^{-2}", isCorrect: false },
         { id: 1, text: "1.7 \\times 10^{-2}", isCorrect: false },

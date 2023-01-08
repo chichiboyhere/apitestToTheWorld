@@ -61,36 +61,36 @@ const questions = [
     },
     {
       id: "Q5",
-      text: `\\frac{0.000 045}{150000} = p \\times 10^q  \\text{ where } \\\\ 1 \\leqslant  p < 10  \\text{and q is a whole number.} \\\\ \\text{ Find } p^q`,
+      text: `\\text{ Sonny is twice as old as Wale. Four years ago, he was four times as old as Wale. When will the sum of their ages be 66?} WASSCE`,
       options: [
-        { id: 0, text: "3^{-11}", isCorrect: false },
-        { id: 1, text: "\\frac{1}{3^{11}}", isCorrect: false },
-        { id: 2, text: "\\frac{1}{3^{10}}", isCorrect: true },
-        { id: 3, text: "3^{-9}", isCorrect: false },
+        { id: 0, text: "24", isCorrect: false },
+        { id: 1, text: "25", isCorrect: false },
+        { id: 2, text: "26", isCorrect: true },
+        { id: 3, text: "27", isCorrect: false },
       ],
       answer: "\\frac{1}{3^{10}}",
       working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`
     },
     {
       id: "Q6",
-      text: `\\text{Find correct to three significant } \\\\ \\text{figures, the value of } \\sqrt{41830} \\text{ (UME) }`,
+      text: `Tom will be 25 years old in n years' time. If he is 5 years younger than Bade's present age. WASSCE`,
       options: [
-        { id: 0, text: "205", isCorrect: true },
-        { id: 1, text: "647", isCorrect: false },
-        { id: 2, text: "2050", isCorrect: false },
-        { id: 3, text: "6470", isCorrect: false },
+        { id: 0, text: "(30 - n)years", isCorrect: true },
+        { id: 1, text: "(20 - n)years", isCorrect: false },
+        { id: 2, text: "(25 - n)years", isCorrect: false },
+        { id: 3, text: "(30 + n)years", isCorrect: false },
       ],
       answer: "205",
       working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
     },
     {
       id: "Q7",
-      text: `\\text{What is the difference between 0.007685} \\\\ \\text{correct to three significant figures} \\\\ \\text{and 0.007685 correct to four places } \\\\ \\text{of decimal?} `,
+      text: `\\text{Halima is n years old. Her brother's age is 5 years more than half of her age. How old is her brother? } \\\\ \\text{(WASSCE)} `,
       options: [
-        { id: 0, text: "10^{-5}", isCorrect: true },
-        { id: 1, text: "7 \\times 10^{-4}", isCorrect: false },
-        { id: 2, text: "8 \\times 10^{-5}", isCorrect: false },
-        { id: 3, text: "10^{-6}", isCorrect: false },
+        { id: 0, text: "n/2+5/2", isCorrect: true },
+        { id: 1, text: "n/2 - 5", isCorrect: false },
+        { id: 2, text: " 5 - n/2", isCorrect: false },
+        { id: 3, text: "n/2 + 5", isCorrect: false },
       ],
       answer: "10^{-5}",
       working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `

@@ -75,36 +75,36 @@ const questions = [
     },
     {
       id: "Q6",
-      text: `\\text{Find correct to three significant } \\\\ \\text{figures, the value of } \\sqrt{41830} \\text{ (UME) }`,
+      text: `\\text{A man invested N5,000 for 9 months at 4%. What is the simple interest?}  \\text{ (UME) }`,
       options: [
-        { id: 0, text: "205", isCorrect: true },
-        { id: 1, text: "647", isCorrect: false },
-        { id: 2, text: "2050", isCorrect: false },
-        { id: 3, text: "6470", isCorrect: false },
+        { id: 0, text: "N150", isCorrect: true },
+        { id: 1, text: "N220", isCorrect: false },
+        { id: 2, text: "N130", isCorrect: false },
+        { id: 3, text: "N250", isCorrect: false },
       ],
       answer: "205",
       working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
     },
     {
       id: "Q7",
-      text: `\\text{What is the difference between 0.007685} \\\\ \\text{correct to three significant figures} \\\\ \\text{and 0.007685 correct to four places } \\\\ \\text{of decimal?} `,
+      text: `\\text{Calculate the time taken for N3000 to earn N600 if invested at 8% simple interest} UME`,
       options: [
-        { id: 0, text: "10^{-5}", isCorrect: true },
-        { id: 1, text: "7 \\times 10^{-4}", isCorrect: false },
-        { id: 2, text: "8 \\times 10^{-5}", isCorrect: false },
-        { id: 3, text: "10^{-6}", isCorrect: false },
+        { id: 0, text: "2 1/2 years}", isCorrect: true },
+        { id: 1, text: "3 years", isCorrect: false },
+        { id: 2, text: "3 1/2 years", isCorrect: false },
+        { id: 3, text: "1 1/2 years", isCorrect: false },
       ],
       answer: "10^{-5}",
       working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
     },
     {
       id: "Q8",
-      text: `\\text{Evaluate } \\frac{0.04 \\times 0.123}{0.34 \\times 72000 }\\\\ \\text{Leave your answer in standard} \\\\ \\text{form correct to 2 significant} \\\\ \\text{figures} `,
+      text: `\\text{Find at which rate per annum simple interest N525 will amount to N588 in 3 years.} \\\\ \\text{(UTME)} `,
       options: [
-        { id: 0, text: "2.0 \\times 10^{-3} ", isCorrect: false },
-        { id: 1, text: "2.0 \\times 10^{-5} ", isCorrect: false },
-        { id: 2, text: "2.0 \\times 10^{-7} ", isCorrect: true },
-        { id: 3, text: "2.0 \\times 10^{-9} ", isCorrect: false },
+        { id: 0, text: "3% ", isCorrect: false },
+        { id: 1, text: "2%", isCorrect: false },
+        { id: 2, text: "5%", isCorrect: true },
+        { id: 3, text: "4%", isCorrect: false },
       ],
       answer: "2.0 \\times 10^{-7} ",
       working:`\\frac{0.04 \\times 0.123}{0.34 \\times 72000 } \\\\= \\frac{0.00492}{24480 } \\\\= 0.000 000 201 \\\\= 0.000 000 20 \\text{ (to 2 s.f)} \\\\= 2.0 \\times 10^{-7}  \\text{( standard form)} `

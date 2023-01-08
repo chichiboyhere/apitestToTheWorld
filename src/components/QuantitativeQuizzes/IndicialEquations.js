@@ -85,7 +85,7 @@ const questions = [
     },
     {
       id: "Q7",
-      text: `\\text{Solve } 5^{2(x−1)} × 5^{x+1}=0.04`,
+      text: `\\text{Solve } 5^{2(x−1)} × 5^{x+1}=0.04 UME / UTME`,
       options: [
         { id: 0, text: "1/3", isCorrect: true },
         { id: 1, text: "1/4", isCorrect: false },
@@ -97,36 +97,36 @@ const questions = [
     },
     {
       id: "Q8",
-      text: `\\text{Evaluate } \\frac{0.04 \\times 0.123}{0.34 \\times 72000 }\\\\ \\text{Leave your answer in standard} \\\\ \\text{form correct to 2 significant} \\\\ \\text{figures} `,
+      text: `\\text{If } 27^{x+2} \\div 9^{x+1} = 3^{2x}, find x. UTME `,
       options: [
-        { id: 0, text: "2.0 \\times 10^{-3} ", isCorrect: false },
-        { id: 1, text: "2.0 \\times 10^{-5} ", isCorrect: false },
-        { id: 2, text: "2.0 \\times 10^{-7} ", isCorrect: true },
-        { id: 3, text: "2.0 \\times 10^{-9} ", isCorrect: false },
+        { id: 0, text: "3", isCorrect: false },
+        { id: 1, text: "4", isCorrect: false },
+        { id: 2, text: "5", isCorrect: true },
+        { id: 3, text: "6", isCorrect: false },
       ],
       answer: "2.0 \\times 10^{-7} ",
       working:`\\frac{0.04 \\times 0.123}{0.34 \\times 72000 } \\\\= \\frac{0.00492}{24480 } \\\\= 0.000 000 201 \\\\= 0.000 000 20 \\text{ (to 2 s.f)} \\\\= 2.0 \\times 10^{-7}  \\text{( standard form)} `
     },
     {
       id: "Q9",
-      text: `\\text{Express the product of 41.56 and 4.12 }  \\\\  \\text{to 4 s.f and 2 d.p and find the } \\\\ \\text{difference between the two outcomes  } \\\\ \\text{in standard form}`,
+      text: `\\text{Solve for x in } 8x^{-2} = 2/25   UTME`,
       options: [
-        { id: 0, text: "1.72 \\times 10^{-2}", isCorrect: false },
-        { id: 1, text: "1.7 \\times 10^{-2}", isCorrect: false },
-        { id: 2, text: "2.2 \\times 10^{-2}", isCorrect: false },
-        { id: 3, text: "2 \\times 10^{-2}", isCorrect: true },
+        { id: 0, text: "4", isCorrect: false },
+        { id: 1, text: "6", isCorrect: false },
+        { id: 2, text: "8", isCorrect: false },
+        { id: 3, text: "10", isCorrect: true },
       ],
       answer: "2 \\times 10^{-2}",
       working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `
     },
     {
       id: "Q10",
-      text: `\\frac{0.000335}{145000} = x \\times 10^y  \\text{ where } \\\\ 1 \\leqslant x < 10  \\text{ and y is a whole number.} \\\\ \\text{ Find the values of x and y.}`,
+      text: ` \\text{If } \\frac{27^x \\times 3^{1−x}}{9^{2x}}=1, find the value of x.} WASSCE`,
       options: [
-        { id: 0, text: "x = 2.13 \\text{ and } y = -9", isCorrect: false },
-        { id: 1, text: "x = 2.31 \\text{ and } y = -9", isCorrect: true },
-        { id: 2, text: "x = 2.31 \\text{ and } y = -10", isCorrect: false },
-        { id: 3, text: "x = 2.11 \\text{ and } y = -11", isCorrect: false },
+        { id: 0, text: "1", isCorrect: false },
+        { id: 1, text: "\\frac{1}{2}", isCorrect: true },
+        { id: 2, text: "-\\frac{1}{2}", isCorrect: false },
+        { id: 3, text: "-1", isCorrect: false },
       ],
       answer: "x = 2.31 \\text{ and } y = -9",
       working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`

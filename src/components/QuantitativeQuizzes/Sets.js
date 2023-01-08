@@ -125,12 +125,12 @@ const questions = [
     },
     {
       id: "Q10",
-      text: `\\frac{0.000335}{145000} = x \\times 10^y  \\text{ where } \\\\ 1 \\leqslant x < 10  \\text{ and y is a whole number.} \\\\ \\text{ Find the values of x and y.}`,
+      text: `\\text{X and Y are two sets such that n(X) = 15, n(Y) = 12 and n{X ∩ Y} = 7. Find ∩{X ∪ Y}} UTME`,
       options: [
-        { id: 0, text: "x = 2.13 \\text{ and } y = -9", isCorrect: false },
-        { id: 1, text: "x = 2.31 \\text{ and } y = -9", isCorrect: true },
-        { id: 2, text: "x = 2.31 \\text{ and } y = -10", isCorrect: false },
-        { id: 3, text: "x = 2.11 \\text{ and } y = -11", isCorrect: false },
+        { id: 0, text: "21", isCorrect: false },
+        { id: 1, text: "225", isCorrect: true },
+        { id: 2, text: "15", isCorrect: false },
+        { id: 3, text: "20", isCorrect: false },
       ],
       answer: "x = 2.31 \\text{ and } y = -9",
       working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`

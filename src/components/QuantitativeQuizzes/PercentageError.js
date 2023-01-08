@@ -62,36 +62,36 @@ const questions = [
     },
     {
       id: "Q5",
-      text: `\\frac{0.000 045}{150000} = p \\times 10^q  \\text{ where } \\\\ 1 \\leqslant  p < 10  \\text{and q is a whole number.} \\\\ \\text{ Find } p^q`,
+      text: ` \\text{The length of a piece of stick is 1.75m. A girl measured it as 1.80m. Find the percentage error} WASSCE`,
       options: [
-        { id: 0, text: "3^{-11}", isCorrect: false },
-        { id: 1, text: "\\frac{1}{3^{11}}", isCorrect: false },
-        { id: 2, text: "\\frac{1}{3^{10}}", isCorrect: true },
-        { id: 3, text: "3^{-9}", isCorrect: false },
+        { id: 0, text: "28/7%", isCorrect: false },
+        { id: 1, text: "29/7%", isCorrect: false },
+        { id: 2, text: "5%", isCorrect: true },
+        { id: 3, text: "20/7%", isCorrect: false },
       ],
       answer: "\\frac{1}{3^{10}}",
       working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`
     },
     {
       id: "Q6",
-      text: `\\text{Find correct to three significant } \\\\ \\text{figures, the value of } \\sqrt{41830} \\text{ (UME) }`,
+      text: `\\text{A sales boy gave a change of N68 instead of N72. Calculate his percentage error} \\text{ (WASSCE) }`,
       options: [
-        { id: 0, text: "205", isCorrect: true },
-        { id: 1, text: "647", isCorrect: false },
-        { id: 2, text: "2050", isCorrect: false },
-        { id: 3, text: "6470", isCorrect: false },
+        { id: 0, text: "4%", isCorrect: true },
+        { id: 1, text: "5 5/9%", isCorrect: false },
+        { id: 2, text: "5 15/17%", isCorrect: false },
+        { id: 3, text: "7%", isCorrect: false },
       ],
       answer: "205",
       working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
     },
     {
       id: "Q7",
-      text: `\\text{What is the difference between 0.007685} \\\\ \\text{correct to three significant figures} \\\\ \\text{and 0.007685 correct to four places } \\\\ \\text{of decimal?} `,
+      text: `\\text{A surveyor measured the length of a obtained 42.55 metres. If his measurement was more than the actual length and the percentage error of his measurement was 8%, calculate the actual length of the land} \\\\ \\text{(NECO)} `,
       options: [
-        { id: 0, text: "10^{-5}", isCorrect: true },
-        { id: 1, text: "7 \\times 10^{-4}", isCorrect: false },
-        { id: 2, text: "8 \\times 10^{-5}", isCorrect: false },
-        { id: 3, text: "10^{-6}", isCorrect: false },
+        { id: 0, text: "39.40 metres", isCorrect: true },
+        { id: 1, text: "46.20 metres", isCorrect: false },
+        { id: 2, text: "46.25 metres", isCorrect: false },
+        { id: 3, text: "46.50 metres E. 48.25 metres", isCorrect: false },
       ],
       answer: "10^{-5}",
       working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `

@@ -73,33 +73,33 @@ const questions = [
     },
     {
       id: "Q6",
-      text: `\\text{Find correct to three significant } \\\\ \\text{figures, the value of } \\sqrt{41830} \\text{ (UME) }`,
+      text: `\\text{If the numbers M, N, Q are in the ratio 5:4:3, find the value of (2N−Q)/M } \\text{ (UME) }`,
       options: [
-        { id: 0, text: "205", isCorrect: true },
-        { id: 1, text: "647", isCorrect: false },
-        { id: 2, text: "2050", isCorrect: false },
-        { id: 3, text: "6470", isCorrect: false },
+        { id: 0, text: "2", isCorrect: true },
+        { id: 1, text: "3", isCorrect: false },
+        { id: 2, text: "1", isCorrect: false },
+        { id: 3, text: "4", isCorrect: false },
       ],
       answer: "205",
       working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
     },
     {
       id: "Q7",
-      text: `\\text{What is the difference between 0.007685} \\\\ \\text{correct to three significant figures} \\\\ \\text{and 0.007685 correct to four places } \\\\ \\text{of decimal?} `,
+      text: `\\text{3 girls share a number of apples in the ration 5:3:2. If the highest share is 40 apples, find the smallest share} \\\\ \\text{(ume)} `,
       options: [
-        { id: 0, text: "10^{-5}", isCorrect: true },
-        { id: 1, text: "7 \\times 10^{-4}", isCorrect: false },
-        { id: 2, text: "8 \\times 10^{-5}", isCorrect: false },
-        { id: 3, text: "10^{-6}", isCorrect: false },
+        { id: 0, text: "36", isCorrect: true },
+        { id: 1, text: "24", isCorrect: false },
+        { id: 2, text: "16", isCorrect: false },
+        { id: 3, text: "38", isCorrect: false },
       ],
       answer: "10^{-5}",
       working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
     },
     {
       id: "Q8",
-      text: `\\text{Evaluate } \\frac{0.04 \\times 0.123}{0.34 \\times 72000 }\\\\ \\text{Leave your answer in standard} \\\\ \\text{form correct to 2 significant} \\\\ \\text{figures} `,
+      text: `\\text{\\text{The present ages of a father and his son are in the ratio 10 : 3. If the son is 15 years old now, in how many years will the ratio of their ages be 2 : 1? }  \\text{ (WASSCE) }  `,
       options: [
-        { id: 0, text: "2.0 \\times 10^{-3} ", isCorrect: false },
+        { id: 0, text: "put options as appropriate ", isCorrect: false },
         { id: 1, text: "2.0 \\times 10^{-5} ", isCorrect: false },
         { id: 2, text: "2.0 \\times 10^{-7} ", isCorrect: true },
         { id: 3, text: "2.0 \\times 10^{-9} ", isCorrect: false },
@@ -109,24 +109,24 @@ const questions = [
     },
     {
       id: "Q9",
-      text: `\\text{Express the product of 41.56 and 4.12 }  \\\\  \\text{to 4 s.f and 2 d.p and find the } \\\\ \\text{difference between the two outcomes  } \\\\ \\text{in standard form}`,
+      text: `\\text{If x : y = 3 : 2 and y : z = 5 : 4, find the value of x in the ratio x : y : z} WASSCE`,
       options: [
-        { id: 0, text: "1.72 \\times 10^{-2}", isCorrect: false },
-        { id: 1, text: "1.7 \\times 10^{-2}", isCorrect: false },
-        { id: 2, text: "2.2 \\times 10^{-2}", isCorrect: false },
-        { id: 3, text: "2 \\times 10^{-2}", isCorrect: true },
+        { id: 0, text: "8", isCorrect: false },
+        { id: 1, text: "10", isCorrect: false },
+        { id: 2, text: "15", isCorrect: false },
+        { id: 3, text: "20", isCorrect: true },
       ],
       answer: "2 \\times 10^{-2}",
       working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `
     },
     {
       id: "Q10",
-      text: `\\frac{0.000335}{145000} = x \\times 10^y  \\text{ where } \\\\ 1 \\leqslant x < 10  \\text{ and y is a whole number.} \\\\ \\text{ Find the values of x and y.}`,
+      text: `\\text{A number of pencils were shared out among Bisi, Sola and Tunde in the ratio of 2:3:5 respectively. If Bisi got 5, how many were shared out?} \\\\ \\text{ (UTME)}`,
       options: [
-        { id: 0, text: "x = 2.13 \\text{ and } y = -9", isCorrect: false },
-        { id: 1, text: "x = 2.31 \\text{ and } y = -9", isCorrect: true },
-        { id: 2, text: "x = 2.31 \\text{ and } y = -10", isCorrect: false },
-        { id: 3, text: "x = 2.11 \\text{ and } y = -11", isCorrect: false },
+        { id: 0, text: "15", isCorrect: false },
+        { id: 1, text: "25", isCorrect: true },
+        { id: 2, text: "30", isCorrect: false },
+        { id: 3, text: "50", isCorrect: false },
       ],
       answer: "x = 2.31 \\text{ and } y = -9",
       working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`

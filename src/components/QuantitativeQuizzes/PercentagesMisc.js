@@ -85,48 +85,48 @@ const questions = [
     },
     {
       id: "Q7",
-      text: `\\text{What is the difference between 0.007685} \\\\ \\text{correct to three significant figures} \\\\ \\text{and 0.007685 correct to four places } \\\\ \\text{of decimal?} `,
+      text: `\\text{A man donates 10% of his monthly net earnings to his church. If it amounts to N4,500, what is his net monthly income? UTME} `,
       options: [
-        { id: 0, text: "10^{-5}", isCorrect: true },
-        { id: 1, text: "7 \\times 10^{-4}", isCorrect: false },
-        { id: 2, text: "8 \\times 10^{-5}", isCorrect: false },
-        { id: 3, text: "10^{-6}", isCorrect: false },
+        { id: 0, text: "N40,500", isCorrect: true },
+        { id: 1, text: "N45,000", isCorrect: false },
+        { id: 2, text: "N52,500", isCorrect: false },
+        { id: 3, text: "N62,000", isCorrect: false },
       ],
       answer: "10^{-5}",
       working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
     },
     {
       id: "Q8",
-      text: `\\text{Evaluate } \\frac{0.04 \\times 0.123}{0.34 \\times 72000 }\\\\ \\text{Leave your answer in standard} \\\\ \\text{form correct to 2 significant} \\\\ \\text{figures} `,
+      text: `\\text{A trader bought an engine for $15,000.00 outside Nigeria. If the exchange rate is $0.075 to N1.00, how much did the engine cost in Naira?} WASSCE`,
       options: [
-        { id: 0, text: "2.0 \\times 10^{-3} ", isCorrect: false },
-        { id: 1, text: "2.0 \\times 10^{-5} ", isCorrect: false },
-        { id: 2, text: "2.0 \\times 10^{-7} ", isCorrect: true },
-        { id: 3, text: "2.0 \\times 10^{-9} ", isCorrect: false },
+        { id: 0, text: "N250,000.00", isCorrect: false },
+        { id: 1, text: "N200,000.00", isCorrect: false },
+        { id: 2, text: "N150,000.00 ", isCorrect: true },
+        { id: 3, text: "N100,000.00", isCorrect: false },
       ],
       answer: "2.0 \\times 10^{-7} ",
       working:`\\frac{0.04 \\times 0.123}{0.34 \\times 72000 } \\\\= \\frac{0.00492}{24480 } \\\\= 0.000 000 201 \\\\= 0.000 000 20 \\text{ (to 2 s.f)} \\\\= 2.0 \\times 10^{-7}  \\text{( standard form)} `
     },
     {
       id: "Q9",
-      text: `\\text{Express the product of 41.56 and 4.12 }  \\\\  \\text{to 4 s.f and 2 d.p and find the } \\\\ \\text{difference between the two outcomes  } \\\\ \\text{in standard form}`,
+      text: `\\text{The amount A to which a principal P amounts at r% compound interest for n years is given by the formula A = P(1 + (r ÷ 100)n. Find A, if P = 126, r = 4 and n = 2. }  \\\\  \\text{UTME}`,
       options: [
-        { id: 0, text: "1.72 \\times 10^{-2}", isCorrect: false },
-        { id: 1, text: "1.7 \\times 10^{-2}", isCorrect: false },
-        { id: 2, text: "2.2 \\times 10^{-2}", isCorrect: false },
-        { id: 3, text: "2 \\times 10^{-2}", isCorrect: true },
+        { id: 0, text: "N132.50K", isCorrect: false },
+        { id: 1, text: "N136.30K", isCorrect: false },
+        { id: 2, text: "N125.40K", isCorrect: false },
+        { id: 3, text: "N257.42K", isCorrect: true },
       ],
       answer: "2 \\times 10^{-2}",
       working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `
     },
     {
       id: "Q10",
-      text: `\\frac{0.000335}{145000} = x \\times 10^y  \\text{ where } \\\\ 1 \\leqslant x < 10  \\text{ and y is a whole number.} \\\\ \\text{ Find the values of x and y.}`,
+      text: `\\text{ A public car dealer marked up the cost of a car at 30% in an attempt to make 20% gross profit. Due to the value of dollar, he now placed 20% discount on the car. What profit or loss will he make?} \\\\ \\text{(UTME)}`,
       options: [
-        { id: 0, text: "x = 2.13 \\text{ and } y = -9", isCorrect: false },
-        { id: 1, text: "x = 2.31 \\text{ and } y = -9", isCorrect: true },
-        { id: 2, text: "x = 2.31 \\text{ and } y = -10", isCorrect: false },
-        { id: 3, text: "x = 2.11 \\text{ and } y = -11", isCorrect: false },
+        { id: 0, text: "3%", isCorrect: false },
+        { id: 1, text: "2%", isCorrect: true },
+        { id: 2, text: "4%", isCorrect: false },
+        { id: 3, text: "1%", isCorrect: false },
       ],
       answer: "x = 2.31 \\text{ and } y = -9",
       working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`
