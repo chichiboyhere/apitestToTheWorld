@@ -62,12 +62,12 @@ const questions = [
     },
     {
       id: "Q5",
-      text: `\\frac{0.000 045}{150000} = p \\times 10^q  \\text{ where } \\\\ 1 \\leqslant  p < 10  \\text{and q is a whole number.} \\\\ \\text{ Find } p^q`,
+      text: ` \\text{ A boy walks 800m in 20 minutes. Calculate his average speed in Km/h } \\\\ `,
       options: [
-        { id: 0, text: "3^{-11}", isCorrect: false },
-        { id: 1, text: "\\frac{1}{3^{11}}", isCorrect: false },
-        { id: 2, text: "\\frac{1}{3^{10}}", isCorrect: true },
-        { id: 3, text: "3^{-9}", isCorrect: false },
+        { id: 0, text: "2.4", isCorrect: false },
+        { id: 1, text: "4", isCorrect: false },
+        { id: 2, text: "24", isCorrect: true },
+        { id: 3, text: "6", isCorrect: false },
       ],
       answer: "\\frac{1}{3^{10}}",
       working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`

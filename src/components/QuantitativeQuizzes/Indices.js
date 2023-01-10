@@ -61,7 +61,7 @@ const questions = [
     },
     {
       id: "Q5",
-      text: `Solve (27/125)^{-1/3} x (4/9)^{1/2}`,
+      text: `Solve (27/125)^{-1/3} \\times (4/9)^{1/2}`,
       options: [
         { id: 0, text: "10/9", isCorrect: false },
         { id: 1, text: "9/10", isCorrect: false },
@@ -73,7 +73,7 @@ const questions = [
     },
     {
       id: "Q6",
-      text: `\\text{Simplify 3^{−5n} / 9^{1−n} × 27^{n+1}`,
+      text: `\\text{Simplify 3^{−5n} / 9^{1−n} \\times 27^{n+1}`,
       options: [
         { id: 0, text: "3^2", isCorrect: true },
         { id: 1, text: "3^3", isCorrect: false },
@@ -97,7 +97,7 @@ const questions = [
     },
     {
       id: "Q8",
-      text: `\\text{Evaluate} \\frac{27^{\\frac{1}{3}} - 8^{\\frac{2}{3}}}{16^{\\frac{2}{4}×2 \\\\ \\text{(Do urs here)} `,
+      text: `\\text{Evaluate} \\frac{27^{\\frac{1}{3}} - 8^{\\frac{2}{3}}}{16^{\\frac{2}{4} \\times 2 \\\\ \\text{(Do urs here)} `,
       options: [
         { id: 0, text: "2.0 \\times 10^{-3} ", isCorrect: false },
         { id: 1, text: "2.0 \\times 10^{-5} ", isCorrect: false },
@@ -121,12 +121,12 @@ const questions = [
     },
     {
       id: "Q10",
-      text: `\\frac{0.000335}{145000} = x \\times 10^y  \\text{ where } \\\\ 1 \\leqslant x < 10  \\text{ and y is a whole number.} \\\\ \\text{ Find the values of x and y.}`,
+      text: `\\text{Simplify } \\frac{25^{\\frac{2}{3}} \\div 25^{\\frac{1}{6}}}{(\\frac{1}{5})^\\frac{7}{6} \\div  (\\frac{1}{5})^\\frac{1}{6} } \\\\ \\text{(UTME)}`,
       options: [
-        { id: 0, text: "x = 2.13 \\text{ and } y = -9", isCorrect: false },
-        { id: 1, text: "x = 2.31 \\text{ and } y = -9", isCorrect: true },
-        { id: 2, text: "x = 2.31 \\text{ and } y = -10", isCorrect: false },
-        { id: 3, text: "x = 2.11 \\text{ and } y = -11", isCorrect: false },
+        { id: 0, text: "25", isCorrect: false },
+        { id: 1, text: "1", isCorrect: true },
+        { id: 2, text: "\\frac{1}{5}", isCorrect: false },
+        { id: 3, text: "\\frac{1}{25}", isCorrect: false },
       ],
       answer: "x = 2.31 \\text{ and } y = -9",
       working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`

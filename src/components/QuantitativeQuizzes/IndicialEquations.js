@@ -13,51 +13,52 @@ import Message from "../UI/Message";
 const questions = [
     {
       id: "Q1",
-      text: `\\text{Solve for x if } 25^x + 3(5^x)=4  \\\\  \\text{ (UME)}}`,
+      text: `\\text{Solve for x if } 25^x + 3\\bigl( 5^x \\bigr)=4  \\\\  \\text{ (UME)}`,
       options: [
         { id: 0, text: "\\text{ 1 or -4}", isCorrect: false },
-        { id: 1, text: "0", isCorrect: false },
+        { id: 1, text: "0", isCorrect: true },
         { id: 2, text: "1", isCorrect: false },
-        { id: 3, text: "\\text{ -4 or 0}", isCorrect: true },
+        { id: 3, text: "\\text{ -4 or 0}", isCorrect: false },
       ],
-      answer: "88",
-      working: `\\sqrt{31.42 \\times 60.32 } = \\sqrt{1895.2544} \\\\= 43.5345 \\\\= 44 \\text{ (correct to 2 s.f) } \\\\= 43.5 \\text{(correct to 1 d.p) } \\\\  \\therefore \\text{ their sum } = 44 + 43.5 = 87.5 \\\\= 88 \\text{(correct to the nearest whole number) } `
+      answer: "0",
+      working: `25^x + 3\\bigl( 5^x \\bigr)=4  \\\\ 5^{2x} + 3\\bigl( 5^x \\bigr)=4  \\\\ \\bigl( 5^x \\bigr)^2  + 3\\bigl( 5^x \\bigr)=4 \\\\ \\text{Let } y =5^x \\\\ \\therefore y^2 + 3y -4 = 0 \\\\ y^2 + 4y -y -4 = 0 \\\\ \\therefore y\\bigl( y + 4 \\bigr) -1\\bigl( y + 4 \\bigr) = 0 \\\\ \\therefore \\bigl( y + 4 \\bigr)\\bigl( y - 1 \\bigr) =0 \\\\  \\therefore y = -4 \\text{ or }1  \\\\ \\therefore \\text{ putting back }5^x \\text{ in place of y }\\\\ 5^x = - 4 \\bigl( \\text{No further solution } \\bigr)\\\\ \\text{ or } 5^x = 1 \\\\ \\therefore 5^x = 5^0 \\\\ \\therefore x = 0 `
     },
     {
       id: "Q2",
       text: `\\text{If } 8^\\frac{x}{2} = \\bigl(2^\\frac{3}{8}\\bigr)\\bigl(4^\\frac{3}{4}\\bigr) \\text{ find x.} \\text{ (UME)}`,
       options: [
-        { id: 0, text: "0.005", isCorrect: false },
-        { id: 1, text: "0.0052", isCorrect: false },
-        { id: 2, text: "0.00520", isCorrect: true },
-        { id: 3, text: "5.2048", isCorrect: false },
+        { id: 0, text: "\\frac{3}{8}", isCorrect: false },
+        { id: 1, text: "\\frac{3}{4}", isCorrect: false },
+        { id: 2, text: "\\frac{4}{5}", isCorrect: false },
+        { id: 3, text: "\\frac{5}{4}", isCorrect: true },
       ],
-      answer: "0.00520",
-      working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
+      answer: "\\frac{5}{4}",
+      working: `8^\\frac{x}{2} = \\bigl(2^\\frac{3}{8}\\bigr)\\bigl(4^\\frac{3}{4}\\bigr)\\\\ \\bigl(2^3\\bigr)^{\\frac{x}{2}} = 2^\\frac{3}{8} \\times \\bigl(2^2\\bigr)^{\\frac{3}{4}} \\\\ 2^\\frac{3x}{2} = 2^\\frac{3}{8} \\times 2^{\\frac{3}{2}} = 2^{\\frac{3}{8} + \\frac{3}{2}} \\\\ \\therefore 2^\\frac{3x}{2} = 2^\\frac{15}{8} \\\\ \\text{Hence: } \\frac{3x}{2} = \\frac{15}{8} \\\\ \\therefore \\text{on cross-multiplying and simplifying } \\\\ x = \\frac{5}{4} `
     },
     {
       id: "Q3",
       text: `\\text{If } \\frac{\\bigl(a^2b^{-3}c\\bigr)^\\frac{3}{4}}{a^{-1}b^4c^5} = a^pb^qc^r\\\\ \\text{what is the value of p + 2q ?} \\text{ (UME)}`,
       options: [
         { id: 0, text: "5/2", isCorrect: false },
-        { id: 1, text: "-(5/4)", isCorrect: true },
+        { id: 1, text: "-(5/4)", isCorrect: false },
         { id: 2, text: "-(25/4)", isCorrect: false },
-        { id: 3, text: "-10", isCorrect: false },
+        { id: 3, text: "-10", isCorrect: true },
       ],
-      answer: "12.4127",
-      working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
+      answer: "-10",
+      working: `\\text{Simplifying the left hand side(LHS) first: } \\\\ \\frac{a^\\frac{3}{2}b^\\frac{-9}{4}c^\\frac{3}{4}}{a^{-1}b^4c^5}
+      \\text{(i.e we multiply the indices}\\\\ \\text{of a, b and c by the outer index}\\frac{3}{4} \\bigr)\\\\ a^{\\frac{3}{2} + 1} b^{\\frac{-9}{4} - 4} c^{\\frac{3}{4} - 5} = a^\\frac{5}{2}b^\\frac{-25}{4}c^\\frac{-17}{4} \\\\ \\text{Now comparing both sides of the equation:} \\\\  p = \\frac{5}{2} \\text{, } q = \\frac{-25}{4} \\text{ and }  r = \\frac{-17}{4} \\\\ \\therefore p + 2q = \\frac{5}{2} + 2\\bigl(\\frac{-25}{4}\\bigr) \\\\= \\frac{5}{2} - \\frac{25}{2} = \\frac{-20}{2} =-10`
     },
     {
       id: "Q4",
       text: `\\text{If } \\frac{9^{2x−1}}{27^{x+1}}=1, \\\\ \\text{find the value of x.} \\text{ (UME)} `,
       options: [
-        { id: 0, text: "8", isCorrect: true },
-        { id: 1, text: "5", isCorrect: false },
+        { id: 0, text: "8", isCorrect: false },
+        { id: 1, text: "5", isCorrect: true },
         { id: 2, text: "3", isCorrect: false },
         { id: 3, text: "2", isCorrect: false },
       ],
-      answer: "1",
-      working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
+      answer: "5",
+      working: `\\frac{9^{2x−1}}{27^{x+1}}=1 \\\\ \\frac{3^{2\\bigl( 2x−1 \\bigr)}}{3^{3\\bigl( x + 1 \\bigr)}}=1 \\\\ \\text{On cross-multiplying:} \\\\ 3^{2\\bigl( 2x−1 \\bigr)} = 3^{3\\bigl( x + 1 \\bigr)} \\\\ \\therefore 2\\bigl( 2x−1 \\bigr) = 3\\bigl( x + 1 \\bigr) \\\\  4x - 2 = 3x + 3 \\\\ \\therefore x = 5`
     },
     {
       id: "Q5",
@@ -68,68 +69,69 @@ const questions = [
         { id: 2, text: "3", isCorrect: true },
         { id: 3, text: "2", isCorrect: false },
       ],
-      answer: "\\frac{1}{3^{10}}",
-      working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`
+      answer: "3",
+      working:`\\sqrt[3]{4}^{2x} = 16 \\\\  \\bigl( \\sqrt[3]{4}^{2x} \\bigr)^3= 16^3 \\text{(take the cube of} \\\\ \\text{both sides to get ride of the cube-root)} \\\\ \\therefore 4^{2x} = 4^6  \\\\ \\therefore 2x = 6  \\\\  x = 3 `
     },
     {
       id: "Q6",
-      text: `\\text{Find the value of x for which 2(3^{2x-1}) = 162 } \\\\  \\text{ (UME) }`,
+      text: `\\text{Find the value of x for which} \\\\  2(3^{2x-1}) = 162 \\text{ (UME) }`,
       options: [
         { id: 0, text: "5/2", isCorrect: true },
         { id: 1, text: "3/2", isCorrect: false },
         { id: 2, text: "2/5", isCorrect: false },
         { id: 3, text: "1/2", isCorrect: false },
       ],
-      answer: "205",
-      working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
+      answer: "5/2",
+      working:`2(3^{2x-1}) = 162 \\\\ \\text{Dividing both sides by 2:}\\\\ 3^{2x-1} = 81  \\\\ \\therefore 3^{2x-1} = 3^4  \\\\ \\therefore 2x-1 = 4 \\\\ \\therefore x = 5/2`
     },
     {
       id: "Q7",
-      text: `\\text{Solve } 5^{2(x−1)} × 5^{x+1}=0.04 UME / UTME`,
+      text: `\\text{Solve } 5^{2(x−1)} \\times 5^{x+1}=0.04 \\text{ (UME)}`,
       options: [
-        { id: 0, text: "1/3", isCorrect: true },
+        { id: 0, text: "1/3", isCorrect: false },
         { id: 1, text: "1/4", isCorrect: false },
         { id: 2, text: "-1/5", isCorrect: false },
-        { id: 3, text: "-1/3", isCorrect: false },
+        { id: 3, text: "-1/3", isCorrect: true },
       ],
-      answer: "10^{-5}",
-      working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
+      answer: "-1/3",
+      working: `5^{2(x−1)} \\times 5^{x+1}=0.04 \\\\ 5^{2(x−1)} \\times 5^{x+1}=\\frac{4}{100} = \\frac{1}{25}= 5^{-2}  \\\\ \\therefore 5^{2x -2 + x + 1} = 5^{-2} \\\\ 5^{3x - 1} = 5^{-2} \\\\ \\therefore 3x - 1 = -2 \\\\ \\therefore x = -1/3`
     },
     {
       id: "Q8",
-      text: `\\text{If } 27^{x+2} \\div 9^{x+1} = 3^{2x}, find x. UTME `,
+      text: `\\text{If } 27^{x+2} \\div 9^{x+1} = 3^{2x}, \\text{find x. (UTME)}`,
       options: [
         { id: 0, text: "3", isCorrect: false },
-        { id: 1, text: "4", isCorrect: false },
-        { id: 2, text: "5", isCorrect: true },
+        { id: 1, text: "4", isCorrect: true },
+        { id: 2, text: "5", isCorrect: false },
         { id: 3, text: "6", isCorrect: false },
       ],
-      answer: "2.0 \\times 10^{-7} ",
-      working:`\\frac{0.04 \\times 0.123}{0.34 \\times 72000 } \\\\= \\frac{0.00492}{24480 } \\\\= 0.000 000 201 \\\\= 0.000 000 20 \\text{ (to 2 s.f)} \\\\= 2.0 \\times 10^{-7}  \\text{( standard form)} `
+      answer: "4",
+      working:`27^{x+2} \\div 9^{x+1} = 3^{2x} \\\\ 3^{3(x+2)} \\div 3^{2(x+1)} = 3^{2x} \\\\ 3^{3x + 6 -(2x + 2)} = 3^{2x} \\\\ 3^{x + 4} = 3^{2x} \\\\ \\therefore x + 4 = 2x \\\\ \\therefore x = 4 `
     },
     {
       id: "Q9",
-      text: `\\text{Solve for x in } 8x^{-2} = 2/25   UTME`,
+      text: `\\text{Solve for x in } 8x^{-2} = 2/25  \\text{ (UTME)}`,
       options: [
         { id: 0, text: "4", isCorrect: false },
         { id: 1, text: "6", isCorrect: false },
         { id: 2, text: "8", isCorrect: false },
         { id: 3, text: "10", isCorrect: true },
       ],
-      answer: "2 \\times 10^{-2}",
-      working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `
+      answer: "10",
+      working: `8x^{-2} = 2/25 \\\\ x^{-2} = \\frac{2}{25} \\times \\frac{1}{8}\\\\ \\therefore x^{-2} = \\frac{1}{100} = 10^{-2}\\\\ \\therefore x = 10`
     },
     {
       id: "Q10",
-      text: ` \\text{If } \\frac{27^x \\times 3^{1−x}}{9^{2x}}=1, find the value of x.} WASSCE`,
+      text: `\\text{If } \\frac{27^x \\times 3^{1−x}}{9^{2x}}=1, \\\\ \\text{find the value of x. (WASSCE)}`,
       options: [
         { id: 0, text: "1", isCorrect: false },
         { id: 1, text: "\\frac{1}{2}", isCorrect: true },
         { id: 2, text: "-\\frac{1}{2}", isCorrect: false },
         { id: 3, text: "-1", isCorrect: false },
       ],
-      answer: "x = 2.31 \\text{ and } y = -9",
-      working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`
+      answer: "\\frac{1}{2}",
+      working:`\\frac{27^x \\times 3^{1−x}}{9^{2x}}=1 \\\\ \\frac{3^{3x} \\times 3^{1−x}}{3^{4x}}=1 \\\\ \\frac{3^{3x + 1 -x }}{3^{4x}}=1
+      \\\\ \\frac{3^{2x + 1  }}{3^{4x}}=1 \\\\ \\therefore 3^{2x + 1 -4x } = 1 \\\\ 3^{1 -2x } = 3^0  \\\\ \\therefore 1 -2x =0 \\\\ \\therefore x=\\frac{1}{2}`
     },
   ];
   

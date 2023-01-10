@@ -111,22 +111,22 @@ const questions = [
       id: "Q9",
       text: `\\text{A man bought a car for N800 and sold it for N520. Find his loss per cent}  \\\\ \\text{(UTME)}`,
       options: [
-        { id: 0, text: "1.72 \\times 10^{-2}", isCorrect: false },
-        { id: 1, text: "1.7 \\times 10^{-2}", isCorrect: false },
-        { id: 2, text: "2.2 \\times 10^{-2}", isCorrect: false },
-        { id: 3, text: "2 \\times 10^{-2}", isCorrect: true },
+        { id: 0, text: "15%", isCorrect: false },
+        { id: 1, text: "25%", isCorrect: false },
+        { id: 2, text: "35%", isCorrect: false },
+        { id: 3, text: "10%", isCorrect: true },
       ],
       answer: "2 \\times 10^{-2}",
       working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `
     },
     {
       id: "Q10",
-      text: `\\frac{0.000335}{145000} = x \\times 10^y  \\text{ where } \\\\ 1 \\leqslant x < 10  \\text{ and y is a whole number.} \\\\ \\text{ Find the values of x and y.}`,
+      text: `\\text{ Tade bought 200 mangoes at 4 for ₦2.50. 30 out of the mangoes got spoilt and the remaining were sold at 2 for ₦2.40. Find the percentage profit or loss.} \\\\ \\text{ (UTME)}`,
       options: [
-        { id: 0, text: "x = 2.13 \\text{ and } y = -9", isCorrect: false },
-        { id: 1, text: "x = 2.31 \\text{ and } y = -9", isCorrect: true },
-        { id: 2, text: "x = 2.31 \\text{ and } y = -10", isCorrect: false },
-        { id: 3, text: "x = 2.11 \\text{ and } y = -11", isCorrect: false },
+        { id: 0, text: "43.6% loss", isCorrect: false },
+        { id: 1, text: "35% profit", isCorrect: true },
+        { id: 2, text: "63.2% profit", isCorrect: false },
+        { id: 3, text: "28% loss", isCorrect: false },
       ],
       answer: "x = 2.31 \\text{ and } y = -9",
       working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`

@@ -14,6 +14,7 @@ import NumberBasesFractions from "./components/QuantitativeQuizzes/NumberBasesFr
 import NumberBasesSummation from "./components/QuantitativeQuizzes/NumberBasesSummation";
 import Fractions from "./components/QuantitativeQuizzes/Fractions";
 import DecimalsAndApprox from "./components/QuantitativeQuizzes/DecimalsAndApprox";
+import IndicialEquations from "./components/QuantitativeQuizzes/IndicialEquations";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path='/quantitativeTestFive' component={NumberBasesSummation} />
         <Route path='/quantitativeTestSix' component={Fractions} />
         <Route path='/quantitativeTestSeven' component={DecimalsAndApprox} />
+        <Route path='/quantitativeTestEight' component={IndicialEquations} />
         <Route path='/numerationTest' component={StartTest} />
         <Route path='/contact' component={ContactPage} />
     </Layout>
