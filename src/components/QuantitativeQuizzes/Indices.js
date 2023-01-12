@@ -20,72 +20,72 @@ const questions = [
         { id: 2, text: "8a", isCorrect: false },
         { id: 3, text: "\\frac{1}{4a}", isCorrect: true },
       ],
-      answer: "88",
-      working: `\\sqrt{31.42 \\times 60.32 } = \\sqrt{1895.2544} \\\\= 43.5345 \\\\= 44 \\text{ (correct to 2 s.f) } \\\\= 43.5 \\text{(correct to 1 d.p) } \\\\  \\therefore \\text{ their sum } = 44 + 43.5 = 87.5 \\\\= 88 \\text{(correct to the nearest whole number) } `
+      answer: "\\frac{1}{4a}",
+      working: `\\bigl(\\sqrt[3]{64a^3}\\bigr)^{-1}   \\\\ = \\bigl( 4a \\bigr)^{-1}  \\\\  = \\frac{1}{4a} `
     },
     {
       id: "Q2",
       text: `\\text{Without using tables, evaluate } \\\\ \\bigl( 343 \\bigr)^{\\frac{1}{3}} \\times \\bigl( 0.14 \\bigr)^{-1} \\times \\bigl(25\\bigr)^{-\\frac{1}{2}} \\text{ (UME)}`,
       options: [
-        { id: 0, text: "10", isCorrect: false },
+        { id: 0, text: "10", isCorrect: true },
         { id: 1, text: "12", isCorrect: false },
-        { id: 2, text: "8", isCorrect: true },
+        { id: 2, text: "8", isCorrect: false },
         { id: 3, text: "7", isCorrect: false },
       ],
-      answer: "0.00520",
-      working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
+      answer: "10",
+      working: `\\bigl( 343 \\bigr)^{\\frac{1}{3}} \\times \\bigl( 0.14 \\bigr)^{-1} \\times \\bigl(25\\bigr)^{-\\frac{1}{2}} \\\\ = \\sqrt[3]{343} \\times (\\frac{14}{100})^{-1} \\times (\\frac{1}{25^\\frac{1}{2})\\\\ = 7 \\times \\frac{100}{14} \\times \\frac{1}{5} \\\\ = 10`
     },
     {
       id: "Q3",
-      text: `\\text{Simplify (25)^−1/2 × (27)^1/3 + (121)^−1/2 × (625)^−1/4 }  \\text{  (UME)}`,
+      text: `\\text{Simplify } (25)^{-\\frac{1}{2}} \\times  (27)^\\frac{1}{3} + (121)^{−\\frac{1}{2}} \\times (625)^{−\\frac{1}{4}} \\\\  \\text{  (UME)}`,
       options: [
-        { id: 0, text: "34/55", isCorrect: false },
-        { id: 1, text: "9/11", isCorrect: true },
-        { id: 2, text: "14/5", isCorrect: false },
-        { id: 3, text: "3/275", isCorrect: false },
+        { id: 0, text: "\\frac{34}{55}", isCorrect: true },
+        { id: 1, text: "\\frac{9}{11}", isCorrect: false },
+        { id: 2, text: "\\frac{14}{5}", isCorrect: false },
+        { id: 3, text: "\\frac{3}{275}", isCorrect: false },
       ],
-      answer: "12.4127",
-      working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
+      answer: "\\frac{34}{55}",
+      working: `(25)^{-\\frac{1}{2}} \\times  (27)^\\frac{1}{3} + (121)^{−\\frac{1}{2}} \\times (625)^{−\\frac{1}{4}} \\\\ = \\frac{1}{25^\\frac{1}{2}} \\times \\sqrt[3]{27} + \\frac{1}{121^\\frac{1}{2}} \\times \\frac{1}{625^\\frac{1}{4}} \\\\ = \\frac{1}{\\sqrt{25}}  \\times 3 + \\frac{1}{11} \\times  \\frac{1}{5} \\\\ = \\frac{3}{5} + \\frac{1}{55} \\\\ = \\frac{34}{55}`
     },
     {
       id: "Q4",
-      text: `\\text{simplify 16^{−1/2} × 4^{−1/2} × 27^{1/3} } UME`,
+      text: `\\text{simplify }16^{−\\frac{1}{2}} \\times 4^{−\\frac{1}{2}}\\times 27^{1/3} \\text{ (UME)}`,
       options: [
-        { id: 0, text: "3/8", isCorrect: true },
-        { id: 1, text: "2/3", isCorrect: false },
-        { id: 2, text: "3/4", isCorrect: false },
-        { id: 3, text: "3/2", isCorrect: false },
+        { id: 0, text: "\\frac{3}{8}", isCorrect: true },
+        { id: 1, text: "\\frac{2}{3}", isCorrect: false },
+        { id: 2, text: "\\frac{3}{4}", isCorrect: false },
+        { id: 3, text: "\\frac{3}{2}", isCorrect: false },
       ],
-      answer: "1",
-      working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
+      answer: "\\frac{3}{8}",
+      working: `16^{−\\frac{1}{2}} \\times 4^{−\\frac{1}{2}} \\times 27^{1/3} \\\\ = \\frac{1}{16\\frac{1}{2}} \\times \\frac{1}{4\\frac{1}{2}} \\times \\sqrt[3]{27} \\\\ = \\frac{1}{\\sqrt{16}}  \\times \\frac{1}{\\sqrt{4}} \\times 3 \\\\ = \\frac{1}{4} \\times \\frac{1}{2} \\times 3  \\\\ = \\frac{3}{8}`
     },
     {
       id: "Q5",
-      text: `Solve (27/125)^{-1/3} \\times (4/9)^{1/2}`,
+      text: `\\text{Solve } (\\frac{27}{125})^{-\\frac{1}{3}} \\times (\\frac{4}{9})^{\\frac{1}{2}} \\text{ (WASSCE)}`,
       options: [
-        { id: 0, text: "10/9", isCorrect: false },
-        { id: 1, text: "9/10", isCorrect: false },
-        { id: 2, text: "2/5", isCorrect: true },
-        { id: 3, text: "12/125", isCorrect: false },
+        { id: 0, text: "\\frac{10}{9}", isCorrect: true },
+        { id: 1, text: "\\frac{9}{10}", isCorrect: false },
+        { id: 2, text: "\\frac{2}{5}", isCorrect: false },
+        { id: 3, text: "\\frac{12}{125}", isCorrect: false },
       ],
-      answer: "\\frac{1}{3^{10}}",
-      working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`
+      answer: "\\frac{10}{9}",
+      working:`(\\frac{27}{125})^{-\\frac{1}{3}} \\times (\\frac{4}{9})^{\\frac{1}{2}} \\\\ = \\sqrt[3]{(\\frac{125}{27})} \\times \\sqrt{(\\frac{4}{9})}  \\\\ = \\frac{5}{3} \\times \\frac{2}{3} \\\\ \\frac{10}{9}`
     },
     {
       id: "Q6",
-      text: `\\text{Simplify 3^{−5n} / 9^{1−n} \\times 27^{n+1}`,
+      text: `\\text{Simplify } \\frac{3^{−3n} \\times 27^{n+1}}{9}`,
       options: [
-        { id: 0, text: "3^2", isCorrect: true },
+        { id: 0, text: "3^2", isCorrect: false },
         { id: 1, text: "3^3", isCorrect: false },
         { id: 2, text: "3^5", isCorrect: false },
-        { id: 3, text: "3", isCorrect: false },
+        { id: 3, text: "3", isCorrect: true },
       ],
-      answer: "205",
-      working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
+      answer: "3",
+      working:`\\frac{3^{−3n} \\times 27^{n+1}}{9} \\\\ = \\frac{3^{−3n} \\times 3^{3(n+1)}}{9}  \\\\ = \\frac{3^{−3n} \\times 3^{3n+3}}{9} \\\\ = \\frac{3^{−3n + 3n + 3} }{9} \\\\ = \\frac{3^3}{9} \\\\ = \\frac{27}{9} =3`
     },
     {
       id: "Q7",
-      text: `\\text{Simplify } \\frac{sqrt{8^2 \\times 4^{n+1}}}{2^{2n} \\times 16} \\\\ \\text{(WASSCE)} `,
+      text: `\\text{Simplify } \\frac{\\sqrt{8^2 \\times 4^{n+1}}}{2^{2n} \\times 16} \\\\ \\text{(WASSCE)} `,
       options: [
         { id: 0, text: "16", isCorrect: true },
         { id: 1, text: "8", isCorrect: false },
@@ -93,7 +93,7 @@ const questions = [
         { id: 3, text: "1", isCorrect: false },
       ],
       answer: "10^{-5}",
-      working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
+      working: `\\frac{\\sqrt{8^2 \\times 4^{n+1}}}{2^{2n} \\times 16} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
     },
     {
       id: "Q8",
@@ -109,27 +109,27 @@ const questions = [
     },
     {
       id: "Q9",
-      text: `\\text{Simplify } \\frac{3^{n−1} \\times 27^{n+1} }{81^n}   \\\\ \\text{(WASSCE)}`,
+      text: `\\text{Simplify } \\frac{3^{n−1} \\times 27^{n+1} }{81^n}`,
       options: [
         { id: 0, text: "3^{2n}", isCorrect: false },
-        { id: 1, text: "9", isCorrect: false },
+        { id: 1, text: "9", isCorrect: true },
         { id: 2, text: "3^n", isCorrect: false },
-        { id: 3, text: "3^{n+1}", isCorrect: true },
+        { id: 3, text: "3^{n+1}", isCorrect: false },
       ],
-      answer: "2 \\times 10^{-2}",
-      working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `
+      answer: "9",
+      working: `\\frac{3^{n−1} \\times 27^{n+1} }{81^n}  \\\\ = \\frac{3^{n−1} \\times 3^{3n+3} }{3^{4n}}  \\\\ = \\frac{3^{n−1 + 3n +3} }{3^{4n}} \\\\ = \\frac{3^{4n +2} }{3^{4n}} \\\\ = 3^{4n + 2 -4n} \\\\ = 3^2 \\\\ =9`
     },
     {
       id: "Q10",
       text: `\\text{Simplify } \\frac{25^{\\frac{2}{3}} \\div 25^{\\frac{1}{6}}}{(\\frac{1}{5})^\\frac{7}{6} \\div  (\\frac{1}{5})^\\frac{1}{6} } \\\\ \\text{(UTME)}`,
       options: [
-        { id: 0, text: "25", isCorrect: false },
-        { id: 1, text: "1", isCorrect: true },
+        { id: 0, text: "25", isCorrect: true },
+        { id: 1, text: "1", isCorrect: false },
         { id: 2, text: "\\frac{1}{5}", isCorrect: false },
         { id: 3, text: "\\frac{1}{25}", isCorrect: false },
       ],
-      answer: "x = 2.31 \\text{ and } y = -9",
-      working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`
+      answer: "25",
+      working:`\\frac{25^{\\frac{2}{3}} \\div 25^{\\frac{1}{6}}}{(\\frac{1}{5})^\\frac{7}{6} \\div  (\\frac{1}{5})^\\frac{1}{6} }\\\\= \\frac{25^{\\frac{2}{3} - \\frac{1}{6}}}{(\\frac{1}{5})^{\\frac{7}{6} - \\frac{1}{6}}} \\\\ = \\frac{25^{\\frac{1}{2}}}{\\frac{1}{5}} \\\\  = 5 \\times \\frac{5}{1} =25`
     },
   ];
   
