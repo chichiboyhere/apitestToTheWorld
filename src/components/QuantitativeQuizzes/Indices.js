@@ -33,7 +33,7 @@ const questions = [
         { id: 3, text: "7", isCorrect: false },
       ],
       answer: "10",
-      working: `\\bigl( 343 \\bigr)^{\\frac{1}{3}} \\times \\bigl( 0.14 \\bigr)^{-1} \\times \\bigl(25\\bigr)^{-\\frac{1}{2}} \\\\ = \\sqrt[3]{343} \\times (\\frac{14}{100})^{-1} \\times (\\frac{1}{25^\\frac{1}{2})\\\\ = 7 \\times \\frac{100}{14} \\times \\frac{1}{5} \\\\ = 10`
+      working: `(343)^{\\frac{1}{3}} \\times ( 0.14)^{-1} \\times (25)^{-\\frac{1}{2}} \\\\ = \\sqrt[3]{343} \\times (\\frac{14}{100})^{-1} \\times \\frac{1}{\\sqrt{25}}\\\\ = 7 \\times \\frac{100}{14} \\times \\frac{1}{5} \\\\ = 10`
     },
     {
       id: "Q3",
@@ -49,7 +49,7 @@ const questions = [
     },
     {
       id: "Q4",
-      text: `\\text{simplify }16^{−\\frac{1}{2}} \\times 4^{−\\frac{1}{2}}\\times 27^{1/3} \\text{ (UME)}`,
+      text: `\\text{Simplify }16^{−\\frac{1}{2}} \\times 4^{−\\frac{1}{2}}\\times 27^{1/3} \\text{ (UME)}`,
       options: [
         { id: 0, text: "\\frac{3}{8}", isCorrect: true },
         { id: 1, text: "\\frac{2}{3}", isCorrect: false },
@@ -69,14 +69,14 @@ const questions = [
         { id: 3, text: "\\frac{12}{125}", isCorrect: false },
       ],
       answer: "\\frac{10}{9}",
-      working:`(\\frac{27}{125})^{-\\frac{1}{3}} \\times (\\frac{4}{9})^{\\frac{1}{2}} \\\\ = \\sqrt[3]{(\\frac{125}{27})} \\times \\sqrt{(\\frac{4}{9})}  \\\\ = \\frac{5}{3} \\times \\frac{2}{3} \\\\ \\frac{10}{9}`
+      working:`(\\frac{27}{125})^{-\\frac{1}{3}} \\times (\\frac{4}{9})^{\\frac{1}{2}} \\\\ = \\sqrt[3]{(\\frac{125}{27})} \\times \\sqrt{(\\frac{4}{9})}  \\\\ = \\frac{5}{3} \\times \\frac{2}{3} \\\\= \\frac{10}{9}`
     },
     {
       id: "Q6",
       text: `\\text{Simplify } \\frac{3^{−3n} \\times 27^{n+1}}{9}`,
       options: [
         { id: 0, text: "3^2", isCorrect: false },
-        { id: 1, text: "3^3", isCorrect: false },
+        { id: 1, text: "\\frac{1}{9}", isCorrect: false },
         { id: 2, text: "3^5", isCorrect: false },
         { id: 3, text: "3", isCorrect: true },
       ],
@@ -85,27 +85,27 @@ const questions = [
     },
     {
       id: "Q7",
-      text: `\\text{Simplify } \\frac{\\sqrt{8^2 \\times 4^{n+1}}}{2^{2n} \\times 16} \\\\ \\text{(WASSCE)} `,
+      text: `\\text{Simplify } \\sqrt{ \\frac{8^2 \\times 4^{n+1}} {2^{2n} \\times 16} } \\\\ \\text{ (WASSCE)} `,
       options: [
-        { id: 0, text: "16", isCorrect: true },
+        { id: 0, text: "16", isCorrect: false },
         { id: 1, text: "8", isCorrect: false },
-        { id: 2, text: "4", isCorrect: false },
+        { id: 2, text: "4", isCorrect: true },
         { id: 3, text: "1", isCorrect: false },
       ],
-      answer: "10^{-5}",
-      working: `\\frac{\\sqrt{8^2 \\times 4^{n+1}}}{2^{2n} \\times 16} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
+      answer: "4",
+      working: `\\sqrt{ \\frac{8^2 \\times 4^{n+1}} {2^{2n} \\times 16}} \\\\= \\sqrt{ \\frac{4^3 \\times 4^{n+1}} {4^n \\times 4^2}} \\\\= \\sqrt{ \\frac{4^{3 + n+1}}{4^{n + 2}} } \\\\= \\sqrt{ \\frac{4^{4 + n}}{4^{n + 2}} } \\\\= \\sqrt{ 4^{{4 + n}-(n + 2)} } \\\\= \\sqrt{ 4^{4 + n-n - 2} } \\\\= \\sqrt{ 4^2} \\\\=4`
     },
     {
       id: "Q8",
-      text: `\\text{Evaluate} \\frac{27^{\\frac{1}{3}} - 8^{\\frac{2}{3}}}{16^{\\frac{2}{4} \\times 2 \\\\ \\text{(Do urs here)} `,
+      text: `\\text{Evaluate} \\frac{ 27^{\\frac{1}{3}} - 8^{\\frac{2}{3}} }{ 16^{\\frac{1}{4}}  \\times 2}`,
       options: [
-        { id: 0, text: "2.0 \\times 10^{-3} ", isCorrect: false },
-        { id: 1, text: "2.0 \\times 10^{-5} ", isCorrect: false },
-        { id: 2, text: "2.0 \\times 10^{-7} ", isCorrect: true },
-        { id: 3, text: "2.0 \\times 10^{-9} ", isCorrect: false },
+        { id: 0, text: "-\\frac{3}{4}", isCorrect: false },
+        { id: 1, text: "\\frac{1}{4} ", isCorrect: false },
+        { id: 2, text: "-\\frac{1}{4}", isCorrect: true },
+        { id: 3, text: "\\frac{5}{4}", isCorrect: false },
       ],
-      answer: "2.0 \\times 10^{-7} ",
-      working:`\\frac{0.04 \\times 0.123}{0.34 \\times 72000 } \\\\= \\frac{0.00492}{24480 } \\\\= 0.000 000 201 \\\\= 0.000 000 20 \\text{ (to 2 s.f)} \\\\= 2.0 \\times 10^{-7}  \\text{( standard form)} `
+      answer: "-\\frac{1}{4}",
+      working:`\\frac{27^{\\frac{1}{3}} - 8^{\\frac{2}{3}}}{16^{\\frac{1}{4}} \\times 2} \\\\= \\frac{\\sqrt[3]{27} - \\sqrt[3]{8^2}}{16^{\\frac{1}{4}} \\times 2} \\\\= \\frac{3 - 4}{\\sqrt[4]{16} \\times 2}  \\\\= \\frac{-1}{4} \\\\= -\\frac{1}{4}`
     },
     {
       id: "Q9",
@@ -114,7 +114,7 @@ const questions = [
         { id: 0, text: "3^{2n}", isCorrect: false },
         { id: 1, text: "9", isCorrect: true },
         { id: 2, text: "3^n", isCorrect: false },
-        { id: 3, text: "3^{n+1}", isCorrect: false },
+        { id: 3, text: "1", isCorrect: false },
       ],
       answer: "9",
       working: `\\frac{3^{n−1} \\times 27^{n+1} }{81^n}  \\\\ = \\frac{3^{n−1} \\times 3^{3n+3} }{3^{4n}}  \\\\ = \\frac{3^{n−1 + 3n +3} }{3^{4n}} \\\\ = \\frac{3^{4n +2} }{3^{4n}} \\\\ = 3^{4n + 2 -4n} \\\\ = 3^2 \\\\ =9`
