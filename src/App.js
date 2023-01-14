@@ -17,6 +17,7 @@ import DecimalsAndApprox from "./components/QuantitativeQuizzes/DecimalsAndAppro
 import Indices from "./components/QuantitativeQuizzes/Indices";
 import IndicialEquations from "./components/QuantitativeQuizzes/IndicialEquations";
 import Logarithm from "./components/QuantitativeQuizzes/Logarithm";
+import PercentageError from "./components/QuantitativeQuizzes/PercentageError" 
 
 function App() {
   return (
@@ -34,9 +35,10 @@ function App() {
         <Route path='/quantitativeTestFive' component={NumberBasesSummation} />
         <Route path='/quantitativeTestSix' component={Fractions} />
         <Route path='/quantitativeTestSeven' component={DecimalsAndApprox} />
-        <Route path='/quantitativeTestEight' component={Indices} />
-        <Route path='/quantitativeTestNine' component={IndicialEquations} />
-        <Route path='/quantitativeTestTen' component={Logarithm} />
+        <Route path='/quantitativeTestEight' component={PercentageError} />
+        <Route path='/quantitativeTestNine' component={Indices} />
+        <Route path='/quantitativeTestTen' component={IndicialEquations} />
+        <Route path='/quantitativeTestEleven' component={Logarithm} />
         <Route path='/numerationTest' component={StartTest} />
         <Route path='/contact' component={ContactPage} />
     </Layout>

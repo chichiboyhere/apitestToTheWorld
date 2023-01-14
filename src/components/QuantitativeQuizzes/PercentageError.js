@@ -21,116 +21,116 @@ const questions = [
         { id: 3, text: "0.40%", isCorrect: false },
       ],
       answer: "0.80%",
-      working: `\\text{% error } = \\frac{\\text{error}}{\\text{true measurement}} \\times 100  `
+      working: `\\text{% error } = \\frac{\\text{error}}{\\text{true measurement}} \\times 100 \\\\ \\text{% error } = \\frac{1.26 - 1.25}{1.25} \\times 100 \\\\ \\text{% error } = \\frac{0.01}{1.25} \\times 100 \\\\ \\therefore \\text{% error } = \\frac{0.01}{1.25} \\times 100 = 0.80%`
     },
     {
       id: "Q2",
       text: `\\text{The radius of a circle is given} \\\\ \\text{as 5cm subject to an error of 0.1cm.} \\\\ \\text{ What is the percentage error in the} \\\\ \\text{ area of the circle?} \\text{ (UME)}`,
       options: [
-        { id: 0, text: "\\frac{1}{25}", isCorrect: false },
+        { id: 0, text: "\\frac{1}{25}", isCorrect: true },
         { id: 1, text: "\\frac{1}{4}", isCorrect: false },
-        { id: 2, text: "4", isCorrect: true },
+        { id: 2, text: "4", isCorrect: false },
         { id: 3, text: "25", isCorrect: false },
       ],
-      answer: "0.00520",
-      working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
+      answer: "\\frac{1}{25}",
+      working: `\\text{% error } = \\frac{\\text{error}}{\\text{true measurement}} \\times 100\\\\ \\text{% error } = \\frac{\\pi \\times 0.1^2}{\\pi \\times 5^2} \\times 100\\\\ \\therefore \\text{% error } = \\frac{1}{25}`
     },
     {
       id: "Q3",
       text: `\\text{The length of a notebook 15cm, was} \\\\ \\text{measured as 16.8cm. Calculate the} \\\\ \\text{ percentage error to 2 significant figures.}\\\\ \\text{  (UME)}`,
       options: [
-        { id: 0, text: "12.00 %", isCorrect: false },
-        { id: 1, text: "11.00 %", isCorrect: true },
-        { id: 2, text: " 10.71 %", isCorrect: false },
-        { id: 3, text: "0.12 %", isCorrect: false },
+        { id: 0, text: "12.00%", isCorrect: true },
+        { id: 1, text: "11.00%", isCorrect: false },
+        { id: 2, text: " 10.71%", isCorrect: false },
+        { id: 3, text: "0.12%", isCorrect: false },
       ],
-      answer: "12.4127",
-      working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
+      answer: "12.00%",
+      working: `\\text{% error } = \\frac{16.8 - 15}{15} \\times 100 \\\\=12.00% `
     },
     {
       id: "Q4",
       text: `\\text{A sales boy gave a change of N75.00} \\\\ \\text{to a buyer instead of N80.00,} \\\\ \\text{calculate his percentage error,} \\\\ \\text{correct to one decimal place?} \\\\ \\text{(NECO)}`,
       options: [
-        { id: 0, text: "6.00%", isCorrect: true },
+        { id: 0, text: "6.00%", isCorrect: false },
         { id: 1, text: "6.20%", isCorrect: false },
-        { id: 2, text: "6.30%", isCorrect: false },
+        { id: 2, text: "6.30%", isCorrect: true },
         { id: 3, text: "6.60%", isCorrect: false },
        
       ],
       answer: "6.30%",
-      working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
+      working: `\\text{% error } = \\frac{80 - 75}{80} \\times 100 \\\\=6.30% `
     },
     {
       id: "Q5",
-      text: ` \\text{The length of a piece of stick is 1.75m. A girl measured it as 1.80m. Find the percentage error} WASSCE`,
+      text: ` \\text{The length of a piece of stick is} \\\\ \\text{1.75m. A girl measured it as 1.80m.} \\\\ \\text{Find the percentage error (WASSCE)} `,
       options: [
-        { id: 0, text: "28/7%", isCorrect: false },
-        { id: 1, text: "29/7%", isCorrect: false },
-        { id: 2, text: "5%", isCorrect: true },
-        { id: 3, text: "20/7%", isCorrect: false },
+        { id: 0, text: "\\frac{28}{7}%", isCorrect: false },
+        { id: 1, text: "\\frac{29}{7}%", isCorrect: false },
+        { id: 2, text: "5%", isCorrect: false },
+        { id: 3, text: "\\frac{20}{7}%", isCorrect: true },
       ],
-      answer: "\\frac{1}{3^{10}}",
-      working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`
+      answer: "\\frac{20}{7}%",
+      working:`\\text{% error }= \\frac{1.80 - 1.75}{1.75} \\times 100  \\\\=\\frac{0.05}{1.75} \\times 100 \\\\ =\\frac{5}{175} \\times 100 \\\\= \\frac{20}{7}%`
     },
     {
       id: "Q6",
-      text: `\\text{A sales boy gave a change of N68 instead of N72. Calculate his percentage error} \\text{ (WASSCE) }`,
+      text: `\\text{A sales boy gave a change of N68} \\\\ \\text{ instead of N72. Calculate } \\\\ \\text{his percentage error} \\text{ (WASSCE) }`,
       options: [
-        { id: 0, text: "4%", isCorrect: true },
-        { id: 1, text: "5 5/9%", isCorrect: false },
-        { id: 2, text: "5 15/17%", isCorrect: false },
+        { id: 0, text: "4%", isCorrect: false },
+        { id: 1, text: "5\\frac{5}{9}%", isCorrect: true },
+        { id: 2, text: "5\\frac{15}{17}%", isCorrect: false },
         { id: 3, text: "7%", isCorrect: false },
       ],
-      answer: "205",
-      working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
+      answer: "5\\frac{5}{9}%",
+      working:`\\text{% error }= \\frac{72 - 68}{72} \\times 100 \\\\ = \\frac{4}{72} \\times 100 \\\\ = \\frac{400}{72} \\\\ =5\\frac{5}{9}%`
     },
     {
       id: "Q7",
-      text: `\\text{A surveyor measured the length of a obtained 42.55 metres. If his measurement was more than the actual length and the percentage error of his measurement was 8%, calculate the actual length of the land} \\\\ \\text{(NECO)} `,
+      text: `\\text{A surveyor measured the length} \\\\ \\text{of a obtained 42.55 metres. If his} \\\\ \\text{measurement was more than the actual length and} \\\\ \\text{the percentage error of his measurement} \\\\ \\text{ was 8%, calculate the actual length} \\\\ \\text{ of the land} \\\\ \\text{(NECO)} `,
       options: [
-        { id: 0, text: "39.40 metres", isCorrect: true },
+        { id: 0, text: "39.40 metres", isCorrect: false },
         { id: 1, text: "46.20 metres", isCorrect: false },
-        { id: 2, text: "46.25 metres", isCorrect: false },
-        { id: 3, text: "46.50 metres E. 48.25 metres", isCorrect: false },
+        { id: 2, text: "46.25 metres", isCorrect: true },
+        { id: 3, text: "46.50 metres", isCorrect: false },
       ],
-      answer: "10^{-5}",
-      working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
+      answer: "46.25 metres",
+      working: `\\text{% error } = \\frac{\\text{error}}{\\text{true measurement}} \\times 100\\\\ 8 = \\frac{x - 42.55}{x} \\times 100 \\\\ \\text{(We assume the actual measurement was x metres)}\\\\ \\therefore 8x = 100x -4255 \\\\ \\therefore 92x = 4255 \\\\ \\therefore x = \\frac{4255}{92}= 46.25 metres`
     },
     {
       id: "Q8",
-      text: `\\text{Evaluate } \\frac{0.04 \\times 0.123}{0.34 \\times 72000 }\\\\ \\text{Leave your answer in standard} \\\\ \\text{form correct to 2 significant} \\\\ \\text{figures} `,
+      text: `\\text{A student found the approximate value} \\\\ \\text{of 0.03545 correct to 2 decimal places} \\\\ \\text{instead of 2 significant figures.} \\\\ \\text{Find the percentage error.}`,
       options: [
-        { id: 0, text: "2.0 \\times 10^{-3} ", isCorrect: false },
-        { id: 1, text: "2.0 \\times 10^{-5} ", isCorrect: false },
-        { id: 2, text: "2.0 \\times 10^{-7} ", isCorrect: true },
-        { id: 3, text: "2.0 \\times 10^{-9} ", isCorrect: false },
+        { id: 0, text: "25.00%", isCorrect: false },
+        { id: 1, text: "10.20%", isCorrect: false },
+        { id: 2, text: "12.25%", isCorrect: false },
+        { id: 3, text: "14.29%", isCorrect: true },
       ],
-      answer: "2.0 \\times 10^{-7} ",
-      working:`\\frac{0.04 \\times 0.123}{0.34 \\times 72000 } \\\\= \\frac{0.00492}{24480 } \\\\= 0.000 000 201 \\\\= 0.000 000 20 \\text{ (to 2 s.f)} \\\\= 2.0 \\times 10^{-7}  \\text{( standard form)} `
+      answer: "14.29%",
+      working:`\\text{The true measurement} = 0.035 \\text{(to 2 s.f)}\\\\ \\text{The false measurement} = 0.04 \\text{(to 2 d.p)} \\\\ \\therefore \\text{% error} = \\frac{0.04 - 0.035}{0.035} \\times 100 \\\\ \\therefore \\text{% error} = \\frac{ 0.005}{0.035} \\times 100 \\\\= 14.29%`
     },
     {
       id: "Q9",
-      text: `\\text{Express the product of 41.56 and 4.12 }  \\\\  \\text{to 4 s.f and 2 d.p and find the } \\\\ \\text{difference between the two outcomes  } \\\\ \\text{in standard form}`,
+      text: `\\text{Tolu made a percentage error of 2%} \\\\ \\text{when he measured the length of a shelf} \\\\ \\text{as 5.2ft, whereas the true measurement was} \\\\ \\text{a few inches more. What was the} \\\\ \\text{true length of the shelf correct} \\\\ \\text{ to 3 significant figures?}`,
       options: [
-        { id: 0, text: "1.72 \\times 10^{-2}", isCorrect: false },
-        { id: 1, text: "1.7 \\times 10^{-2}", isCorrect: false },
-        { id: 2, text: "2.2 \\times 10^{-2}", isCorrect: false },
-        { id: 3, text: "2 \\times 10^{-2}", isCorrect: true },
+        { id: 0, text: "5.34ft", isCorrect: false },
+        { id: 1, text: "5.09ft", isCorrect: false },
+        { id: 2, text: "5.10ft", isCorrect: false },
+        { id: 3, text: "5.31ft", isCorrect: true},
       ],
-      answer: "2 \\times 10^{-2}",
-      working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `
+      answer: "5.31ft",
+      working: `\\text{Assuming the true measurement is x:} \\\\ 2 = \\frac{x - 5.2}{x} \\times 100 \\\\ 2x = 100x - 520 \\\\ 98x = 520\\\\ \\therefore x = \\frac{520}{98} \\\\ = 5.31ft`
     },
     {
       id: "Q10",
-      text: `\\frac{0.000335}{145000} = x \\times 10^y  \\text{ where } \\\\ 1 \\leqslant x < 10  \\text{ and y is a whole number.} \\\\ \\text{ Find the values of x and y.}`,
+      text: `\\text{The length of a notebook 15cm,} \\\\ \\text{was measured as 13.5cm.} \\\\ \\text{ Calculate the percentage error.} `,
       options: [
-        { id: 0, text: "x = 2.13 \\text{ and } y = -9", isCorrect: false },
-        { id: 1, text: "x = 2.31 \\text{ and } y = -9", isCorrect: true },
-        { id: 2, text: "x = 2.31 \\text{ and } y = -10", isCorrect: false },
-        { id: 3, text: "x = 2.11 \\text{ and } y = -11", isCorrect: false },
+        { id: 0, text: "12%", isCorrect: false },
+        { id: 1, text: "9%", isCorrect: false },
+        { id: 2, text: "10%", isCorrect: true },
+        { id: 3, text: "11%", isCorrect: false },
       ],
-      answer: "x = 2.31 \\text{ and } y = -9",
-      working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`
+      answer: "10%",
+      working:`\\text{% error} = \\frac{15 - 13.5}{15} \\times 100 \\\\= \\frac{1.5}{15} \\times 100  \\\\ = 10%`
     },
   ];
 

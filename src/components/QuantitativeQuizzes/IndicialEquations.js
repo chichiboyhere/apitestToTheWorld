@@ -62,7 +62,7 @@ const questions = [
     },
     {
       id: "Q5",
-      text: `\\text{Given that }  \\sqrt[3]{4}^{2x} = 16 \\text{, find the value of x.} \\\\ \\text{ (UME)} `,
+      text: `\\text{Given that }  \\sqrt[3]{4^{2x}} = 16 \\text{, find the value of x.} \\\\ \\text{ (UME)} `,
       options: [
         { id: 0, text: "4", isCorrect: false },
         { id: 1, text: "6", isCorrect: false },
@@ -70,7 +70,7 @@ const questions = [
         { id: 3, text: "2", isCorrect: false },
       ],
       answer: "3",
-      working:`\\sqrt[3]{4}^{2x} = 16 \\\\  \\bigl( \\sqrt[3]{4}^{2x} \\bigr)^3= 16^3 \\text{(take the cube of} \\\\ \\text{both sides to get ride of the cube-root)} \\\\ \\therefore 4^{2x} = 4^6  \\\\ \\therefore 2x = 6  \\\\  x = 3 `
+      working:`\\sqrt[3]{4^{2x}} = 16 \\\\  \\bigl( \\sqrt[3]{4^{2x} }\\bigr)^3= 16^3 \\text{(take the cube of} \\\\ \\text{both sides to get ride of the cube-root)} \\\\ \\therefore 4^{2x} = 4^6  \\\\ \\therefore 2x = 6  \\\\  x = 3 `
     },
     {
       id: "Q6",

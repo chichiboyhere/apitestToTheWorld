@@ -49,7 +49,7 @@ const questions = [
     },
     {
       id: "Q4",
-      text: `\\text{Given that } log_a2 = 0.693 \\text{ and } log_a3 = 1.097,\\\\ \\text{ find } log_a 13.5 \\text{  (UME)}`,
+      text: `\\text{Given that } log_a2 = 0.693 \\text{ and } log_a3 \\\\= 1.097, \\text{ find } log_a 13.5 \\text{  (UME)}`,
       options: [
         { id: 0, text: "1.404", isCorrect: false },
         { id: 1, text: "1.790", isCorrect: false },
@@ -69,7 +69,7 @@ const questions = [
         { id: 3, text: "-3, -2", isCorrect: false },
       ],
       answer: "-2, -3",
-      working:`log_4(y - 1) + log_4(\\frac{1}{2}x) = 1 \\\\log_4((y - 1) \\times \\frac{1}{2}x) = 1 \\\\ \\therefore x(y - 1)  = 8  \\\\ \\therefore  x = \\frac{8}{y-1} \\text{...(1)} \\\\ \\text{Also } log_2(y + 1) + log_2x = 2 \\\\ log_2x(y + 1)  = 2  \\\\ \\therefore x(y + 1) =4 \\\\ \\therefore x =\\frac{4}{y+1} \\text{...(2)} \\\\ \\text{Equating (1) and (2): } \\frac{8}{y-1} = \\frac{4}{y+1} \\\\ \\therefore 8y + 8 = 4y -4 \\text{ (cross-multiplying)}\\\\ \\therefore 4y= -12 \\\ \\therefore y = -3 \\\\ \\text{Hence, putting y = -3 into eqn (1): } \\\\ x = \\frac{8}{-3-1} = -2  \\\\ \\text{So } x =-2 \\text{, } y = -3`
+      working:`log_4(y - 1) + log_4(\\frac{1}{2}x) = 1 \\\\log_4((y - 1) \\times \\frac{1}{2}x) = 1 \\\\log_4(\\frac{y-1}{2}x) = 1 \\\\ \\therefore \\frac{y-1}{2}x = 4^1\\\\ \\therefore x(y - 1)  = 8  \\\\ \\therefore  x = \\frac{8}{y-1} \\text{...(1)} \\\\ \\text{Also } log_2(y + 1) + log_2x = 2 \\\\ log_2x(y + 1)  = 2  \\\\ \\therefore x(y + 1) =4 \\\\ \\therefore x =\\frac{4}{y+1} \\text{...(2)} \\\\ \\text{Equating (1) and (2): } \\frac{8}{y-1} = \\frac{4}{y+1} \\\\ \\therefore 8y + 8 = 4y -4 \\text{ (cross-multiplying)}\\\\ \\therefore 4y= -12 \\\ \\therefore y = -3 \\\\ \\text{Hence, putting y = -3 into eqn (1): } \\\\ x = \\frac{8}{-3-1} = -2  \\\\ \\text{So } x =-2 \\text{, } y = -3`
     },
     {
       id: "Q6",
@@ -105,7 +105,7 @@ const questions = [
         { id: 3, text: "\\frac{3}{8}", isCorrect: false },
       ],
       answer: "\\frac{3}{4}",
-      working:`6log_x2 - 3log_x3 = 3log_50.2 \\\\log_x2^6 - log_x3^3 = log_5(\\frac{1}{5})^3\\\\log_x64 - log_x27 = 3log_5(\\frac{1}{5}) \\\\log_x\\frac{64}{27} = 3log_55^{-1} \\\\log_x(\\frac{4}{3})^3 = -3log_55 \\\\ \\therefore log_x(\\frac{4}{3})^3 = -3 \\\\ \\therefore x^{-3} = (\\frac{4}{3})^3\\\\ \\therefore x^{-3} = (\\frac{3}{4})^{-3} \\\\ \\therefore x = \\frac{3}{4} `
+      working:`6log_x2 - 3log_x3 = 3log_50.2 \\\\log_x2^6 - log_x3^3 = 3log_5(\\frac{1}{5})\\\\log_x64 - log_x27 = 3log_5(\\frac{1}{5}) \\\\log_x\\frac{64}{27} = 3log_55^{-1} \\\\log_x(\\frac{4}{3})^3 = -3log_55 \\\\ \\therefore log_x(\\frac{4}{3})^3 = -3 \\\\ \\therefore x^{-3} = (\\frac{4}{3})^3\\\\ \\therefore x^{-3} = (\\frac{3}{4})^{-3} \\\\ \\therefore x = \\frac{3}{4} `
     },
     {
       id: "Q9",
@@ -117,7 +117,7 @@ const questions = [
         { id: 3, text: "0.3010", isCorrect: false },
       ],
       answer: "0.6532",
-      working: `log_{10}4.5\\\\ = log_{10}\\frac{9}{2} \\\\ = log_{10}9 - log_{10}2   \\\\ = log_{10}3^2 - log_{10}2 \\\\ = 2log_{10}3 - log_{10}2 \\\\ =2(0.4771) - 0.3010 \\text{ Slotting in the hint values} \\\\ =0.6532`
+      working: `log_{10}4.5\\\\ = log_{10}\\frac{9}{2} \\\\ = log_{10}9 - log_{10}2   \\\\ = log_{10}3^2 - log_{10}2 \\\\ = 2log_{10}3 - log_{10}2 \\\\ =2(0.4771) - 0.3010 \\\\ \\text{ (Slotting in the hint values)} \\\\ =0.6532`
     },
     {
       id: "Q10",
@@ -129,7 +129,7 @@ const questions = [
         { id: 3, text: "2 - 3x", isCorrect: true },
       ],
       answer: "2 - 3x",
-      working:`log_{10}12.5\\\\= log_{10}\\frac{25}{2}  \\\\ = log_{10}25 - log_{10}2\\\\ = log_{10}\\frac{100}{4} - log_{10}2\\\\  = log_{10}\\frac{100}{4} - log_{10}2 \\\\ = log_{10}100 -log_{10}4 - log_{10}2 \\\\= log_{10}10^2 - log_{10}2^2 - log_{10}2 \\\\= 2log_{10}10 - 2log_{10}2 - log_{10}2 \\\\ = 2(1) - 3log_{10}2 \\\\ =2 -3x`
+      working:`log_{10}12.5\\\\= log_{10}\\frac{25}{2}  \\\\ = log_{10}25 - log_{10}2\\\\ = log_{10}\\frac{100}{4} - log_{10}2\\\\  = log_{10}100 -log_{10}4 - log_{10}2 \\\\= log_{10}10^2 - log_{10}2^2 - log_{10}2 \\\\= 2log_{10}10 - 2log_{10}2 - log_{10}2 \\\\ = 2(1) - 3log_{10}2 \\\\ =2 -3x`
     },
   ];
   

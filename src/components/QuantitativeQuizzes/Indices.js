@@ -57,7 +57,7 @@ const questions = [
         { id: 3, text: "\\frac{3}{2}", isCorrect: false },
       ],
       answer: "\\frac{3}{8}",
-      working: `16^{−\\frac{1}{2}} \\times 4^{−\\frac{1}{2}} \\times 27^{1/3} \\\\ = \\frac{1}{16\\frac{1}{2}} \\times \\frac{1}{4\\frac{1}{2}} \\times \\sqrt[3]{27} \\\\ = \\frac{1}{\\sqrt{16}}  \\times \\frac{1}{\\sqrt{4}} \\times 3 \\\\ = \\frac{1}{4} \\times \\frac{1}{2} \\times 3  \\\\ = \\frac{3}{8}`
+      working: `16^{−\\frac{1}{2}} \\times 4^{−\\frac{1}{2}} \\times 27^{1/3} \\\\ = \\frac{1}{16^{\\frac{1}{2}}} \\times \\frac{1}{4^\\frac{1}{2}} \\times \\sqrt[3]{27} \\\\ = \\frac{1}{\\sqrt{16}}  \\times \\frac{1}{\\sqrt{4}} \\times 3 \\\\ = \\frac{1}{4} \\times \\frac{1}{2} \\times 3  \\\\ = \\frac{3}{8}`
     },
     {
       id: "Q5",
@@ -105,7 +105,7 @@ const questions = [
         { id: 3, text: "\\frac{5}{4}", isCorrect: false },
       ],
       answer: "-\\frac{1}{4}",
-      working:`\\frac{27^{\\frac{1}{3}} - 8^{\\frac{2}{3}}}{16^{\\frac{1}{4}} \\times 2} \\\\= \\frac{\\sqrt[3]{27} - \\sqrt[3]{8^2}}{16^{\\frac{1}{4}} \\times 2} \\\\= \\frac{3 - 4}{\\sqrt[4]{16} \\times 2}  \\\\= \\frac{-1}{4} \\\\= -\\frac{1}{4}`
+      working:`\\frac{27^{\\frac{1}{3}} - 8^{\\frac{2}{3}}}{16^{\\frac{1}{4}} \\times 2} \\\\= \\frac{\\sqrt[3]{27} - \\sqrt[3]{8^2}}{\\sqrt[4]{16}  \\times 2} \\\\= \\frac{3 - 4}{2 \\times 2}  \\\\= \\frac{-1}{4} \\\\= -\\frac{1}{4}`
     },
     {
       id: "Q9",
