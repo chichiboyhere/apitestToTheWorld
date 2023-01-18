@@ -13,123 +13,124 @@ import Message from "../UI/Message";
 const questions = [
     {
       id: "Q1",
-      text: `\\text{A car dealer bought a second-hand}  \\\\ \\text{car for N250,000 and spent N70,000} \\\\ \\text{refurbishing it.He then sold the} \\\\ \\text{ car for N400,000. What } \\\\ \\text{is the percentage gain?} \\text{ (UME)}`,
+      text: `\\text{A car dealer bought a second-hand}  \\\\ \\text{car for N250,000 and spent N70,000} \\\\ \\text{refurbishing it. He then sold the} \\\\ \\text{ car for N400,000. What } \\\\ \\text{is the percentage gain?} \\text{ (UME)}`,
       options: [
-        { id: 0, text: "60%", isCorrect: false },
-        { id: 1, text: "32%", isCorrect: false },
-        { id: 2, text: "25%", isCorrect: false },
-        { id: 3, text: "20%", isCorrect: true },
+        { id: 0, text: "60\\text{%}", isCorrect: false },
+        { id: 1, text: "32\\text{%}", isCorrect: false },
+        { id: 2, text: "25\\text{%}", isCorrect: true },
+        { id: 3, text: "20\\text{%}", isCorrect: false },
       ],
-      answer: "88",
-      working: `\\sqrt{31.42 \\times 60.32 } = \\sqrt{1895.2544} \\\\= 43.5345 \\\\= 44 \\text{ (correct to 2 s.f) } \\\\= 43.5 \\text{(correct to 1 d.p) } \\\\  \\therefore \\text{ their sum } = 44 + 43.5 = 87.5 \\\\= 88 \\text{(correct to the nearest whole number) } `
+      answer: "25\\text{%}",
+      working: `\\text{Total cost price(C.P) }= N250,000 + N70,000\\\\= N320,000 \\\\ \\text{Profit }  N400,000- N320,000 = N80,000 \\\\ \\therefore \\text{% Profit} =\\frac{80,000}{320,000} \\times 100\\\\= \\frac{80,000}{320,000} \\times 100 = 25\\text{%} `
     },
     {
       id: "Q2",
-      text: `\\text{A trader bought 100 oranges at 5}\\\\ \\text{ for N1.20, 20 oranges got spoilt } \\\\ \\text{and the remaining were sold at 4 for N1.50.} \\\\ \\text{ Find the percentage gain or loss.} \\\\ \\text{ (UME)}`,
+      text: `\\text{A trader bought 100 oranges at 5}\\\\ \\text{ for N1.20, 20 oranges got spoilt } \\\\ \\text{and the remaining were sold at} \\\\ \\text{ 4 for N1.50. Find the} \\\\ \\text{percentage gain or loss.} \\text{ (UME)}`,
       options: [
         { id: 0, text: "30% gain", isCorrect: false },
-        { id: 1, text: "25% gain", isCorrect: false },
-        { id: 2, text: "30% loss", isCorrect: true },
+        { id: 1, text: "25% gain", isCorrect: true },
+        { id: 2, text: "30% loss", isCorrect: false },
         { id: 3, text: "25% loss", isCorrect: false },
       ],
-      answer: "0.00520",
-      working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
+      answer: "25% gain",
+      working: `\\text{C.P }= \\frac{100}{5} \\times N1.20 = N24.00\\\\ \\text{S.P} = \\frac{80}{4} \\times N1.50 = N30.00 \\\\ \\text{ (Note: Only 80 oranges were sold as 20 got spoilt)} \\\\ \\therefore \\text{Profit made} = N30.00 - N24.00 = N6.00 \\\\ \\therefore \\text{% profit } = \\frac{6}{24} \\times 100=25% gain`
     },
     {
       id: "Q3",
       text: `\\text{A woman buys 270 oranges for}  \\\\ \\text{N1800.00 and sells at 5 for N40.00.} \\\\ \\text{What is her profit? } \\text{ (UME)}`,
       options: [
-        { id: 0, text: "8.8415", isCorrect: false },
-        { id: 1, text: "12.4127", isCorrect: true },
-        { id: 2, text: "124.1265", isCorrect: false },
-        { id: 3, text: "12.4120", isCorrect: false },
+        { id: 0, text: "N2,160.00", isCorrect: false },
+        { id: 1, text: "N1,620.00", isCorrect: false },
+        { id: 2, text: "N630.00", isCorrect: false },
+        { id: 3, text: "N360.00", isCorrect: true },
       ],
-      answer: "12.4127",
-      working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
+      answer: "N360.00",
+      working: `\\text{C.P } = N1800.00\\\\ \\text{S.P} = \\frac{270}{5} \\times N40.00 = N2,160.00  \\\\ \\therefore \\text{Profit made} = N2,160 - N1,800 = N360.00 `
     },
     {
       id: "Q4",
-      text: `\\text{A man made a profit of 5% when he} \\\\ \\text{ sold an article for N60,000.00. } \\\\ \\text{How much would he have sell the article to} \\\\ \\text{ make a profit of 26%} \\text{UME}`,
+      text: `\\text{A man made a profit of 5% when he} \\\\ \\text{ sold an article for N60,000.00. } \\\\ \\text{How much would he have sold the article to} \\\\ \\text{ make a profit of 26%} \\text{UME}`,
       options: [
-        { id: 0, text: "1", isCorrect: true },
-        { id: 1, text: "2", isCorrect: false },
-        { id: 2, text: "877", isCorrect: false },
-        { id: 3, text: "1001", isCorrect: false },
+        { id: 0, text: "N68,000", isCorrect: false },
+        { id: 1, text: "N72,000", isCorrect: true },
+        { id: 2, text: "N65,000", isCorrect: false },
+        { id: 3, text: "N70,000", isCorrect: false },
       ],
-      answer: "1",
-      working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
+      answer: "N72,000",
+      working: `\\text{If he sold the artice at 5% proft}\\\\ \\text{his % S.P. } = 105\\text{% (i.e. 5% more than} \\\\ \\text{the C.P, which is 100% by default)} \\\\ \\text{However, if he had sold at 26% profit, instead,} \\\\ \\text{his %SP would have been} 126\\text{%} \\\\  \\therefore 105\\text{%} \\rightarrow N60,000 \\\\ \\text{and } 126\\text{%} \\rightarrow N x \\\\ \\text{Cross-multiply: }  105x = 126(60,000) \\\\ \\therefore x = \\frac{126 \\times 60000 }{105} = N72,000 \\\\ \\text{So he would have sold at N72,000} \\\\  \\text{to make a profit of }  26\\text{%}`
+      
     },
     {
       id: "Q5",
-      text: `\\text{A man bought a second-hand photocopying machine for N34,000. He serviced it at a cost of N2,000 and then sold it at a profit of 15%. What was the selling price?} UME`,
+      text: `\\text{A man bought a second-hand photocopying} \\\\ \\text{ machine for N34,000. He serviced it at a } \\\\ \\text{cost of N2,000 and then sold it at a} \\\\ \\text{profit of 15%. What was the selling price? (UME)}`,
       options: [
         { id: 0, text: "N37,550", isCorrect: false },
         { id: 1, text: "N40,400", isCorrect: false },
         { id: 2, text: "N41,400", isCorrect: true },
         { id: 3, text: "N42,400", isCorrect: false },
       ],
-      answer: "\\frac{1}{3^{10}}",
-      working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`
+      answer: "N41,400",
+      working:`\\text{Total cost price(C.P) }= N34,000 + N2,000\\\\= N36,000 \\\\ \\therefore \\text{SP } =  \\frac{115}{100} \\times  N36,000 = N41,400 \\\\ \\text{Alternatively, we could say} \\\\ \\text{% profit} = \\frac{profit}{CP} \\times 100 \\\\ \\therefore 15 = \\frac{profit}{N36,000} \\times 100 \\\\ \\therefore  \\text{profit} = \\frac{15 \\times  36000}{100} = 5400\\\\ \\therefore  \\text{SP = CP + profit} = 36000 + 5400 = N41,400`
     },
     {
       id: "Q6",
-      text: `\\text{A woman bought a grinder for N60,000. She sold it at a loss of 15%. How much did she sell it?} \\text{ (UME) }`,
+      text: `\\text{A woman bought a grinder for N60,000.} \\\\ \\text{She sold it at a loss of 15%.} \\\\ \\text{ How much did she sell it?} \\text{ (UME) }`,
       options: [
-        { id: 0, text: "N53,000", isCorrect: true },
+        { id: 0, text: "N53,000", isCorrect: false },
         { id: 1, text: "N52,000", isCorrect: false },
-        { id: 2, text: "N51,000", isCorrect: false },
+        { id: 2, text: "N51,000", isCorrect: true },
         { id: 3, text: "N50,000", isCorrect: false },
       ],
-      answer: "205",
-      working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
+      answer: "N51,000",
+      working:`\\text{Since she sold at a loss of 15%, her %SP } = 100 - 15  = 85% \\\\ \\text{So if 100%(i.e %CP)} \\rightarrow N60000 \\\\ \\therefore  85\\text{%(i.e %SP } = \\frac{85}{100} \\times 60000= N51,000`
     },
     {
       id: "Q7",
-      text: `\\text{A trader bought 100 oranges at 5 for N40.00 and 20 for N120.00. Find the profit or loss percent}  \\\\ \\text{(WASSCE)} `,
+      text: `\\text{A trader bought 100 oranges at 5 for N40.00}  \\\\ \\text{and sold at  20 for N120.00. Find the profit} \\\\ \\text{or loss percent}  \\text{(WASSCE)} `,
       options: [
-        { id: 0, text: "10^{-5}", isCorrect: true },
-        { id: 1, text: "7 \\times 10^{-4}", isCorrect: false },
-        { id: 2, text: "8 \\times 10^{-5}", isCorrect: false },
-        { id: 3, text: "10^{-6}", isCorrect: false },
+        { id: 0, text: "20\\text{% profit}", isCorrect: false },
+        { id: 1, text: "20\\text{% loss}", isCorrect: false },
+        { id: 2, text: "25\\text{% profit}", isCorrect: false },
+        { id: 3, text: "25\\text{% loss}", isCorrect: true },
       ],
-      answer: "10^{-5}",
-      working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
+      answer: "25\\text{% loss}",
+      working: `\\text{CP } = \\frac{100}{5} \\times  N40.00 = N800 \\\\ \\text{SP } = \\frac{100}{20} \\times  N120.00 = N600 \\\\ \\therefore \\text{loss recorded} = N800 - N600 = N200 \\\\ \\therefore \\text{ % loss} =\\frac{200}{800} \\times 100 = 25\\text{% loss}`
     },
     {
       id: "Q8",
-      text: `\\text{A man sells his new brand car for N420,000 at a gain of 15%. What did it cost him?} \\\\ \\text{(UTME)} `,
+      text: `\\text{A man sells his brand new car for } \\\\ \\text{N420,000 at a gain of 15%. What did} \\\\ \\text{ it cost him?}  \\text{(UTME)} `,
       options: [
         { id: 0, text: "N410,000", isCorrect: false },
-        { id: 1, text: "N365, 217", isCorrect: false },
-        { id: 2, text: "N157, 250", isCorrect: true },
+        { id: 1, text: "N365,217", isCorrect: true },
+        { id: 2, text: "N157,250", isCorrect: false },
         { id: 3, text: "N257,000", isCorrect: false },
       ],
-      answer: "2.0 \\times 10^{-7} ",
-      working:`\\frac{0.04 \\times 0.123}{0.34 \\times 72000 } \\\\= \\frac{0.00492}{24480 } \\\\= 0.000 000 201 \\\\= 0.000 000 20 \\text{ (to 2 s.f)} \\\\= 2.0 \\times 10^{-7}  \\text{( standard form)} `
+      answer: "N365,217",
+      working:`\\text{ %SP = 115% } \\rightarrow N420,000 \\\\ \\therefore  \\text{%(i.e %CP = 100%} = \\frac{100}{115} \\times 420000= N365,217 `
     },
     {
       id: "Q9",
-      text: `\\text{A man bought a car for N800 and sold it for N520. Find his loss per cent}  \\\\ \\text{(UTME)}`,
+      text: `\\text{A man bought a car for N800 and sold} \\\\ \\text{ it for N520. Find his loss per cent}  \\\\ \\text{(UTME)}`,
       options: [
         { id: 0, text: "15%", isCorrect: false },
         { id: 1, text: "25%", isCorrect: false },
-        { id: 2, text: "35%", isCorrect: false },
-        { id: 3, text: "10%", isCorrect: true },
+        { id: 2, text: "35%", isCorrect: true },
+        { id: 3, text: "10%", isCorrect: false },
       ],
-      answer: "2 \\times 10^{-2}",
-      working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `
+      answer: "35%",
+      working: ` \\text{The loss}  = N800 - N520 = N280  \\\\ \\therefore \\text{ % loss} = \\frac{loss}{CP} \\times 100\\\\  =  \\frac{280}{800} \\times 100 = 35%`
     },
     {
       id: "Q10",
-      text: `\\text{ Tade bought 200 mangoes at 4 for ₦2.50. 30 out of the mangoes got spoilt and the remaining were sold at 2 for ₦2.40. Find the percentage profit or loss.} \\\\ \\text{ (UTME)}`,
+      text: `\\text{Tolu bought 200 mangoes at 4 for ₦2.40.} \\\\ \\text{40 out of the mangoes got spoilt} \\\\ \\text{and the remaining were sold at 2 for ₦2.50.} \\\\ \\text{ Find the percentage profit or loss.} `,
       options: [
-        { id: 0, text: "43.6% loss", isCorrect: false },
-        { id: 1, text: "35% profit", isCorrect: true },
-        { id: 2, text: "63.2% profit", isCorrect: false },
-        { id: 3, text: "28% loss", isCorrect: false },
+        { id: 0, text: "67\\text{% profit }", isCorrect: true },
+        { id: 1, text: "30\\text{% profit }", isCorrect: false },
+        { id: 2, text: "40\\text{% loss }", isCorrect: false },
+        { id: 3, text: "30\\text{% loss }", isCorrect: false },
       ],
-      answer: "x = 2.31 \\text{ and } y = -9",
-      working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`
+      answer: "67\\text{% profit }",
+      working:`\\text{C.P }= \\frac{200}{4} \\times N2.40 = N120.00\\\\ \\text{S.P} = \\frac{160}{2} \\times N2.50 = N200.00 \\\\ \\text{ (Note: Only 160 oranges were sold as 40 got spoilt)} \\\\ \\therefore \\text{Profit made} = N200.00 - N120.00 = N80.00 \\\\ \\therefore \\text{% profit } = \\frac{80}{120} \\times 100=67\\text{% profit }`
     },
   ];
   

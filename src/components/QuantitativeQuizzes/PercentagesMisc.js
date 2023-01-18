@@ -15,49 +15,49 @@ const questions = [
       id: "Q1",
       text: `\\text{A worker's present salary is} \\\\ \\text{N24,000 per annum. His annual} \\\\ \\text{increment is 10% of his basic salary.} \\\\ \\text{ What would be his annual salary at} \\\\ \\text{the beginning of the third year?} \\\\ \\text{ (UME)}`,
       options: [
-        { id: 0, text: "81", isCorrect: false },
-        { id: 1, text: "83", isCorrect: false },
-        { id: 2, text: "85", isCorrect: false },
-        { id: 3, text: "88", isCorrect: true },
+        { id: 0, text: "nill", isCorrect: false },
+        { id: 1, text: "nill", isCorrect: false },
+        { id: 2, text: "nill", isCorrect: false },
+        { id: 3, text: "nill", isCorrect: true },
       ],
-      answer: "88",
-      working: `\\sqrt{31.42 \\times 60.32 } = \\sqrt{1895.2544} \\\\= 43.5345 \\\\= 44 \\text{ (correct to 2 s.f) } \\\\= 43.5 \\text{(correct to 1 d.p) } \\\\  \\therefore \\text{ their sum } = 44 + 43.5 = 87.5 \\\\= 88 \\text{(correct to the nearest whole number) } `
+      answer: "N29,040",
+      working: `\\text{Year 1: Principal = N24,000}\\\\ \\text{Increase} = +  N2400 \\\\ \\text{(i.e } \\frac{10}{100} of N24,000 = N2400 \\text{)} \\\\ \\text{Year 2: Principal = N26,400 } \\\\  \\text{      Increase} = +  N2640 \\\\ \\text{(i.e } \\frac{10}{100} of N26,400 = N2640 \\text{)} \\\\ \\text{Year 3: Principal = N29,040} \\\\ \\text{Alternatively:} \\\\ A = P(1 + \\frac{r}{100})^n \\\\=24,000(1 + \\frac{10}{100})^2\\\\=24,000(1.1)^2 \\\\=24,000(1.1)^2 = N29,040 `
     },
     {
       id: "Q2",
       text: `\\text{If the population of a town} \\\\ \\text{was 240,000 in January 1998 and }\\\\ \\text{it increased by 2% each year, what} \\\\ \\text{would be the population of the town} \\\\ \\text{ in January, 2000?}\\text{ (UME)}`,
       options: [
         { id: 0, text: "480,000", isCorrect: false },
-        { id: 1, text: "249,696", isCorrect: false },
-        { id: 2, text: "249,600", isCorrect: true },
+        { id: 1, text: "249,696", isCorrect: true },
+        { id: 2, text: "249,600", isCorrect: false },
         { id: 3, text: "244,800", isCorrect: false },
       ],
-      answer: "0.00520",
-      working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
+      answer: "249,696",
+      working: `\\text{Jan 1998 - Jan 2000 is a period of 2 years}\\\\ \\text{Using } A = P(1 + \\frac{r}{100})^n \\\\=240,000(1 + \\frac{2}{100})^2 \\\\=240,000(1.02)^2 = 249,696`
     },
     {
       id: "Q3",
       text: `\\text{A man wishes to keep his money} \\\\ \\text{in a savings deposit at 25% compound} \\\\ \\text{ interest so that after three years} \\\\ \\text{ he can buy a car for N150,000.} \\\\ \\text{ How much does he need to deposit? } \\\\  \\text{  (UME)}`,
       options: [
         { id: 0, text: "N112,000.50", isCorrect: false },
-        { id: 1, text: "N96,000.00", isCorrect: true },
+        { id: 1, text: "N96,000.00", isCorrect: false },
         { id: 2, text: "N85,714.28", isCorrect: false },
-        { id: 3, text: "N76,800.00", isCorrect: false },
+        { id: 3, text: "N76,800.00", isCorrect: true },
       ],
-      answer: "12.4127",
-      working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
+      answer: "N76,800.00",
+      working: `\\text{Compound interest formula: } \\\\ \\text{Amount, A = } P(1 + \\frac{r}{100})^n  \\\\ 150,000 = P( 1 + \\frac{25}{100})^3 \\\\ 150,000 = P(1.25)^3 \\\\ 150,000 = P \\times 1.953125 \\\\ \\therefore P =\\frac{150000}{1.953125} = N76,800.00`
     },
     {
       id: "Q4",
-      text: `\\text{A cinema hall contains a certain} \\\\ \\text{number of people. If }22\\frac{1}{2}% \\text{ are} \\\\ \\text{children,} 47\\frac{1}{2}% \\text{ are men and 84 are women,}\\\\  \\text{find the number of men in the hall.} \\\\ \\text{(UME)} `,
+      text: `\\text{A cinema hall contains a certain} \\\\ \\text{number of people. If }22\\frac{1}{2} \\text{% are} \\\\ \\text{children,} 47\\frac{1}{2} \\text{% are men and 84 are women,}\\\\  \\text{find the number of men in the hall.} \\\\ \\text{(UME)} `,
       options: [
-        { id: 0, text: "63", isCorrect: true },
+        { id: 0, text: "63", isCorrect: false },
         { id: 1, text: "84", isCorrect: false },
         { id: 2, text: "113", isCorrect: false },
-        { id: 3, text: "133", isCorrect: false },
+        { id: 3, text: "133", isCorrect: true },
       ],
-      answer: "1",
-      working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
+      answer: "133",
+      working: `\\text{% of women=} 100\\text{%} - (22\\frac{1}{2} + 47\\frac{1}{2})\\text{%}) = 30\\text{%}\\\\ \\therefore 30\\text{%} \\rightarrow 84 \\text{ women} \\\\ \\therefore 47\\frac{1}{2}\\text{%} \\rightarrow \\frac{47\\frac{1}{2}}{30} \\times 84 \\\\= \\frac{95}{2 \\times 30} \\times 84=133 `
     },
     {
       id: "Q5",
@@ -68,68 +68,68 @@ const questions = [
         { id: 2, text: "x = 5", isCorrect: true },
         { id: 3, text: "x = 7", isCorrect: false },
       ],
-      answer: "\\frac{1}{3^{10}}",
-      working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`
+      answer: "5",
+      working:`x \\text{% of }240 = 12 \\\\ \\frac{x}{100} \\times 240 =12 \\\\ \\therefore x = \\frac{12 \\times 100 }{240} = 5`
     },
     {
       id: "Q6",
-      text: `\\text{If 85% of x is N3230, what is the value of x?} \\text{ (WASSCE) }`,
+      text: `\\text{If 85% of x is N3230, what} \\\\  \\text{is the value of x?} \\text{ (WASSCE) }`,
       options: [
-        { id: 0, text: "205", isCorrect: true },
-        { id: 1, text: "647", isCorrect: false },
-        { id: 2, text: "2050", isCorrect: false },
-        { id: 3, text: "6470", isCorrect: false },
+        { id: 0, text: "nill", isCorrect: true },
+        { id: 1, text: "nill", isCorrect: false },
+        { id: 2, text: "nill", isCorrect: false },
+        { id: 3, text: "nill", isCorrect: false },
       ],
       answer: "205",
-      working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
+      working:`85\\text{% of x} = N3230 \\\\ \\frac{85}{100} \\times x = 3230 \\\\ \\therefore x =  \\frac{3230 \\times 100}{85} = N3,800`
     },
     {
       id: "Q7",
-      text: `\\text{A man donates 10% of his monthly net earnings to his church. If it amounts to N4,500, what is his net monthly income? UTME} `,
+      text: `\\text{A man donates 10% of his monthly} \\\\  \\text{net earnings to his church. If} \\\\  \\text{it amounts to N4,500, what is} \\\\  \\text{his net monthly income? (UTME)} `,
       options: [
-        { id: 0, text: "N40,500", isCorrect: true },
-        { id: 1, text: "N45,000", isCorrect: false },
+        { id: 0, text: "N40,500", isCorrect: false },
+        { id: 1, text: "N45,000", isCorrect: true },
         { id: 2, text: "N52,500", isCorrect: false },
         { id: 3, text: "N62,000", isCorrect: false },
       ],
-      answer: "10^{-5}",
-      working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
+      answer: "N45,000",
+      working: `\\text{If his income = } x Naira\\\\ 10 \\text{% of }x = 4500 \\\\ \\therefore x = \\frac{100}{10} \\times N4500 = N45,000 `
     },
     {
       id: "Q8",
-      text: `\\text{A trader bought an engine for $15,000.00 outside Nigeria. If the exchange rate is $0.075 to N1.00, how much did the engine cost in Naira?} WASSCE`,
+      text: `\\text{A trader bought an engine for} \\\\ $15,000.00 \\text{ outside Nigeria. If}  \\\\ \\text{the exchange rate is } $0.075 \\text{ to} \\\\ \\text{ N1.00, how much did the engine} \\\\ \\text{cost in Naira? (WASSCE)}`,
       options: [
         { id: 0, text: "N250,000.00", isCorrect: false },
-        { id: 1, text: "N200,000.00", isCorrect: false },
-        { id: 2, text: "N150,000.00 ", isCorrect: true },
+        { id: 1, text: "N200,000.00", isCorrect: true },
+        { id: 2, text: "N150,000.00 ", isCorrect: false },
         { id: 3, text: "N100,000.00", isCorrect: false },
       ],
-      answer: "2.0 \\times 10^{-7} ",
-      working:`\\frac{0.04 \\times 0.123}{0.34 \\times 72000 } \\\\= \\frac{0.00492}{24480 } \\\\= 0.000 000 201 \\\\= 0.000 000 20 \\text{ (to 2 s.f)} \\\\= 2.0 \\times 10^{-7}  \\text{( standard form)} `
+      answer: "N200,000.00",
+      working:`\\text{If } $0.075 = N1, \\text{ then } $1 = \\frac{1}{0.075} = N13.33 \\\\ \\therefore $15,000  = N15,000 \\times 13.33 = N200,000.00`
     },
     {
       id: "Q9",
-      text: `\\text{The amount A to which a principal P amounts at r% compound interest for n years is given by the formula A = P(1 + (r ÷ 100)n. Find A, if P = 126, r = 4 and n = 2. }  \\\\  \\text{UTME}`,
+      text: `\\text{The amount A to which a principal P} \\\\  \\text{amounts at r% compound interest for n} \\\\  \\text{years is given by the formula} \\\\  A =  P(1 + \\frac{r}{100})^n.\\\\ \\text{Find A, if P = 126, r = 4 and n = 2. }  \\\\  \\text{UTME}`,
       options: [
         { id: 0, text: "N132.50K", isCorrect: false },
-        { id: 1, text: "N136.30K", isCorrect: false },
+        { id: 1, text: "N136.30K", isCorrect: true },
         { id: 2, text: "N125.40K", isCorrect: false },
-        { id: 3, text: "N257.42K", isCorrect: true },
+        { id: 3, text: "N257.42K", isCorrect: false },
       ],
-      answer: "2 \\times 10^{-2}",
-      working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `
+      answer: "N136.30K",
+      working: ` A =  P(1 + \\frac{r}{100})^n \\\\ \\therefore  A = 126(1 + \\frac{4}{100})^2 \\\\= 126(1 + 0.04)^2 \\\\= 126(1.04)^2\\\\ = 136.28 = N136.30K \\text{(approximately)}`
     },
     {
       id: "Q10",
-      text: `\\text{ A public car dealer marked up the cost of a car at 30% in an attempt to make 20% gross profit. Due to the value of dollar, he now placed 20% discount on the car. What profit or loss will he make?} \\\\ \\text{(UTME)}`,
+      text: `\\text{A public car dealer marked up} \\\\  \\text{the cost of a car at 30% in an } \\\\  \\text{attempt to make 20% gross profit.} \\\\  \\text{ Due to the value of dollar, he} \\\\  \\text{now placed 20% discount on the car.} \\\\  \\text{What profit or loss will he make?} \\\\ \\text{(UTME)}`,
       options: [
-        { id: 0, text: "3%", isCorrect: false },
-        { id: 1, text: "2%", isCorrect: true },
-        { id: 2, text: "4%", isCorrect: false },
-        { id: 3, text: "1%", isCorrect: false },
+        { id: 0, text: "3\\text{%}", isCorrect: false },
+        { id: 1, text: "2\\text{%}", isCorrect: false },
+        { id: 2, text: "4\\text{%}", isCorrect: true },
+        { id: 3, text: "1\\text{%}", isCorrect: false },
       ],
-      answer: "x = 2.31 \\text{ and } y = -9",
-      working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`
+      answer: "4\\text{%}",
+      working:`\\text{Let's assume the cost price(CP)} \\\\ \\text{of the car} = 100 \\\\ \\text{The dealer would have had to set} \\\\ \\text{the selling price(SP) at } \\\\ \\text{120 to make a profit of 20%} \\\\ \\text{Now, he allowed a discount of 20% on the SP} \\\\ \\text{i.e he allowed a discount of} \\frac{20}{100} of 120 = 24\\\\ \\text{So the actual SP is } 120 -24 =96 \\\\ \\therefore \\text{He made a loss of } 100 - 96 = 4 \\\\ \\text{\And this amounts to a 4% loss}`
     },
   ];
   

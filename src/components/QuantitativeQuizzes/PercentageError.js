@@ -21,7 +21,7 @@ const questions = [
         { id: 3, text: "0.40%", isCorrect: false },
       ],
       answer: "0.80%",
-      working: `\\text{% error } = \\frac{\\text{error}}{\\text{true measurement}} \\times 100 \\\\ \\text{% error } = \\frac{1.26 - 1.25}{1.25} \\times 100 \\\\ \\text{% error } = \\frac{0.01}{1.25} \\times 100 \\\\ \\therefore \\text{% error } = \\frac{0.01}{1.25} \\times 100 = 0.80%`
+      working: `\\text{% error } = \\frac{\\text{error}}{\\text{true measurement}} \\times 100 \\\\ \\text{% error } = \\frac{1.26 - 1.25}{1.25} \\times 100 \\\\ \\text{% error } = \\frac{0.01}{1.25} \\times 100 \\\\ \\therefore \\text{% error } = \\frac{1}{1.25}  = 0.80%`
     },
     {
       id: "Q2",
@@ -86,15 +86,15 @@ const questions = [
     },
     {
       id: "Q7",
-      text: `\\text{A surveyor measured the length} \\\\ \\text{of a obtained 42.55 metres. If his} \\\\ \\text{measurement was more than the actual length and} \\\\ \\text{the percentage error of his measurement} \\\\ \\text{ was 8%, calculate the actual length} \\\\ \\text{ of the land} \\\\ \\text{(NECO)} `,
+      text: `\\text{A surveyor measured the length of}  \\\\ \\text{a piece of land and  obtained}\\\\ \\text{42.55 metres. If his measurement} \\\\ \\text{was more than the actual length and} \\\\ \\text{the percentage error of his measurement} \\\\ \\text{ was 8%, calculate the actual length} \\\\ \\text{ of the land} \\\\ \\text{(NECO)} `,
       options: [
-        { id: 0, text: "39.40 metres", isCorrect: false },
-        { id: 1, text: "46.20 metres", isCorrect: false },
-        { id: 2, text: "46.25 metres", isCorrect: true },
-        { id: 3, text: "46.50 metres", isCorrect: false },
+        { id: 0, text: "39.40 \\text{ metres}", isCorrect: true },
+        { id: 1, text: "46.20 \\text{ metres}", isCorrect: false },
+        { id: 2, text: "46.25 \\text{ metres}", isCorrect: false },
+        { id: 3, text: "46.50 \\text{ metres}", isCorrect: false },
       ],
-      answer: "46.25 metres",
-      working: `\\text{% error } = \\frac{\\text{error}}{\\text{true measurement}} \\times 100\\\\ 8 = \\frac{x - 42.55}{x} \\times 100 \\\\ \\text{(We assume the actual measurement was x metres)}\\\\ \\therefore 8x = 100x -4255 \\\\ \\therefore 92x = 4255 \\\\ \\therefore x = \\frac{4255}{92}= 46.25 metres`
+      answer: "39.40 \\text{ metres}",
+      working: `\\text{% error } = \\frac{\\text{error}}{\\text{true measurement}} \\times 100\\\\ 8 = \\frac{ 42.55 -x}{x} \\times 100 \\\\ \\text{(We assume the actual measurement} \\\\ \\text{was x metres)}\\\\ \\therefore 8x = 4255 - 100x\\\\ \\therefore 108x = 4255 \\\\ \\therefore x = \\frac{4255}{108}= 39.40 \\text{ metres}`
     },
     {
       id: "Q8",
