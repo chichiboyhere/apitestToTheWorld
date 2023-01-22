@@ -84,10 +84,13 @@ const Navbar = () => {
                     <Link to="/quantitativeTestSix"  className="dropdown-content-mobile__li">Fractions</Link><hr></hr>
                     <Link to="/quantitativeTestSeven"  className="dropdown-content-mobile__li">Decimals & Approx.</Link><hr></hr>
                     <Link to="/quantitativeTestEight"  className="dropdown-content-mobile__li">Percentage Error</Link><hr></hr>
-                    <Link to="/quantitativeTestNine"  className="dropdown-content-mobile__li">Percentage Miscellaneous</Link><hr></hr>
-                    <Link to="/quantitativeTestTen"  className="dropdown-content-mobile__li">Indices</Link><hr></hr>
-                    <Link to="/quantitativeTestEleven"  className="dropdown-content-mobile__li">Indicial Equations</Link><hr></hr>
-                    <Link to="/quantitativeTestTwelve"  className="dropdown-content-mobile__li">Logarithm</Link><hr></hr>
+                    <Link to="/quantitativeTestNine"  className="dropdown-content-mobile__li">Percentage Profit and Loss</Link><hr></hr>
+                    <Link to="/quantitativeTestTen"  className="dropdown-content-mobile__li">Percentage Miscellaneous</Link><hr></hr>
+                    <Link to="/quantitativeTestEleven"  className="dropdown-content-mobile__li">Rate</Link><hr></hr>
+                    <Link to="/quantitativeTestTwelve"  className="dropdown-content-mobile__li">Proportion</Link><hr></hr>
+                    <Link to="/quantitativeTestThirteen"  className="dropdown-content-mobile__li">Indices</Link><hr></hr>
+                    <Link to="/quantitativeTestFourteen"  className="dropdown-content-mobile__li">Indicial Equations</Link><hr></hr>
+                    <Link to="/quantitativeTestFifteen"  className="dropdown-content-mobile__li">Logarithm</Link><hr></hr>
                   </div>}
               </li>
               <li>
@@ -142,10 +145,13 @@ const Navbar = () => {
                     <Link to="/quantitativeTestSix"  className="dropdown-content__li">  Fractions</Link>
                     <Link to="/quantitativeTestSeven"  className="dropdown-content__li">Decimals & Approx.</Link>
                     <Link to="/quantitativeTestEight"  className="dropdown-content__li">Percentage Error</Link>
-                    <Link to="/quantitativeTestNine"  className="dropdown-content__li">Percentage Miscellaneous</Link>
-                    <Link to="/quantitativeTestTen"  className="dropdown-content__li">Indices</Link>
-                    <Link to="/quantitativeTestEleven"  className="dropdown-content__li">Indicial Equations</Link>
-                    <Link to="/quantitativeTestTwelve"  className="dropdown-content__li">Logarithm</Link>
+                    <Link to="/quantitativeTestNine"  className="dropdown-content__li">Percentage Profit and Loss</Link>
+                    <Link to="/quantitativeTestTen"  className="dropdown-content__li">Percentage Miscellaneous</Link>
+                    <Link to="/quantitativeTestEleven"  className="dropdown-content__li">Rate</Link>
+                    <Link to="/quantitativeTestTwelve"  className="dropdown-content__li">Proportion</Link>
+                    <Link to="/quantitativeTestThirteen"  className="dropdown-content__li">Indices</Link>
+                    <Link to="/quantitativeTestFourteen"  className="dropdown-content__li">Indicial Equations</Link>
+                    <Link to="/quantitativeTestFifteen"  className="dropdown-content__li">Logarithm</Link>
                   </div>
               </div>
               <div className="dropdown">

@@ -13,123 +13,123 @@ import Message from "../UI/Message";
 const questions = [
     {
       id: "Q1",
-      text: `\\text{The time taken to do a piece of work is inversely proportional to the number of men employed. If it takes 30 men to do a piece of work in 6 days, how many men are required to do the work in 4 days?} UME`,
+      text: `\\text{The time taken to do a piece of work} \\\\ \\text{is inversely proportional to the number of men}\\\\ \\text{employed.If it takes 30 men to do a piece of work} \\\\ \\text{in 6 days, how many men are required to do} \\\\ \\text{the work in 4 days?   (UME)}`,
       options: [
         { id: 0, text: "20", isCorrect: false },
         { id: 1, text: "35", isCorrect: false },
-        { id: 2, text: "45", isCorrect: false },
-        { id: 3, text: "60", isCorrect: true },
+        { id: 2, text: "45", isCorrect: true },
+        { id: 3, text: "60", isCorrect: false },
       ],
-      answer: "88",
-      working: ``
+      answer: "45",
+      working: `\\text{time, t} \\propto \\frac{1}{ \\text{ number of men, n}} \\\\ \\therefore \\frac{t_1}{t_2} = \\frac{n_2}{n_1} \\\\ \\frac{6}{4} = \\frac{n_2}{30} \\\\ \\text{On cross-multiplying: }4n_2 = 6 \\times 30 \\\\ \\therefore  n_2 = \\frac{180}{4} = 45 men`
     },
     {
       id: "Q2",
       text: `\\text{Mohammed is 8 years older than Joy }  \\\\ \\text{now. In five years’ time he will be}\\\\ \\text{ twice as old as Joy.} \\\\ \\text{ How old is Joy now? }  \\text{ (NECO)}`,
       options: [
-        { id: 0, text: "1 1/2years", isCorrect: false },
-        { id: 1, text: "3years", isCorrect: false },
-        { id: 2, text: "4 1/2years", isCorrect: true },
-        { id: 3, text: "6 years  E. 8 years", isCorrect: false },
+        { id: 0, text: "1 \\frac{1}{2}\\text{ years}", isCorrect: false },
+        { id: 1, text: "3 \\text{ years}", isCorrect: true },
+        { id: 2, text: "4 \\frac{1}{2}\\text{ years}", isCorrect: false },
+        { id: 3, text: "6 \\text{ years}", isCorrect: false },
       ],
-      answer: "0.00520",
-      working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
+      answer: "3 \\text{ years}",
+      working: `\\text{Let Joy's present age be x years old} \\\\ \\therefore \\text{Mohammed is (x + 8) years} \\\\ \\text{In 5 years' time: } \\\\ \\text{Joy's age } = x + 5 \\\\ \\text{And Mohammed's age } = x + 8 + 5 = x + 13 \\\\ \\text{So the relationship between their ages:} x + 13 = 2(x + 5) \\\\ \\therefore x + 13 = 2x + 10 \\\\ \\therefore x = 3 \\text{ years}`
     },
     {
       id: "Q3",
-      text: `\\text{I am x years old and my brother} \\\\ \\text{is 3 years older how old} \\\\ \\text{was my brother last year}  \\text{  (WASSCE)}`,
+      text: `\\text{I am x years old and my brother} \\\\ \\text{is 3 years older, how old} \\\\ \\text{was my brother last year}  \\text{  (WASSCE)}`,
       options: [
-        { id: 0, text: "(x - 4) years", isCorrect: false },
-        { id: 1, text: "(x + 2) years", isCorrect: true },
-        { id: 2, text: "(3x - 1) years", isCorrect: false },
-        { id: 3, text: "(3x + 1) years", isCorrect: false },
+        { id: 0, text: "\\text{(x - 4) years}", isCorrect: false },
+        { id: 1, text: "\\text{(x + 2) years}", isCorrect: true },
+        { id: 2, text: "\\text{(3x - 1) years}", isCorrect: false },
+        { id: 3, text: "\\text{(3x + 1) years}", isCorrect: false },
       ],
-      answer: "12.4127",
-      working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
+      answer: "\\text{(x + 2) years}",
+      working: `\\text{If I am x years old, my brother, 3 years} \\\\ \\text{older, is (x + 3) years} \\\\ \\therefore \\text{My brother's age last year: (x + 2) years} `
     },
     {
       id: "Q4",
-      text: `\\text{A car uses one litre of petrol for every 14km. If one of petrol cost N63.00, how far can the car go with N900.00 worth of petrol? } WASSCE`,
+      text: `\\text{A car uses one litre of petrol for every 14km.} \\\\ \\text{If 1 litre of petrol costs N63.00, how far can} \\\\ \\text{the car go with N900.00 worth of petrol?  (WASSCE)}`,
       options: [
-        { id: 0, text: "420km", isCorrect: true },
+        { id: 0, text: "420km", isCorrect: false },
         { id: 1, text: "405km", isCorrect: false },
         { id: 2, text: "210km", isCorrect: false },
-        { id: 3, text: "200km", isCorrect: false },
+        { id: 3, text: "200km", isCorrect: true },
       ],
-      answer: "1",
-      working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
+      answer: "200km",
+      working: `\\text{Number of litres obtainable with N900:} \\\\ \\frac{900}{63} = 14.286 \\\\ \\therefore \\text{The number of km possible on 14.286 litres} \\\\ \\text{of petrol } = 14.286 \\times 14 = 200\\text{km} `
     },
     {
       id: "Q5",
-      text: `\\text{ Sonny is twice as old as Wale. Four years ago, he was four times as old as Wale. When will the sum of their ages be 66?} WASSCE`,
+      text: `\\text{Sonny is twice as old as Wale. Four years} \\\\ \\text{ago, he was four times as old as Wale.} \\\\ \\text{When will the sum of their ages be 66? (WASSCE)}`,
       options: [
-        { id: 0, text: "24", isCorrect: false },
+        { id: 0, text: "24", isCorrect: true },
         { id: 1, text: "25", isCorrect: false },
-        { id: 2, text: "26", isCorrect: true },
+        { id: 2, text: "26", isCorrect: false },
         { id: 3, text: "27", isCorrect: false },
       ],
-      answer: "\\frac{1}{3^{10}}",
-      working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`
+      answer: "24",
+      working:`\\text{Let Wale's present age be x years old} \\\\ \\therefore \\text{Sonny is 2x years} \\\\ \\text{4 years ago: } \\\\ \\text{Wale's age } = x - 4 \\\\ \\text{And Sonny's age } = 2x - 4 \\\\ \\text{So the relationship between their ages:} 2x -4 = 4(x - 4) \\\\ \\text{i.e Sonny was 4 times as old as Wale} \\\\ \\therefore 2x -4  = 4x - 16 \\\\ \\therefore 2x = 16 - 4= 12 \\\\ \\therefore x = 12/2 = 6 \\\\ \\text{So Wale is 6 years old and Sonny, 12} \\\\ \\text{In y years' time(a future time):} \\\\ \\text{Wale's age = 6 + y and Sonny's age = 12 + y} \\\\ \\therefore 6 + y + 12 + y = 66 \\\\ 2y = 66 - 18 = 48 \\\\ \\therefore y = 24`
     },
     {
       id: "Q6",
-      text: `Tom will be 25 years old in n years' time. If he is 5 years younger than Bade's present age. WASSCE`,
+      text: `\\text{Tom will be 25 years old in n years' time.} \\\\ \\text{If he is 5 years younger than Bade.} \\\\ \\text{What is Bade's present} \\\\ \\text{ age.  (WASSCE)}`,
       options: [
-        { id: 0, text: "(30 - n)years", isCorrect: true },
-        { id: 1, text: "(20 - n)years", isCorrect: false },
-        { id: 2, text: "(25 - n)years", isCorrect: false },
-        { id: 3, text: "(30 + n)years", isCorrect: false },
+        { id: 0, text: "\\text{(30 - n) years}", isCorrect: true },
+        { id: 1, text: "\\text{(20 - n) years}", isCorrect: false },
+        { id: 2, text: "\\text{(25 - n) years}", isCorrect: false },
+        { id: 3, text: "\\text{(30 + n) years}", isCorrect: false },
       ],
-      answer: "205",
-      working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
+      answer: "\\text{(30 - n) years}",
+      working:`\\text{Since Tom will be 25 years old in n years' time, } \\\\ \\text{his present age = 25 - n} \\\\ \\text{But Tom is 5 years younger than Bade} \\\\ \\text{So Bade's age is (30 - n) years}`
     },
     {
       id: "Q7",
-      text: `\\text{Halima is n years old. Her brother's age is 5 years more than half of her age. How old is her brother? } \\\\ \\text{(WASSCE)} `,
+      text: `\\text{Halima is n years old. Her brother's} \\\\ \\text{age is 5 years more than half of her age.} \\\\ \\text{How old is her brother? } \\\\ \\text{(WASSCE)} `,
       options: [
-        { id: 0, text: "n/2+5/2", isCorrect: true },
-        { id: 1, text: "n/2 - 5", isCorrect: false },
-        { id: 2, text: " 5 - n/2", isCorrect: false },
-        { id: 3, text: "n/2 + 5", isCorrect: false },
+        { id: 0, text: "\\frac{n}{2} + \\frac{n}{5}", isCorrect: false },
+        { id: 1, text: "\\frac{n}{2} - 5", isCorrect: false },
+        { id: 2, text: "5 - \\frac{n}{2}", isCorrect: false },
+        { id: 3, text: "\\frac{n}{2} + 5", isCorrect: true },
       ],
-      answer: "10^{-5}",
-      working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
+      answer: "\\frac{n}{2} + 5",
+      working: `\\text{Halima's age: n years } \\\\ \\text{Her brother's age: } \\frac{n}{2} + 5`
     },
     {
       id: "Q8",
-      text: `\\text{Evaluate } \\frac{0.04 \\times 0.123}{0.34 \\times 72000 }\\\\ \\text{Leave your answer in standard} \\\\ \\text{form correct to 2 significant} \\\\ \\text{figures} `,
+      text: `\\text{Five years ago, a mother was 5 times}\\\\ \\text{as old as her daughter. In 10 years' time,} \\\\ \\text{the mother will be twice as old as the daughter.} \\\\ \\text{How old are they at the moment?} `,
       options: [
-        { id: 0, text: "2.0 \\times 10^{-3} ", isCorrect: false },
-        { id: 1, text: "2.0 \\times 10^{-5} ", isCorrect: false },
-        { id: 2, text: "2.0 \\times 10^{-7} ", isCorrect: true },
-        { id: 3, text: "2.0 \\times 10^{-9} ", isCorrect: false },
+        { id: 0, text: "15, 45", isCorrect: false },
+        { id: 1, text: "5, 25", isCorrect: false },
+        { id: 2, text: "10, 40", isCorrect: false },
+        { id: 3, text: "10, 30", isCorrect: true },
       ],
-      answer: "2.0 \\times 10^{-7} ",
-      working:`\\frac{0.04 \\times 0.123}{0.34 \\times 72000 } \\\\= \\frac{0.00492}{24480 } \\\\= 0.000 000 201 \\\\= 0.000 000 20 \\text{ (to 2 s.f)} \\\\= 2.0 \\times 10^{-7}  \\text{( standard form)} `
+      answer: "10, 30",
+      working:`\\text{Let daughter's present age be x yrs} \\\\ \\text{And mother's present age, y yrs}\\\\ \\text{5 yrs' ago:} \\\\ \\text{daughter's age = x - 5} \\\\ \\text{mother's age = y - 5} \\\\ \\text{So the relationship between their ages:} \\\\ y - 5 = 5(x -5) \\\\ y - 5 = 5x - 25 \\\\ 5x -y = 20 \\text{...(1)} \\\\ \\text{In 10 years' time: } \\\\ \\text{daughter's age = x + 10}\\\\ \\text{and mother's age = y + 10} \\\\ \\text{So the relationship between their ages:} y + 10 = 2(x + 10) \\\\ y + 10 = 2x + 20 \\\\ \\therefore 2x - y = - 10 \\text{...(2)} \\\\ \\text{Subtracting eqn(1) from eqn(2):} 3x = 30 \\\\ \\therefore x = 10 \\\\ \\text{and putting x = 10 in eqn(1), we get:} \\\\ 5(10) - y = 20  \\\\ \\therefore y = 30 \\\\ \\text{So daughter's age is 10 years}\\\\ \\text{While mother's age is 30 years}`
     },
     {
       id: "Q9",
-      text: `\\text{Express the product of 41.56 and 4.12 }  \\\\  \\text{to 4 s.f and 2 d.p and find the } \\\\ \\text{difference between the two outcomes  } \\\\ \\text{in standard form}`,
+      text: `\\text{Four men do a piece of work in 12 days.} \\\\ \\text{How many days do 6 men, working at }\\\\ \\text{the same rate, do the work?}`,
       options: [
-        { id: 0, text: "1.72 \\times 10^{-2}", isCorrect: false },
-        { id: 1, text: "1.7 \\times 10^{-2}", isCorrect: false },
-        { id: 2, text: "2.2 \\times 10^{-2}", isCorrect: false },
-        { id: 3, text: "2 \\times 10^{-2}", isCorrect: true },
+        { id: 0, text: "8", isCorrect: true },
+        { id: 1, text: "6", isCorrect: false },
+        { id: 2, text: "10", isCorrect: false },
+        { id: 3, text: "12", isCorrect: false },
       ],
-      answer: "2 \\times 10^{-2}",
-      working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `
+      answer: "8",
+      working: `\\text{time, t} \\propto \\frac{1}{number of men, n} \\\\ \\therefore \\frac{t_1}{t_2} = \\frac{n_2}{n_1} \\\\ \\frac{12}{t_2} = \\frac{6}{4} \\\\ \\text{On cross-multiplying: }6t_2 = 12 \\times 4 \\\\ \\therefore  t_2 = \\frac{48}{6} = 8 \\text{ men}`
     },
     {
       id: "Q10",
-      text: `\\frac{0.000335}{145000} = x \\times 10^y  \\text{ where } \\\\ 1 \\leqslant x < 10  \\text{ and y is a whole number.} \\\\ \\text{ Find the values of x and y.}`,
+      text: `\\text{When a long bar soap is cut into two equal parts,} \\\\ \\text{each piece is 25cm long. What is the length of each} \\\\ \\text{piece is the bar soap is cut into 4 parts instead?}`,
       options: [
-        { id: 0, text: "x = 2.13 \\text{ and } y = -9", isCorrect: false },
-        { id: 1, text: "x = 2.31 \\text{ and } y = -9", isCorrect: true },
-        { id: 2, text: "x = 2.31 \\text{ and } y = -10", isCorrect: false },
-        { id: 3, text: "x = 2.11 \\text{ and } y = -11", isCorrect: false },
+        { id: 0, text: "15\\text{ cm long}", isCorrect: false },
+        { id: 1, text: "25\\text{ cm long}", isCorrect: false },
+        { id: 2, text: "5\\text{ cm long}", isCorrect: false },
+        { id: 3, text: "12.5\\text{ cm long}", isCorrect: true },
       ],
-      answer: "x = 2.31 \\text{ and } y = -9",
-      working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`
+      answer: "12.5\\text{ cm long}",
+      working:`\\text{Since each of the two equal pieces is 25cm,} \\\\ \\text{the entire bar soap is 50cm long} \\\\ \\text{So if it is cut into 4 equal parts, each piece is } \\frac{50cm}{4} = 12.5\\text{ cm long}`
     },
   ];
   

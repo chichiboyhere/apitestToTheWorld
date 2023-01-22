@@ -15,123 +15,123 @@ const questions = [
       id: "Q1",
       text: `\\text{If N225.00 yields N27.00 in x years} \\\\ \\text{ simple interest at the rate of 4% per}\\\\ \\text{ annum, find x } \\text{ (UME)}`,
       options: [
-        { id: 0, text: "3", isCorrect: false },
+        { id: 0, text: "3", isCorrect: true },
         { id: 1, text: "4", isCorrect: false },
         { id: 2, text: "12", isCorrect: false },
-        { id: 3, text: "7", isCorrect: true },
+        { id: 3, text: "7", isCorrect: false },
       ],
-      answer: "88",
-      working: `\\sqrt{31.42 \\times 60.32 } = \\sqrt{1895.2544} \\\\= 43.5345 \\\\= 44 \\text{ (correct to 2 s.f) } \\\\= 43.5 \\text{(correct to 1 d.p) } \\\\  \\therefore \\text{ their sum } = 44 + 43.5 = 87.5 \\\\= 88 \\text{(correct to the nearest whole number) } `
+      answer: "3",
+      working: `\\text{Simple Interest, I} =\\frac{PRT}{100}\\\\ \\text{(where P = principal, R = rate, T = time)} \\\\  \\therefore 27 = \\frac{225 \\times 4 \\times x}{100} \\\\ 27 = \\frac{900x}{100} \\\\ 27 = 9x \\\\ \\therefore x =3`
     },
     {
       id: "Q2",
       text: `\\text{Find the principal which amounts} \\\\ \\text{to N5,500 at a simple interest in} \\\\ \\text{ 5 years at 2% per annum.} \\text{ (UME)}`,
       options: [
         { id: 0, text: "N4,900", isCorrect: false },
-        { id: 1, text: "N5,000", isCorrect: false },
-        { id: 2, text: "N4,700", isCorrect: true },
+        { id: 1, text: "N5,000", isCorrect: true },
+        { id: 2, text: "N4,700", isCorrect: false },
         { id: 3, text: "N4,800", isCorrect: false },
       ],
-      answer: "0.00520",
-      working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
+      answer: "N5,000",
+      working: `\\text{Using, I} =\\frac{PRT}{100}\\\\ \\text{Amount, A = P + I} \\\\  \\therefore \\text{A - P} =\\frac{PRT}{100} \\\\ 5500 - P = \\frac{P \\times 2 \\times 5}{100} \\\\ 5500 - P = \\frac{P}{10} \\\\ \\text{On cross-multiplying:} \\\\ 55000 - 10P = P\\therefore 11P  = 55000 \\\\ \\therefore P = N5,000`
     },
     {
       id: "Q3",
-      text: `\\text{If the interest on N150.00 for} 2\\frac{1}{2} \\\\ \\text{years is N4.50, find the interest on} \\\\ \\text{N250.00 for 6 months at the same rate } \\\\  \\text{  (UME)}`,
+      text: `\\text{If the interest on N150.00 for } 2\\frac{1}{2} \\\\ \\text{years is N4.50, find the interest on} \\\\ \\text{N250.00 for 6 months at the same rate } \\\\  \\text{  (UME)}`,
       options: [
-        { id: 0, text: "N1.50", isCorrect: false },
-        { id: 1, text: "N7.50", isCorrect: true },
+        { id: 0, text: "N1.50", isCorrect: true },
+        { id: 1, text: "N7.50", isCorrect: false },
         { id: 2, text: "N15.00", isCorrect: false },
         { id: 3, text: "N18.00", isCorrect: false },
       ],
-      answer: "12.4127",
-      working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
+      answer: "N1.50",
+      working: `\\text{From, I} =\\frac{PRT}{100} \\\\ R =\\frac{100I}{PT} \\\\ R =\\frac{100 \\times 4.5}{150 \\times \\frac{5}{2} }
+      \\\\ =\\frac{450}{375} = 1.2\\text{%} \\\\ \\text{So at the same rate } I = \\frac{250 \\times 1.2 \\times 1 }{100 \\times 2} \\\\ \\text{Note: 6 months is changed to } \\frac{1}{2} year \\\\ \\therefore I = \\frac{25 \\times 12 }{100 \\times 2} = N1.50`
     },
     {
       id: "Q4",
-      text: `\\text{calculate the simple interest on N7,500 for 8 years at 5% per annum } UME`,
+      text: `\\text{calculate the simple interest on N7,500}  \\\\ \\text{for 8 years at 5% per annum  (UME)} `,
       options: [
         { id: 0, text: "N3,000", isCorrect: true },
         { id: 1, text: "N600", isCorrect: false },
         { id: 2, text: "N300", isCorrect: false },
         { id: 3, text: "N150", isCorrect: false },
       ],
-      answer: "1",
-      working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
+      answer: "N3,000",
+      working: `\\text{Using, I} =\\frac{PRT}{100} \\\\ I = \\frac{7,500 \\times 5 \\times 8}{100} \\\\ = 75 \\times 40 = N3,000`
     },
     {
       id: "Q5",
-      text: ` \\text{At what rate will the interest on N400 increases to N24 in 3 years reckoning in simple interest?
-
-      } UME`,
+      text: ` \\text{At what rate will the interest on N400}  \\\\ \\text{increases to N24 in 3 years reckoning} \\\\ \\text{ in simple interest? (UTME)}`,
       options: [
-        { id: 0, text: "3%", isCorrect: false },
-        { id: 1, text: "2%", isCorrect: false },
-        { id: 2, text: "5%", isCorrect: true },
-        { id: 3, text: "4%", isCorrect: false },
+        { id: 0, text: "3\\text{%}", isCorrect: false },
+        { id: 1, text: "2\\text{%}", isCorrect: true },
+        { id: 2, text: "5\\text{%}", isCorrect: false },
+        { id: 3, text: "4\\text{%}", isCorrect: false },
       ],
-      answer: "\\frac{1}{3^{10}}",
-      working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`
+      answer: "2\\text{%}",
+      working:`\\text{From, I} =\\frac{PRT}{100} \\\\ R =\\frac{100I}{PT} \\\\ R =\\frac{100 \\times 24}{400 \\times 3 } = 2\\text{%}
+      `
     },
     {
       id: "Q6",
-      text: `\\text{A man invested N5,000 for 9 months at 4%. What is the simple interest?}  \\text{ (UME) }`,
+      text: `\\text{A man invested N5,000 for 9 months at 4%.} \\\\ \\text{What is the simple interest?}  \\text{ (UME)}`,
       options: [
         { id: 0, text: "N150", isCorrect: true },
         { id: 1, text: "N220", isCorrect: false },
         { id: 2, text: "N130", isCorrect: false },
         { id: 3, text: "N250", isCorrect: false },
       ],
-      answer: "205",
-      working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
+      answer: "N150",
+      working:`\\text{Using, I} =\\frac{PRT}{100} \\\\ I = \\frac{5000 \\times 9 \\times 4}{100 \\times 12} \\\\ \\text{Note: 9 months =} \\frac{9}{12} \\text{ year} \\\\ \\therefore I = N150`
     },
     {
       id: "Q7",
-      text: `\\text{Calculate the time taken for N3000 to earn N600 if invested at 8% simple interest} UME`,
+      text: `\\text{Calculate the time taken for N3000}\\\\ \\text{to earn N600 if invested at 8% } \\\\ \\text{simple interest.  (UME)}`,
       options: [
-        { id: 0, text: "2 1/2 years}", isCorrect: true },
+        { id: 0, text: "2\\frac{1}{2} \\text{ years}", isCorrect: true },
         { id: 1, text: "3 years", isCorrect: false },
-        { id: 2, text: "3 1/2 years", isCorrect: false },
-        { id: 3, text: "1 1/2 years", isCorrect: false },
+        { id: 2, text: "3\\frac{1}{2} \\text{ years}", isCorrect: false },
+        { id: 3, text: "1\\frac{1}{2} \\text{ years}", isCorrect: false },
       ],
-      answer: "10^{-5}",
-      working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
+      answer: "2\\frac{1}{2} \\text{ years}",
+      working: `\\text{From, I} =\\frac{PRT}{100} \\\\ T =\\frac{100I}{PR} \\\\ T =\\frac{100 \\times 600}{3000 \\times 8} \\\\ \\therefore T = \\frac{5}{2} = 2\\frac{1}{2} \\text{ years}`
     },
     {
       id: "Q8",
-      text: `\\text{Find at which rate per annum simple interest N525 will amount to N588 in 3 years.} \\\\ \\text{(UTME)} `,
+      text: `\\text{Find at which rate per annum simple} \\\\ \\text{interest will N525 amount to N588 in 3 years.} \\\\ \\text{(UTME)} `,
       options: [
-        { id: 0, text: "3% ", isCorrect: false },
-        { id: 1, text: "2%", isCorrect: false },
-        { id: 2, text: "5%", isCorrect: true },
-        { id: 3, text: "4%", isCorrect: false },
+        { id: 0, text: "3\\text{%}", isCorrect: false },
+        { id: 1, text: "2\\text{%}", isCorrect: false },
+        { id: 2, text: "5\\text{%}", isCorrect: false },
+        { id: 3, text: "4\\text{%}", isCorrect: true },
       ],
-      answer: "2.0 \\times 10^{-7} ",
-      working:`\\frac{0.04 \\times 0.123}{0.34 \\times 72000 } \\\\= \\frac{0.00492}{24480 } \\\\= 0.000 000 201 \\\\= 0.000 000 20 \\text{ (to 2 s.f)} \\\\= 2.0 \\times 10^{-7}  \\text{( standard form)} `
+      answer: "4\\text{%}",
+      working:`\\text{From, I} =\\frac{PRT}{100} \\\\ R =\\frac{100I}{PT} \\\\ R =\\frac{100 \\times (588 - 525)}{525 \\times 3 } \\\\ \\text{Note: The interest = A - P =  588 - 525} \\\\ \\therefore R =\\frac{100 \\times 63}{1575}  \\\\  R = 4\\text{%}`
     },
     {
       id: "Q9",
-      text: `\\text{Express the product of 41.56 and 4.12 }  \\\\  \\text{to 4 s.f and 2 d.p and find the } \\\\ \\text{difference between the two outcomes  } \\\\ \\text{in standard form}`,
+      text: `\\text{A sum of N100,000 was saved between banks}  \\\\  \\text{A and B such that the total interest got at } \\\\ \\text{the end of a year was N2,750.} \\\\ \\text{If bank A paid simple interest at the rate} \\\\ \\text{of 2% per annum and bank B paid simple} \\\\ \\text{ interest at 3% per annum, how much} \\\\ \\text{was deposited in bank B?}`,
       options: [
-        { id: 0, text: "1.72 \\times 10^{-2}", isCorrect: false },
-        { id: 1, text: "1.7 \\times 10^{-2}", isCorrect: false },
-        { id: 2, text: "2.2 \\times 10^{-2}", isCorrect: false },
-        { id: 3, text: "2 \\times 10^{-2}", isCorrect: true },
+        { id: 0, text: "N65,000", isCorrect: false },
+        { id: 1, text: "N55,000", isCorrect: false },
+        { id: 2, text: "N75,000", isCorrect: true },
+        { id: 3, text: "N25,000", isCorrect: false },
       ],
-      answer: "2 \\times 10^{-2}",
-      working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `
+      answer: "N75,000",
+      working: `\\text{Let's assume Nx was deposited in bank B} \\\\ \\text{Hence N(100,000 - x) was deposited in A} \\\\ \\frac{(100,000 -x) \\times 2 \\times 1}{100} + \\frac{x \\times 3 \\times 1}{100} = 2,750\\\\ 200,000 - 2x + 3x = 275,000 \\text{(Multiply thro' by 100)}\\\\ \\therefore x = N75,000 \\\\ \\text{So N75,000 was depoisted in bank B}`
     },
     {
       id: "Q10",
-      text: `\\frac{0.000335}{145000} = x \\times 10^y  \\text{ where } \\\\ 1 \\leqslant x < 10  \\text{ and y is a whole number.} \\\\ \\text{ Find the values of x and y.}`,
+      text: `\\text{A bank pays simple interest at the rate of } 1\\frac{1}{2}\\text{%} \\\\ \\text{ per annum on savings accounts.}\\\\ \\text{Suppose Chinedu opens a savings account} \\\\ \\text{with the bank on January 1, 2023 whereupon} \\\\ \\text{he deposits a sum of N50,000. How much does} \\\\ \\text{his account balance read by December 31, 2023,} \\\\ \\text{if he does not make any withdrawals or} \\\\ \\text{further deposits throughout the year?}`,
       options: [
-        { id: 0, text: "x = 2.13 \\text{ and } y = -9", isCorrect: false },
-        { id: 1, text: "x = 2.31 \\text{ and } y = -9", isCorrect: true },
-        { id: 2, text: "x = 2.31 \\text{ and } y = -10", isCorrect: false },
-        { id: 3, text: "x = 2.11 \\text{ and } y = -11", isCorrect: false },
+        { id: 0, text: "N52,750", isCorrect: false },
+        { id: 1, text: "N50,750", isCorrect: true },
+        { id: 2, text: "N51,750", isCorrect: false },
+        { id: 3, text: "N50,500", isCorrect: false },
       ],
-      answer: "x = 2.31 \\text{ and } y = -9",
-      working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`
+      answer: "N50,750",
+      working:`\\text{Interest accrued } = \\frac{50,000 \\times 3 \\times  1}{100 \\times 2} = N750 \\\\ \\text{The account balance:} 50,000 + 750 = N50,750`
     },
   ];
   

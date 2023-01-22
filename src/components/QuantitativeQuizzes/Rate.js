@@ -22,115 +22,115 @@ const questions = [
         
       ],
       answer: "20.8m/s",
-      working: `\\sqrt{31.42 \\times 60.32 } = \\sqrt{1895.2544} \\\\= 43.5345 \\\\= 44 \\text{ (correct to 2 s.f) } \\\\= 43.5 \\text{(correct to 1 d.p) } \\\\  \\therefore \\text{ their sum } = 44 + 43.5 = 87.5 \\\\= 88 \\text{(correct to the nearest whole number) } `
+      working: `\\text{ ave. speed(in m/s)} = \\frac{75 km}{1 h} = \\frac{75 \\times 1000m}{60 \\times 60 s}  \\\\ = 20.8m/s`
     },
     {
       id: "Q2",
       text: `\\text{A train moving at a uniform speed} \\\\ \\text{covers 36km in 21 minutes. How} \\\\ \\text{long does it take to cover 60km? }  \\\\ \\text{ (WASSCE)}`,
       options: [
-        { id: 0, text: "35 mins", isCorrect: false },
-        { id: 1, text: "40 mins", isCorrect: false },
-        { id: 2, text: "45 mins", isCorrect: true },
-        { id: 3, text: "90 mins", isCorrect: false },
+        { id: 0, text: "35 \\text{ mins}", isCorrect: true },
+        { id: 1, text: "40 \\text{ mins}", isCorrect: false },
+        { id: 2, text: "45 \\text{ mins}", isCorrect: false },
+        { id: 3, text: "90 \\text{ mins}", isCorrect: false },
       ],
-      answer: "0.00520",
-      working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
+      answer: "35 \\text{ mins}",
+      working: `\\text{ uniform speed(in km/min)} = \\frac{36 km}{21 min} = \\frac{12}{7} km/min \\\\ \\therefore \\text{ time to cover 60 km} = \\frac{distance}{speed}\\\\= \\frac{60}{12/7} \\\\= 60 \\times \\frac{7}{12} = 35 \\text{ mins}`
     },
     {
       id: "Q3",
-      text: `\\text{A train travels 60km in M minutes. If its average speed is 400km per hour, find the value of M } \\\\ \\text{  (WASSCE)}`,
+      text: `\\text{A train travels 60km in M minutes.} \\\\ \\text{If its average speed is 400km per hour,} \\\\ \\text{ find the value of M } \\\\ \\text{  (WASSCE)}`,
       options: [
-        { id: 0, text: "8.8415", isCorrect: false },
-        { id: 1, text: "12.4127", isCorrect: true },
-        { id: 2, text: "124.1265", isCorrect: false },
-        { id: 3, text: "12.4120", isCorrect: false },
+        { id: 0, text: "chk wassce", isCorrect: false },
+        { id: 1, text: "chk wassce", isCorrect: true },
+        { id: 2, text: "chk wassce", isCorrect: false },
+        { id: 3, text: "chk wassce", isCorrect: false },
       ],
-      answer: "12.4127",
-      working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
+      answer: "9\\text{ mins}",
+      working: `\\text{ time M(mins)} = \\frac{distance}{speed}\\\\= \\frac{60 km}{400 kmh^{-1}} \\\\= 0.15 h \\\\= 0.15 \\times 60  \\\\= 9\\text{ mins}`
     },
     {
       id: "Q4",
-      text: `\\text{A man travels at a rate of 25m/sec. If he travels for 10½hrs, how many kilometres has he covered? NECO }`,
+      text: `\\text{A man travels at a rate of 25m/sec.} \\\\ \\text{If he travels for } 10 \\frac{1}{2} \\text{ hrs, how many}   \\\\ \\text{kilometres has he covered?  (NECO)}`,
       options: [
-        { id: 0, text: "1", isCorrect: true },
-        { id: 1, text: "2", isCorrect: false },
-        { id: 2, text: "877", isCorrect: false },
-        { id: 3, text: "1001", isCorrect: false },
+        { id: 0, text: "chk neco", isCorrect: true },
+        { id: 1, text: "chk neco", isCorrect: false },
+        { id: 2, text: "chk neco", isCorrect: false },
+        { id: 3, text: "chk neco", isCorrect: false },
       ],
       answer: "1",
-      working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
+      working: `\\text{distance = ave. speed } \\times \\text{time} \\\\ \\therefore \\text{distance} = 25 \\text{m}s^{-1} \\times 10 \\frac{1}{2} \\text{ hrs} \\\\ = 25 \\times 3.6 \\text{ km}h^{-1} \\times 10.5 hrs \\\\= 945\\text{ km} \\\\ \\text{Note: A quick way to convert speed(in m/s)} \\\\ \\text{to speed(in km/h) is to multiply by 3.6} \\\\ \\text{While converting from km/h to m/s} \\\\ \\text{requires dividing by 3.6}`
     },
     {
       id: "Q5",
-      text: ` \\text{ A boy walks 800m in 20 minutes. Calculate his average speed in Km/h } \\\\ `,
+      text: ` \\text{ A boy walks 800m in 20 minutes.} \\\\ \\text{ Calculate his average speed in Km/h } \\\\ `,
       options: [
-        { id: 0, text: "2.4", isCorrect: false },
+        { id: 0, text: "2.4", isCorrect: true },
         { id: 1, text: "4", isCorrect: false },
-        { id: 2, text: "24", isCorrect: true },
+        { id: 2, text: "24", isCorrect: false },
         { id: 3, text: "6", isCorrect: false },
       ],
-      answer: "\\frac{1}{3^{10}}",
-      working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`
+      answer: "2.4",
+      working:`\\text{average speed (in Km/h)} = \\frac{800 m}{20 min} \\\\ = \\frac{800 \\div 1000 \\text{ km}}{20 \\div 60 \\text{ h}} \\\\ = \\frac{0.8}{0.3333} \\\\ = 2.4`
     },
     {
       id: "Q6",
-      text: `\\text{Find correct to three significant } \\\\ \\text{figures, the value of } \\sqrt{41830} \\text{ (UME) }`,
+      text: `\\text{It takes Kunle, who works twice as} \\\\ \\text{fast as Sade, 6 days to accomplish a task.}\\\\ \\text{Working together, how long will} \\\\ \\text{it take both of them to do the work? }`,
       options: [
-        { id: 0, text: "205", isCorrect: true },
-        { id: 1, text: "647", isCorrect: false },
-        { id: 2, text: "2050", isCorrect: false },
-        { id: 3, text: "6470", isCorrect: false },
+        { id: 0, text: "12 \\text{ days}", isCorrect: false },
+        { id: 1, text: "18 \\text{ days}", isCorrect: false },
+        { id: 2, text: "4 \\text{ days}", isCorrect: true },
+        { id: 3, text: "3 \\text{ days}", isCorrect: false },
       ],
-      answer: "205",
-      working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
+      answer: "4 \\text{ days}",
+      working:` \\text{rate of work } \\propto \\frac{1}{\\text{time on work}} \\\\ \\text{ Kunle's time on work } = 6 \\text{ days} \\\\ \\therefore  \\text{ Sade's time on work } = 12 \\text{ days} \\text{ (Recall she} \\\\ \\text{works twice slower than Kunle)} \\\\ \\text{ Kunle's rate of work } = \\frac{1}{6} \\text{ per day} \\\\ \\text{ Sade's rate of work } = \\frac{1}{12} \\text{ per day} \\\\  \\therefore \\text{ their collective work rate} = \\frac{1}{6} + \\frac{1}{12} \\\\ = \\frac{2 + 1}{12} \\\\ = \\frac{1}{4} \\text{ per day} \\\\  \\therefore \\text{ their collective time on the work} = \\frac{4}{1} \\text{ days} = 4 \\text{ days}`
     },
     {
       id: "Q7",
-      text: `\\text{What is the difference between 0.007685} \\\\ \\text{correct to three significant figures} \\\\ \\text{and 0.007685 correct to four places } \\\\ \\text{of decimal?} `,
+      text: `\\text{Working alone, it takes Mr Sada 14 days to} \\\\ \\text{accomplish a task. When joined by his son,} \\\\ \\text{they both finish the same work in 10 days.} \\\\ \\text{How long will it take his son to do } \\\\ \\text{the work alone?}`,
       options: [
-        { id: 0, text: "10^{-5}", isCorrect: true },
-        { id: 1, text: "7 \\times 10^{-4}", isCorrect: false },
-        { id: 2, text: "8 \\times 10^{-5}", isCorrect: false },
-        { id: 3, text: "10^{-6}", isCorrect: false },
+        { id: 0, text: "45 \\text{ days}", isCorrect: false },
+        { id: 1, text: "21 \\text{ days}", isCorrect: false },
+        { id: 2, text: "70 \\text{ days}", isCorrect: false },
+        { id: 3, text: "35 \\text{ days}", isCorrect: true },
       ],
-      answer: "10^{-5}",
-      working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
+      answer: "35 \\text{ days}",
+      working: `\\text{If two persons A and B individually} \\\\ \\text{spend times } t_A \\text{ and } t_B \\\\ \\text{on a piece of work, then the } \\\\ \\text{collective time } t_C \\text{ they spend on the task} \\\\ \\text{is given by:}\\\\ \\frac{1}{t_C} = \\frac{1}{t_A} + \\frac{1}{t_B} \\\\  \\therefore \\text{in this instance, Mr Sada's time} = t_A = 14\\text{ days} \\\\ \\text{his son's time} = t_B = \\text{ ?} \\\\ \\text{but their collective time} = t_C = 10\\text{ days} \\\\ \\therefore \\text{using } \\frac{1}{t_C} = \\frac{1}{t_A} + \\frac{1}{t_B} \\\\ \\frac{1}{10} = \\frac{1}{14} + \\frac{1}{t_B} \\\\  \\therefore \\frac{1}{t_B} = \\frac{1}{10} - \\frac{1}{14} \\\\= \\frac{7 - 5}{70} \\\\= \\frac{1}{35}\\text{ per day} \\\\  \\therefore t_B = \\frac{35}{1} = 35\\text{ days} \\\\ \\therefore \\text{his son's time } = 35 \\text{ days}`
     },
     {
       id: "Q8",
-      text: `\\text{Evaluate } \\frac{0.04 \\times 0.123}{0.34 \\times 72000 }\\\\ \\text{Leave your answer in standard} \\\\ \\text{form correct to 2 significant} \\\\ \\text{figures} `,
+      text: `\\text{Tunde and Shola can do a piece of work in} \\\\ \\text{18 days. Tunde can do it alone in x days,} \\\\ \\text{while Shola take 15 days longer to do it alone.} \\\\ \\text{Which of the following equations} \\\\ \\text{is satisfied by x?} `,
       options: [
-        { id: 0, text: "2.0 \\times 10^{-3} ", isCorrect: false },
-        { id: 1, text: "2.0 \\times 10^{-5} ", isCorrect: false },
-        { id: 2, text: "2.0 \\times 10^{-7} ", isCorrect: true },
-        { id: 3, text: "2.0 \\times 10^{-9} ", isCorrect: false },
+        { id: 0, text: "x^2 - 5x - 18 = 0", isCorrect: false },
+        { id: 1, text: "x^2 - 20x + 360 = 0 ", isCorrect: false },
+        { id: 2, text: "x^2 - 21x - 270 = 0", isCorrect: true },
+        { id: 3, text: "2x^2 + 42x - 190 = 0", isCorrect: false },
       ],
-      answer: "2.0 \\times 10^{-7} ",
-      working:`\\frac{0.04 \\times 0.123}{0.34 \\times 72000 } \\\\= \\frac{0.00492}{24480 } \\\\= 0.000 000 201 \\\\= 0.000 000 20 \\text{ (to 2 s.f)} \\\\= 2.0 \\times 10^{-7}  \\text{( standard form)} `
+      answer: "x^2 - 21x - 270 = 0",
+      working:`\\text{Using } \\frac{1}{t_C} = \\frac{1}{t_A} + \\frac{1}{t_B}\\\\ \\text{(Where } t_A \\text{= time spent by Tunde} \\\\  t_B =\\text{time spent by Shola, while} \\\\  t_C =\\text{time spent by both of them)} \\\\ \\therefore  \\frac{1}{18} = \\frac{1}{x} + \\frac{1}{x + 15} \\\\  \\frac{1}{18} = \\frac{x + 15 + x}{x(x + 15)} \\\\ x(x + 15) = 18(2x + 15) \\\\ x^2 + 15x = 36x + 270 \\\\ \\therefore x^2 -21x -270 = 0`
     },
     {
       id: "Q9",
-      text: `\\text{Express the product of 41.56 and 4.12 }  \\\\  \\text{to 4 s.f and 2 d.p and find the } \\\\ \\text{difference between the two outcomes  } \\\\ \\text{in standard form}`,
+      text: `\\text{Cosmos ought to drive at an average speed }  \\\\  \\text{of } x kmh^{-1} \\text{ to cover a given distance } \\\\ \\text{in a scheduled period } \\\\ \\text{of 4 hours. If he goes } 10 kmh^{-1} \\text{ slower, } \\\\ \\text{he will be 1 hour late. Find x}`,
       options: [
-        { id: 0, text: "1.72 \\times 10^{-2}", isCorrect: false },
-        { id: 1, text: "1.7 \\times 10^{-2}", isCorrect: false },
-        { id: 2, text: "2.2 \\times 10^{-2}", isCorrect: false },
-        { id: 3, text: "2 \\times 10^{-2}", isCorrect: true },
+        { id: 0, text: "60 \\text{ km}h^{-1}", isCorrect: false },
+        { id: 1, text: "40 \\text{ km}h^{-1}", isCorrect: false },
+        { id: 2, text: "50 \\text{ km}h^{-1}", isCorrect: true},
+        { id: 3, text: "30 \\text{ km}h^{-1}", isCorrect: false },
       ],
-      answer: "2 \\times 10^{-2}",
-      working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `
+      answer: "50 \\text{ km}h^{-1}",
+      working: `\\text{Recall that } \\text{distance = ave. speed } \\times \\text{time} \\\\ \\therefore 4x = 5(x -10) \\\\ \\text{(The idea here is that even though} \\\\ \\text{ave. speed and time spent between two points} \\\\ \\text{may vary, the distance covered remains the} \\\\ \\text{same, provided one maintains the same route.))} \\\\ \\therefore 4x = 5x - 50 \\\\ \\therefore  x = 50 \\text{ km}h^{-1}`
     },
     {
       id: "Q10",
-      text: `\\frac{0.000335}{145000} = x \\times 10^y  \\text{ where } \\\\ 1 \\leqslant x < 10  \\text{ and y is a whole number.} \\\\ \\text{ Find the values of x and y.}`,
+      text: `\\text{In a 100m dash, athlete A gets a 5-second} \\\\  \\text{head start over athlete B. They run at } \\\\ \\text{average speeds 5 m/s and 10m/s respectively.} \\\\ \\text{How far is A from finish line at the time} \\\\ \\text{B just crosses it?}`,
       options: [
-        { id: 0, text: "x = 2.13 \\text{ and } y = -9", isCorrect: false },
-        { id: 1, text: "x = 2.31 \\text{ and } y = -9", isCorrect: true },
-        { id: 2, text: "x = 2.31 \\text{ and } y = -10", isCorrect: false },
-        { id: 3, text: "x = 2.11 \\text{ and } y = -11", isCorrect: false },
+        { id: 0, text: "25 m", isCorrect: true },
+        { id: 1, text: "30 m", isCorrect: false },
+        { id: 2, text: "75 m", isCorrect: false },
+        { id: 3, text: "50 m", isCorrect: false },
       ],
-      answer: "x = 2.31 \\text{ and } y = -9",
-      working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`
+      answer: "25 m",
+      working:`\\text{time spent on the race by:} \\\\ \\text{athlete A =} \\frac{distance}{ave. speed} = \\frac{100 m}{5} =20s \\\\ \\text{athlete B =} \\frac{distance}{ave. speed} = \\frac{100 m}{10}= 10s \\\\ \\therefore \\text{by the time B reaches finish line} \\\\ \\text{A has been running for 15s}  \\\\ \\text{(Recall A got a 5-second head start)}\\\\ \\text{And that means A has covered a distance }\\\\ \\text{= ave. speed } \\times \\text{ time} \\\\= 5 \\times 15 = 75m \\\\ \\text{which leaves him 25m behind B}`
     },
   ];
   

@@ -18,7 +18,10 @@ import Indices from "./components/QuantitativeQuizzes/Indices";
 import IndicialEquations from "./components/QuantitativeQuizzes/IndicialEquations";
 import Logarithm from "./components/QuantitativeQuizzes/Logarithm";
 import PercentageError from "./components/QuantitativeQuizzes/PercentageError";
+import ProfitAndLoss from "./components/QuantitativeQuizzes/ProfitAndLoss";
 import PercentagesMisc from "./components/QuantitativeQuizzes/PercentagesMisc";
+import Rate from "./components/QuantitativeQuizzes/Rate";
+import Proportion from "./components/QuantitativeQuizzes/Proportion"; 
 
 function App() {
   return (
@@ -37,10 +40,13 @@ function App() {
         <Route path='/quantitativeTestSix' component={Fractions} />
         <Route path='/quantitativeTestSeven' component={DecimalsAndApprox} />
         <Route path='/quantitativeTestEight' component={PercentageError} />
-        <Route path='/quantitativeTestNine' component={PercentagesMisc} />
-        <Route path='/quantitativeTestTen' component={Indices} />
-        <Route path='/quantitativeTestEleven' component={IndicialEquations} />
-        <Route path='/quantitativeTestTwelve' component={Logarithm} />
+        <Route path='/quantitativeTestNine' component={ProfitAndLoss} />
+        <Route path='/quantitativeTestTen' component={PercentagesMisc} />
+        <Route path='/quantitativeTestEleven' component={Rate} />
+        <Route path='/quantitativeTestTwelve' component={Proportion} />
+        <Route path='/quantitativeTestThirteen' component={Indices} />
+        <Route path='/quantitativeTestFourteen' component={IndicialEquations} />
+        <Route path='/quantitativeTestFifteen' component={Logarithm} />
         <Route path='/numerationTest' component={StartTest} />
         <Route path='/contact' component={ContactPage} />
     </Layout>
