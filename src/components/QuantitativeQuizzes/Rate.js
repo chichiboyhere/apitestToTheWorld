@@ -98,7 +98,7 @@ const questions = [
     },
     {
       id: "Q8",
-      text: `\\text{Tunde and Shola can do a piece of work in} \\\\ \\text{18 days. Tunde can do it alone in x days,} \\\\ \\text{while Shola take 15 days longer to do it alone.} \\\\ \\text{Which of the following equations} \\\\ \\text{is satisfied by x?} `,
+      text: `\\text{Tunde and Shola can do a piece of work in} \\\\ \\text{18 days. Tunde can do it alone in x days,} \\\\ \\text{while Shola take 15 days longer to do it} \\\\ \\text{alone. Which of the following equations} \\\\ \\text{is satisfied by x?} `,
       options: [
         { id: 0, text: "x^2 - 5x - 18 = 0", isCorrect: false },
         { id: 1, text: "x^2 - 20x + 360 = 0 ", isCorrect: false },

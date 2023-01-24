@@ -17,119 +17,120 @@ const questions = [
       options: [
         { id: 0, text: "17\\sqrt{4}", isCorrect: false },
         { id: 1, text: "4\\sqrt{17}", isCorrect: false },
-        { id: 2, text: "17\\sqrt{2}", isCorrect: false },
-        { id: 3, text: "12\\sqrt{4}", isCorrect: true },
+        { id: 2, text: "17\\sqrt{2}", isCorrect: true },
+        { id: 3, text: "12\\sqrt{4}", isCorrect: false },
       ],
-      answer: "88",
-      working: `\\sqrt{31.42 \\times 60.32 } = \\sqrt{1895.2544} \\\\= 43.5345 \\\\= 44 \\text{ (correct to 2 s.f) } \\\\= 43.5 \\text{(correct to 1 d.p) } \\\\  \\therefore \\text{ their sum } = 44 + 43.5 = 87.5 \\\\= 88 \\text{(correct to the nearest whole number) } `
+      answer: "17\\sqrt{2}",
+      working: `5\\sqrt{18} - 3\\sqrt{72} + 4\\sqrt{50}\\\\ 5\\sqrt{9 \\times 2} - 3\\sqrt{36 \\times 2} + 4\\sqrt{25 \\times 2} \\\\ 5  \\times 3 \\sqrt{2} - 3 \\times 6 \\sqrt{2} + 4\\times 5\\sqrt{2} \\\\15\\sqrt{2} - 18\\sqrt{2} + 20\\sqrt{2} \\\\ 17\\sqrt{2}`
     },
     {
       id: "Q2",
       text: `\\text{Simplify } \\sqrt{48} - \\frac{9}{\\sqrt{3}} + \\sqrt{75} \\text{ (UME)}`,
       options: [
         { id: 0, text: "5\\sqrt{3}", isCorrect: false },
-        { id: 1, text: "6\\sqrt{3}", isCorrect: false },
-        { id: 2, text: "8\\sqrt{3}", isCorrect: true },
+        { id: 1, text: "6\\sqrt{3}", isCorrect: true },
+        { id: 2, text: "8\\sqrt{3}", isCorrect: false },
         { id: 3, text: "18\\sqrt{3}", isCorrect: false },
       ],
-      answer: "0.00520",
-      working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
+      answer: "6\\sqrt{3}",
+      working: `\\sqrt{48} - \\frac{9}{\\sqrt{3}} + \\sqrt{75} \\\\ \\sqrt{16 \\times 3} - \\frac{9}{\\sqrt{3}}\\frac{\\sqrt{3}}{\\sqrt{3}} + \\sqrt{25 \\times 3} \\\\ 4\\sqrt{3} - \\frac{9\\sqrt{3}}{3} + 5\\sqrt{3}  \\\\  9\\sqrt{3} - \\frac{9\\sqrt{3}}{3} \\\\  9\\sqrt{3} - 3\\sqrt{3} = 6\\sqrt{3} `
     },
     {
       id: "Q3",
       text: `\\text{Given that } \\sqrt{2}=1.414\\text{, find without} \\\\ \\text{using tables, the value of } \\frac{1}{\\sqrt{2}}  \\\\ \\text{(UME)}`,
       options: [
         { id: 0, text: "0.141", isCorrect: false },
-        { id: 1, text: "0.301", isCorrect: true },
+        { id: 1, text: "0.301", isCorrect: false },
         { id: 2, text: "0.667", isCorrect: false },
-        { id: 3, text: "0.707", isCorrect: false },
+        { id: 3, text: "0.707", isCorrect: true },
       ],
-      answer: "12.4127",
-      working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
+      answer: "0.707",
+      working: `\\frac{1}{\\sqrt{2}} \\\\ = \\frac{1}{\\sqrt{2}}\\frac{\\sqrt{2}}{\\sqrt{2}}  \\\\  \\text{ (Rationalizing the denominator) } \\\\ = \\frac{\\sqrt{2}}{2} \\\\ = \\frac{1.414}{2} \\\\ = 0.707`
     },
     {
       id: "Q4",
       text: `\\text{Given that } p = 1 + \\sqrt{2} \\\\ \\text{ and } q = 1 - \\sqrt{2} \\\\ \\text{ evaluate } \\frac{p^2 - q^2}{2pq} \\text{(UME)}`,
       options: [
-        { id: 0, text: "2\\bigl(2 + \\sqrt{2}\\bigr)", isCorrect: true },
+        { id: 0, text: "2\\bigl(2 + \\sqrt{2}\\bigr)", isCorrect: false },
         { id: 1, text: "-2\\bigl(2 + \\sqrt{2}\\bigr)", isCorrect: false },
         { id: 2, text: "2\\sqrt{2}", isCorrect: false },
-        { id: 3, text: "-2\\sqrt{2}", isCorrect: false },
+        { id: 3, text: "-2\\sqrt{2}", isCorrect: true },
       ],
-      answer: "1",
-      working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
+      answer: "-2\\sqrt{2}",
+      working: `\\frac{p^2 - q^2}{2pq} \\\\= \\frac{(1 + \\sqrt{2})^2 - (1 - \\sqrt{2})^2}{2(1 + \\sqrt{2})(1 - \\sqrt{2})} \\\\= \\frac{(1 + 2\\sqrt{2} + 2) - (1 - 2\\sqrt{2} + 2)}{2(1 -2)} \\\\= \\frac{1 + 2\\sqrt{2} + 2 - 1 + 2\\sqrt{2} - 2)}{-2} \\\\= \\frac{ 4\\sqrt{2}}{-2} \\\\= -2\\sqrt{2}`
     },
     {
       id: "Q5",
       text: `\\text{Simplify }\\frac{2\\sqrt{3}+3\\sqrt{5}}{3\\sqrt{5}-2\\sqrt{3}} \\text{(UME)}`,
       options: [
         { id: 0, text: "\\frac{19 +4\\sqrt{25}}{11}", isCorrect: false },
-        { id: 1, text: "\\frac{19 +4\\sqrt{15}}{11}", isCorrect: false },
-        { id: 2, text: "\\frac{19 +2\\sqrt{15}}{11}", isCorrect: true },
+        { id: 1, text: "\\frac{19 +4\\sqrt{15}}{11}", isCorrect: true },
+        { id: 2, text: "\\frac{19 +2\\sqrt{15}}{11}", isCorrect: false },
         { id: 3, text: "\\frac{19 +2\\sqrt{15}}{19}", isCorrect: false },
       ],
-      answer: "\\frac{1}{3^{10}}",
-      working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`
+      answer: "\\frac{19 +4\\sqrt{15}}{11}",
+      working:`\\frac{2\\sqrt{3}+3\\sqrt{5}}{3\\sqrt{5}-2\\sqrt{3}} \\\\= \\frac{2\\sqrt{3} + 3\\sqrt{5}}{3\\sqrt{5}-2\\sqrt{3}} \\frac {3\\sqrt{5} + 2\\sqrt{3}}{3\\sqrt{5} + 2\\sqrt{3}}  \\\\ \\text{(Rationalizing the denominator)} \\\\ = \\frac{6\\sqrt{15} + (4 \\times 3) +  (9 \\times 5) + 6\\sqrt{15}} {(9 \\times 5) - (4 \\times 3)} \\\\ \\text{(Difference of two squares was applied to} \\\\ \\text{ the denominator)} \\\\ =\\frac{12\\sqrt{15} + 12 +  45} {45 - 12} \\\\ =\\frac{12\\sqrt{15} + 57} {33} \\\\ =\\frac{12\\sqrt{15} + 57}{33} \\\\ =\\frac{3(4\\sqrt{15} + 19)}{33} \\\\ =\\frac{(4\\sqrt{15} + 19)}{11} \\\\ = \\frac{19 +4\\sqrt{15}}{11}`
     },
     {
       id: "Q6",
-      text: `\\text{Find the value of k if } \\\\ \\frac{k}{\\sqrt{3} + \\sqrt{2}} = k\\sqrt{3} - \\sqrt{2}`,
+      text: `\\text{Simplify } \\\\ \\frac{1}{\\sqrt{3} + 2} \\text{in the form } a + b\\sqrt{3} \\\\ \\text{(UME)}`,
       options: [
-        { id: 0, text: "1", isCorrect: true },
-        { id: 1, text: "1", isCorrect: false },
-        { id: 2, text: "1", isCorrect: false },
-        { id: 3, text: "solve", isCorrect: false },
+        { id: 0, text: "2 - \\sqrt{3}", isCorrect: true },
+        { id: 1, text: "-2 - \\sqrt{3}", isCorrect: false },
+        { id: 2, text: "2 + \\sqrt{3}", isCorrect: false },
+        { id: 3, text: "-2 + \\sqrt{3}", isCorrect: false },
       ],
-      answer: "205",
-      working:` `
+      answer: "2 - \\sqrt{3}",
+      working:`\\frac{1}{\\sqrt{3} + 2} \\\\ = \\frac{1}{\\sqrt{3} + 2}\\frac{\\sqrt{3} - 2}{\\sqrt{3} - 2}  \\\\ \\text{(Introducing conjugate surd: } \\sqrt{3} - 2 \\\\ = \\frac{\\sqrt{3} - 2}{3 - 2^2} \\\\ =2 - \\sqrt{3}`
+      
     },
     {
       id: "Q7",
-      text: `\\text{Find the value of x if } \\\\ \\frac{\\sqrt{2}}{x + \\sqrt{2}  = \\frac{1}{x  - \\sqrt{2} \\text{(UME)}`,
+      text: `\\text{Find the value of x if } \\\\ \\frac{\\sqrt{2}}{x + \\sqrt{2}}  = \\frac{1}{x  - \\sqrt{2} \\text{(UME)}`,
       options: [
-        { id: 0, text: "3\\sqrt{2} + 4", isCorrect: true },
+        { id: 0, text: "3\\sqrt{2} + 4", isCorrect: false },
         { id: 1, text: "3\\sqrt{2} - 4", isCorrect: false },
         { id: 2, text: "3 - 2\\sqrt{2}", isCorrect: false },
-        { id: 3, text: "4 + 2\\sqrt{2}", isCorrect: false },
+        { id: 3, text: "4 + 3\\sqrt{2}", isCorrect: true },
       ],
-      answer: "10^{-5}",
-      working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
+      answer: "4 + 3\\sqrt{2}",
+      working: `\\frac{\\sqrt{2}}{x + \\sqrt{2}}  = \\frac{1}{x  - \\sqrt{2}} \\\\ \\sqrt{2}(x - \\sqrt{2}) = x + \\sqrt{2} \\text{ (cross-multiply)} \\\\ x\\sqrt{2} - 2 = x + \\sqrt{2} \\\\ x\\sqrt{2} - x = \\sqrt{2} + 2 \\\\ \\text{(Collecting like terms)} \\\\ x(\\sqrt{2} - 1) = \\sqrt{2} + 2 \\\\ \\therefore x = \\frac{ \\sqrt{2} + 2}{\\sqrt{2} - 1} \\\\ = \\frac{ \\sqrt{2} + 2}{\\sqrt{2} - 1}\\frac{\\sqrt{2} + 1}{\\sqrt{2} + 1} \\text{(Introducing conjugate surd: } \\sqrt{2} + 1) \\\\ = \\frac{ 2 + 3\\sqrt{2} + 2}{2 - 1} \\\\ = 4 + 3\\sqrt{2}`
     },
     {
       id: "Q8",
-      text: `\\text{If } \\frac{2\\sqrt{3} - \\sqrt{2}}{\\sqrt{3} + 2\\sqrt{2}} m + n\\sqrt{6}\\\\ \\text{What is the value of m and n respectively?} \\\\  \\text{(UME)} `,
+      text: `\\text{If } \\frac{2\\sqrt{3} - \\sqrt{2}}{\\sqrt{3} + 2\\sqrt{2}} = m + n\\sqrt{6}\\\\ \\text{What is the value of m and n respectively?} \\\\  \\text{(UME)} `,
       options: [
         { id: 0, text: "1, -2 ", isCorrect: false },
-        { id: 1, text: " -2, 1 ", isCorrect: false },
-        { id: 2, text: "-\\frac{2}{5}, 1", isCorrect: true },
+        { id: 1, text: "-2, 1", isCorrect: true },
+        { id: 2, text: "-\\frac{2}{5}, 1", isCorrect: false },
         { id: 3, text: "2, \\frac{3}{5}", isCorrect: false },
       ],
-      answer: "2.0 \\times 10^{-7} ",
-      working:`\\frac{0.04 \\times 0.123}{0.34 \\times 72000 } \\\\= \\frac{0.00492}{24480 } \\\\= 0.000 000 201 \\\\= 0.000 000 20 \\text{ (to 2 s.f)} \\\\= 2.0 \\times 10^{-7}  \\text{( standard form)} `
+      answer: "-2, 1",
+      working:`\\text{Working on the left hand side(LHS) first:} \\\\ \\frac{2\\sqrt{3} - \\sqrt{2}}{\\sqrt{3} + 2\\sqrt{2}}\\frac{\\sqrt{3} - 2\\sqrt{2}}{\\sqrt{3} - 2\\sqrt{2}} \\\\ \\text{Introducing the conjugate surd:} \\\\ \\sqrt{3} - 2\\sqrt{2} \\\\= \\frac{2(3) - 4\\sqrt{6} - \\sqrt{6} + 2(2) }{3 - (4 \\times 2)}  \\\\= \\frac{6 - 5\\sqrt{6} + 4 }{3 - 8} \\\\= \\frac{10 - 5\\sqrt{6} }{-5} \\\\ 5\\frac{2 - \\sqrt{6} }{-5} \\\\ = -2 + \\sqrt{6} \\\\ \\text{Comparing with the right hand side(RHS)} \\\\ -2 + \\sqrt{6}= m + n\\sqrt{6} \\\\ \\therefore m  = -2 \\text{ and } n = 1`
     },
     {
       id: "Q9",
-      text: `\\text{Simplify }  \\bigl( \\sqrt{0.7}+ \\sqrt{70} \\bigr)^2 `,
+      text: `\\text{Simplify }  ( \\sqrt{0.7}+ \\sqrt{70} )^2 `,
       options: [
-        { id: 0, text: "84.7", isCorrect: false },
+        { id: 0, text: "84.7", isCorrect: true },
         { id: 1, text: "70.7", isCorrect: false },
         { id: 2, text: "217.7", isCorrect: false },
-        { id: 3, text: "168.7", isCorrect: true },
+        { id: 3, text: "168.7", isCorrect: false },
       ],
-      answer: "2 \\times 10^{-2}",
-      working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `
+      answer: "84.7",
+      working: `( \\sqrt{0.7}+ \\sqrt{70} )^2\\\\ = ( \\sqrt{0.7}+ \\sqrt{70} )( \\sqrt{0.7}+ \\sqrt{70} ) \\\\= 0.7 + \\sqrt{49} + \\sqrt{49} + 70 \\\\ = 70.7 + 14 \\\\ = 84.7`
     },
     {
       id: "Q10",
       text: ` \\text{Simplify } \\frac{ \\sqrt{98} - \\sqrt{50}}{ \\sqrt{32}} \\text{ (UME)}`,
       options: [
-        { id: 0, text: "chk jamb", isCorrect: false },
-        { id: 1, text: "x = 1 \\text{ and } y = -9", isCorrect: true },
-        { id: 2, text: "x = 1/2 \\text{ and } y = -10", isCorrect: false },
-        { id: 3, text: "x = 1/4 \\text{ and } y = -11", isCorrect: false },
+        { id: 0, text: "3", isCorrect: false },
+        { id: 1, text: "1", isCorrect: false },
+        { id: 2, text: "\\frac{1}{2}", isCorrect: true },
+        { id: 3, text: "\\frac{1}{4}", isCorrect: false },
       ],
-      answer: "x = 2.31 \\text{ and } y = -9",
-      working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`
+      answer: "\\frac{1}{2}",
+      working:`\\frac{ \\sqrt{98} - \\sqrt{50}}{ \\sqrt{32}}  \\\\ = \\frac{ \\sqrt{49 \\times 2 } - \\sqrt{25 \\times 2}}{ \\sqrt{16 \\times 2}} \\\\ = \\frac{ 7\\sqrt{2 } - 5\\sqrt{2}}{ 4\\sqrt{2}}\\\\ = \\frac{2\\sqrt{2}}{ 4\\sqrt{2}} \\\\ = \\frac{1}{2}`
     },
   ];
   

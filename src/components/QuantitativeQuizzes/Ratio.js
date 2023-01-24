@@ -13,27 +13,27 @@ import Message from "../UI/Message";
 const questions = [
     {
       id: "Q1",
-      text: `\\text{If m:n = 13:11, find} \\\\ m^2 - n^2 : (m + n)^2}  \\text{UME}`,
+      text: `\\text{If m:n = 13:11, find} \\\\ m^2 - n^2 : (m + n)^2  \\text{  (UME)}`,
       options: [
         { id: 0, text: "1:11", isCorrect: false },
         { id: 1, text: "1:13", isCorrect: false },
         { id: 2, text: "1:10", isCorrect: false },
         { id: 3, text: "1:12", isCorrect: true },
       ],
-      answer: "88",
-      working: ` `
+      answer: "1:12",
+      working: `m^2 - n^2 : (m + n)^2 \\\\= \\frac{(m + n)(m - n)}{(m + n)(m + n)} \\\\= \\frac{(m - n)}{(m + n)} \\\\= \\frac{13 - 11}{ 13 + 11} \\\\= 2 : 24 \\\\= 1:12 `
     },
     {
       id: "Q2",
       text: `\\text{ N140,000 is shared between Abu,} \\\\ \\text{ Kayode and Uche. Abu has twice as } \\\\ \\text{much as Kayode, and Kayode has twice as } \\\\ \\text{much as Uche. What is Kayode's share?} \\\\ \\text{(WASSCE) }`,
       options: [
         { id: 0, text: "N80,000", isCorrect: false },
-        { id: 1, text: "N40,000", isCorrect: false },
-        { id: 2, text: "N20,000", isCorrect: true },
+        { id: 1, text: "N40,000", isCorrect: true },
+        { id: 2, text: "N20,000", isCorrect: false },
         { id: 3, text: "N10,000", isCorrect: false },
       ],
-      answer: "0.00520",
-      working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
+      answer: "N40,000",
+      working: `\\text{Let Uche's share = x} \\\\ \\therefore \\text{Kayode's share = 2x} \\\\ \\text{ And so Abu's share = 4x } \\\\ \\therefore \\text{The sum of their shares } = x + 2x + 4x = 140,000 \\\\ 7x = 140,000 \\\\ \\therefore x = 20,000 \\\\ \\therefore \\text{Kayode's share = 2x } = 2(20,000) = N40,000`
     },
     {
       id: "Q3",
@@ -44,92 +44,92 @@ const questions = [
         { id: 2, text: "3 : 5 : 4", isCorrect: false },
         { id: 3, text: "5 : 4 : 7", isCorrect: false },
       ],
-      answer: "12.4127",
-      working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
+      answer: "12 : 20 : 35",
+      working: `\\text{Since y is the connection between the letters} \\\\ \\text{we express all the letters in terms of y:} \\\\ x:y = 3:5 \\\\ \\frac{x}{y} = \\frac{3}{5} \\\\ \\therefore 5x = 3y \\rightarrow x = \\frac{3}{5}y \\\\ \\text{Similarly, } y:z = 4:7 \\\\ \\frac{y}{z} = \\frac{4}{7}  \\\\ \\therefore 7y = 4z  \\rightarrow z = \\frac{7}{4}y \\\\ \\therefore x:y:z = \\frac{3}{5}y : y : \\frac{7}{4}y \\\\ \\text{Cancelling out the y's: } \\\\ \\frac{3}{5}: 1 : \\frac{7}{4} \\\\ \\text{Multiplying through by the LCM of} \\\\ \\text{ the denominators, 20: } \\\\  12: 20: 35`
     },
     {
       id: "Q4",
-      text: `\\text{The sum of the ages of Musa and Lawal is 28 years. After sharing a certain sum of money in the ratio of their ages, Musa gets N600 and Lawal N800. How old is Lawal?} (UME)`,
+      text: `\\text{The sum of the ages of Musa and Lawal}\\\\ \\text{is 28 years. After sharing a certain sum }  \\\\ \\text{of money in the ratio of their ages,}  \\\\ \\text{ Musa gets N600 and Lawal N800. }  \\\\ \\text{How old is Lawal? (UME)}`,
       options: [
-        { id: 0, text: "14 years", isCorrect: true },
-        { id: 1, text: "20 years", isCorrect: false },
-        { id: 2, text: "12 years", isCorrect: false },
-        { id: 3, text: "16 years", isCorrect: false },
+        { id: 0, text: "14\\text{ years}", isCorrect: false },
+        { id: 1, text: "20\\text{ years}", isCorrect: false },
+        { id: 2, text: "12\\text{ years}", isCorrect: false },
+        { id: 3, text: "16\\text{ years}", isCorrect: true },
       ],
-      answer: "1",
-      working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
+      answer: "16\\text{ years}",
+      working: `\\text{Let Lawal's age = x yrs} \\\\ \\therefore \\text{Musa's age = (28 - x) yrs} \\\\ \\text{Since they shared money in the ratio} \\\\ \\text{ of their ages:} \\\\ \\therefore \\frac{28 - x}{x} = \\frac{600}{800} = \\frac{3}{4} \\\\ \\therefore 4(28 - x) = 3x \\\\ 112 -4x = 3x \\\\ \\therefore 7x = 112 \\\\ \\therefore x = \\frac{112}{7} = 16 \\\\ \\therefore \\text{Lawal's age } = 16\\text{ years} `
     },
     {
       id: "Q5",
-      text: `\\text{A farmer planted 5000 grains of maize and harvested 5000 cobs, each bearing 500 grains. What is the ratio of the number of grains sowed to the number harvested? } \\\\  \\text{ (UME) } `,
+      text: `\\text{A farmer planted 5000 grains of maize} \\\\ \\text{ and harvested 5000 cobs, each bearing 500} \\\\ \\text{ grains. What is the ratio of the number} \\\\ \\text{of grains sowed to the number harvested? } \\\\  \\text{ (UME) } `,
       options: [
         { id: 0, text: "1 : 250 000", isCorrect: false },
         { id: 1, text: "1 : 25 000", isCorrect: false },
         { id: 2, text: "1 : 500", isCorrect: true },
         { id: 3, text: "1 : 5 000", isCorrect: false },
       ],
-      answer: "\\frac{1}{3^{10}}",
-      working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`
+      answer: "1 : 500",
+      working:`\\text{Number of grains harvested} \\\\= 5000 \\times 500 = 2,500,000 \\\\ \\text{Ratio of grains sowed to grains harvested:} \\\\ \\therefore 5000 : 2,500,000 \\\\= 1 : 500`
     },
     {
       id: "Q6",
-      text: `\\text{If the numbers M, N, Q are in the ratio 5:4:3, find the value of (2N−Q)/M } \\text{ (UME) }`,
+      text: `\\text{If the numbers M, N, Q are in the ratio} \\\\ 5:4:3 \\text{, find the value of} \\frac{2N − Q}{M} \\text{ (UME) }`,
       options: [
-        { id: 0, text: "2", isCorrect: true },
+        { id: 0, text: "2", isCorrect: false },
         { id: 1, text: "3", isCorrect: false },
-        { id: 2, text: "1", isCorrect: false },
+        { id: 2, text: "1", isCorrect: true },
         { id: 3, text: "4", isCorrect: false },
       ],
-      answer: "205",
-      working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
+      answer: "1",
+      working:`\\frac{2N − Q}{M} = \\frac{2(4) − 3}{5} = 1 `
     },
     {
       id: "Q7",
-      text: `\\text{3 girls share a number of apples in the ration 5:3:2. If the highest share is 40 apples, find the smallest share} \\\\ \\text{(ume)} `,
+      text: `\\text{3 girls share a number of apples in the} \\\\ \\text{ratio 5:3:2. If the highest share is 40} \\\\ \\text{apples, find the smallest share} \\\\ \\text{(UME)} `,
       options: [
-        { id: 0, text: "36", isCorrect: true },
+        { id: 0, text: "36", isCorrect: false },
         { id: 1, text: "24", isCorrect: false },
-        { id: 2, text: "16", isCorrect: false },
+        { id: 2, text: "16", isCorrect: true },
         { id: 3, text: "38", isCorrect: false },
       ],
-      answer: "10^{-5}",
-      working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
+      answer: "16",
+      working: `5 \\rightarrow 40 \\\\ \\therefore 2 \\rightarrow \\frac{2}{5} \\times  40 = 16 `
     },
     {
       id: "Q8",
-      text: `\\text{\\text{The present ages of a father and his son are in the ratio 10 : 3. If the son is 15 years old now, in how many years will the ratio of their ages be 2 : 1? }  \\text{ (WASSCE) }  `,
+      text: `\\text{The present ages of a father and his} \\\\ \\text{son are in the ratio 10 : 3. If the son is} \\\\ \\text{15 years old now, in how many years} \\\\ \\text{ will the ratio of their ages be} \\\\ \\text{ 2 : 1? }  \\text{ (WASSCE) }  `,
       options: [
-        { id: 0, text: "put options as appropriate ", isCorrect: false },
-        { id: 1, text: "2.0 \\times 10^{-5} ", isCorrect: false },
-        { id: 2, text: "2.0 \\times 10^{-7} ", isCorrect: true },
-        { id: 3, text: "2.0 \\times 10^{-9} ", isCorrect: false },
+        { id: 0, text: "chckwassce", isCorrect: false },
+        { id: 1, text: "chckwassce", isCorrect: false },
+        { id: 2, text: "chckwassce", isCorrect: true },
+        { id: 3, text: "chckwassce", isCorrect: false },
       ],
-      answer: "2.0 \\times 10^{-7} ",
-      working:`\\frac{0.04 \\times 0.123}{0.34 \\times 72000 } \\\\= \\frac{0.00492}{24480 } \\\\= 0.000 000 201 \\\\= 0.000 000 20 \\text{ (to 2 s.f)} \\\\= 2.0 \\times 10^{-7}  \\text{( standard form)} `
+      answer: "chckwassce",
+      working:`\\text{Since the son's age is 15 yrs} \\\\ \\therefore 3 \\rightarrow 15 \\text{ yrs} \\\\ 10 \\rightarrow \\frac{10}{3} \\times 15 = 50 \\text{ years} \\\\ \\text{So father's present age is 50 yrs} \\\\ \\therefore \\text{In x years' time:} \\\\ \\frac{\\text{Father's age}}{\\text{son's age}} = \\frac{50 + x}{15 + x} = \\frac{2}{1} \\\\ \\text{Cross-multiplying:} \\\\ 50 + x = 30 + 2x \\\\ \\therefore x = 20 \\text{ years}`
     },
     {
       id: "Q9",
-      text: `\\text{If x : y = 3 : 2 and y : z = 5 : 4, find the value of x in the ratio x : y : z} WASSCE`,
+      text: `\\text{If x : y = 3 : 2 and y : z = 5 : 4,} \\\\ \\text{find the value of x in the ratio x : y : z} \\\\ \\text{(WASSCE)}`,
       options: [
         { id: 0, text: "8", isCorrect: false },
         { id: 1, text: "10", isCorrect: false },
-        { id: 2, text: "15", isCorrect: false },
-        { id: 3, text: "20", isCorrect: true },
+        { id: 2, text: "15", isCorrect: true },
+        { id: 3, text: "20", isCorrect: false },
       ],
-      answer: "2 \\times 10^{-2}",
-      working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `
+      answer: "15",
+      working: `\\text{Following the steps in question 3} \\\\ x:y = 3:2 \\\\ \\frac{x}{y} = \\frac{3}{2} \\\\ \\therefore 2x = 3y \\rightarrow x = \\frac{3}{2}y \\\\ \\text{Similarly, } y:z = 5:4 \\\\ \\frac{y}{z} = \\frac{5}{4}  \\\\ \\therefore 4y = 5z  \\rightarrow z = \\frac{4}{5}y \\\\ \\therefore x:y:z = \\frac{3}{2}y : y : \\frac{4}{5}y \\\\ \\text{Cancelling out the y's: } \\\\ \\frac{3}{2}: 1 : \\frac{4}{5} \\\\ \\text{Multiplying through by the LCM of} \\\\ \\text{ the denominators, 10: } \\\\ x : y : z = 15: 10: 8 \\\\ \\therefore x = 15`
     },
     {
       id: "Q10",
-      text: `\\text{A number of pencils were shared out among Bisi, Sola and Tunde in the ratio of 2:3:5 respectively. If Bisi got 5, how many were shared out?} \\\\ \\text{ (UTME)}`,
+      text: `\\text{A number of pencils were shared out among} \\\\ \\text{Bisi, Sola and Tunde in the ratio of} \\\\ \\text{2:3:5 respectively. If Bisi got 5,} \\\\ \\text{how many were shared out?  (UTME)}`,
       options: [
         { id: 0, text: "15", isCorrect: false },
         { id: 1, text: "25", isCorrect: true },
         { id: 2, text: "30", isCorrect: false },
         { id: 3, text: "50", isCorrect: false },
       ],
-      answer: "x = 2.31 \\text{ and } y = -9",
-      working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`
+      answer: "25",
+      working:`\\text{The sum of the ratios = } 2 + 3 + 5 = 10 \\\\  \\text{Bisi's share, } 2 \\rightarrow 5 \\\\ \\therefore \\text{Total share, } 10 \\rightarrow \\frac{10}{2} \\times 5 = 25`
     },
   ];
   

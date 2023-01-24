@@ -13,7 +13,7 @@ import Message from "../UI/Message";
 const questions = [
     {
       id: "Q1",
-      text: `\\text{The time taken to do a piece of work} \\\\ \\text{is inversely proportional to the number of men}\\\\ \\text{employed.If it takes 30 men to do a piece of work} \\\\ \\text{in 6 days, how many men are required to do} \\\\ \\text{the work in 4 days?   (UME)}`,
+      text: `\\text{The time taken to do a piece of work} \\\\ \\text{is inversely proportional to the number}\\\\ \\text{of men employed.If it takes 30 men to do} \\\\ \\text{a piece of work in 6 days, how many men} \\\\ \\text{are required to do the work in 4 days?}\\\\ \\text{(UME)}`,
       options: [
         { id: 0, text: "20", isCorrect: false },
         { id: 1, text: "35", isCorrect: false },
@@ -37,7 +37,7 @@ const questions = [
     },
     {
       id: "Q3",
-      text: `\\text{I am x years old and my brother} \\\\ \\text{is 3 years older, how old} \\\\ \\text{was my brother last year}  \\text{  (WASSCE)}`,
+      text: `\\text{I am x years old and my brother} \\\\ \\text{is 3 years older, how old} \\\\ \\text{was my brother last year} \\\\ \\text{  (WASSCE)}`,
       options: [
         { id: 0, text: "\\text{(x - 4) years}", isCorrect: false },
         { id: 1, text: "\\text{(x + 2) years}", isCorrect: true },
@@ -49,7 +49,7 @@ const questions = [
     },
     {
       id: "Q4",
-      text: `\\text{A car uses one litre of petrol for every 14km.} \\\\ \\text{If 1 litre of petrol costs N63.00, how far can} \\\\ \\text{the car go with N900.00 worth of petrol?  (WASSCE)}`,
+      text: `\\text{A car uses one litre of petrol for every 14km.} \\\\ \\text{If 1 litre of petrol costs N63.00, how far can} \\\\ \\text{the car go with N900.00 worth of petrol?}  \\\\ \\text{(WASSCE)}`,
       options: [
         { id: 0, text: "420km", isCorrect: false },
         { id: 1, text: "405km", isCorrect: false },
@@ -61,7 +61,7 @@ const questions = [
     },
     {
       id: "Q5",
-      text: `\\text{Sonny is twice as old as Wale. Four years} \\\\ \\text{ago, he was four times as old as Wale.} \\\\ \\text{When will the sum of their ages be 66? (WASSCE)}`,
+      text: `\\text{Sonny is twice as old as Wale. Four years} \\\\ \\text{ago, he was four times as old as Wale.} \\\\ \\text{When will the sum of their ages be 66?} \\\\ \\text{ (WASSCE)}`,
       options: [
         { id: 0, text: "24", isCorrect: true },
         { id: 1, text: "25", isCorrect: false },
@@ -97,7 +97,7 @@ const questions = [
     },
     {
       id: "Q8",
-      text: `\\text{Five years ago, a mother was 5 times}\\\\ \\text{as old as her daughter. In 10 years' time,} \\\\ \\text{the mother will be twice as old as the daughter.} \\\\ \\text{How old are they at the moment?} `,
+      text: `\\text{Five years ago, a mother was 5 times}\\\\ \\text{as old as her daughter. In 10 years' time,} \\\\ \\text{the mother will be twice as old as the} \\\\ \\text{daughter. How old are they at the moment?} `,
       options: [
         { id: 0, text: "15, 45", isCorrect: false },
         { id: 1, text: "5, 25", isCorrect: false },
@@ -121,7 +121,7 @@ const questions = [
     },
     {
       id: "Q10",
-      text: `\\text{When a long bar soap is cut into two equal parts,} \\\\ \\text{each piece is 25cm long. What is the length of each} \\\\ \\text{piece is the bar soap is cut into 4 parts instead?}`,
+      text: `\\text{When a long bar soap is cut into two equal} \\\\ \\text{parts, each piece is 25cm long. What is the} \\\\ \\text{length of each piece if the bar soap is} \\\\ \\text{cut into 4 equal parts instead?}`,
       options: [
         { id: 0, text: "15\\text{ cm long}", isCorrect: false },
         { id: 1, text: "25\\text{ cm long}", isCorrect: false },
