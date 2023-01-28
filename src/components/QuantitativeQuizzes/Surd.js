@@ -106,7 +106,7 @@ const questions = [
         { id: 3, text: "2, \\frac{3}{5}", isCorrect: false },
       ],
       answer: "-2, 1",
-      working:`\\text{Working on the left hand side(LHS) first:} \\\\ \\frac{2\\sqrt{3} - \\sqrt{2}}{\\sqrt{3} + 2\\sqrt{2}} \\times \\frac{\\sqrt{3} - 2\\sqrt{2}}{\\sqrt{3} - 2\\sqrt{2}} \\\\ \\text{Introducing the conjugate surd:} \\\\ \\sqrt{3} - 2\\sqrt{2} \\\\= \\frac{2(3) - 4\\sqrt{6} - \\sqrt{6} + 2(2) }{3 - (4 \\times 2)}  \\\\= \\frac{6 - 5\\sqrt{6} + 4 }{3 - 8} \\\\= \\frac{10 - 5\\sqrt{6} }{-5} \\\\ \\frac{5(2 - \\sqrt{6} )}{-5} \\\\ = -2 + \\sqrt{6} \\\\ \\text{Comparing with the right hand side(RHS)} \\\\ -2 + \\sqrt{6}= m + n\\sqrt{6} \\\\ \\therefore m  = -2 \\text{ and } n = 1`
+      working:`\\text{Working on the left hand side(LHS) first:} \\\\ \\frac{2\\sqrt{3} -\\sqrt{2}}{\\sqrt{3} + 2\\sqrt{2}} \\times \\frac{\\sqrt{3} - 2\\sqrt{2}}{\\sqrt{3} - 2\\sqrt{2}} \\\\ \\text{Introducing the conjugate surd:} \\\\ \\sqrt{3} - 2\\sqrt{2} \\\\= \\frac{2(3) - 4\\sqrt{6} - \\sqrt{6} + 2(2) }{3 - (4 \\times 2)}  \\\\= \\frac{6 - 5\\sqrt{6} + 4 }{3 - 8} \\\\= \\frac{10 - 5\\sqrt{6} }{-5} \\\\ \\frac{5(2 - \\sqrt{6} )}{-5} \\\\ = -2 + \\sqrt{6} \\\\ \\text{Comparing with the right hand side(RHS)} \\\\ -2 + \\sqrt{6}= m + n\\sqrt{6} \\\\ \\therefore m  = -2 \\text{ and } n = 1`
     },
     {
       id: "Q9",
