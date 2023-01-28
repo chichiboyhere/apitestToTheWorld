@@ -11,6 +11,12 @@ import logicalIcon from "./logical_reasoning_icon.png";
 import book_cover from "./book_cover.jpg";
 import book from "./interact_with_math.pdf";
 import cov_child_pupils from "./covenant_child_pupils.jpg";
+import venn from "./venn.png";
+import venn2 from "./venn_2.png";
+import venn3 from "./venn_3.png";
+import venn4 from "./venn_4.png";
+import venn5 from "./venn_5.png";
+import venn6 from "./venn_6.png";
 
 export default {
   contact,
@@ -25,5 +31,11 @@ export default {
   logicalIcon,
   book_cover,
   book,
-  cov_child_pupils
+  cov_child_pupils,
+  venn,
+  venn2,
+  venn3,
+  venn4,
+  venn5,
+  venn6,
 };

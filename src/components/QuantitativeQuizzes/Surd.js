@@ -21,7 +21,7 @@ const questions = [
         { id: 3, text: "12\\sqrt{4}", isCorrect: false },
       ],
       answer: "17\\sqrt{2}",
-      working: `5\\sqrt{18} - 3\\sqrt{72} + 4\\sqrt{50}\\\\ 5\\sqrt{9 \\times 2} - 3\\sqrt{36 \\times 2} + 4\\sqrt{25 \\times 2} \\\\ 5  \\times 3 \\sqrt{2} - 3 \\times 6 \\sqrt{2} + 4\\times 5\\sqrt{2} \\\\15\\sqrt{2} - 18\\sqrt{2} + 20\\sqrt{2} \\\\ 17\\sqrt{2}`
+      working: `5\\sqrt{18} - 3\\sqrt{72} + 4\\sqrt{50}\\\\= 5\\sqrt{9 \\times 2} - 3\\sqrt{36 \\times 2} + 4\\sqrt{25 \\times 2} \\\\= 5  \\times 3 \\sqrt{2} - 3 \\times 6 \\sqrt{2} + 4\\times 5\\sqrt{2} \\\\ =15\\sqrt{2} - 18\\sqrt{2} + 20\\sqrt{2} \\\\= 17\\sqrt{2}`
     },
     {
       id: "Q2",
@@ -33,7 +33,7 @@ const questions = [
         { id: 3, text: "18\\sqrt{3}", isCorrect: false },
       ],
       answer: "6\\sqrt{3}",
-      working: `\\sqrt{48} - \\frac{9}{\\sqrt{3}} + \\sqrt{75} \\\\ \\sqrt{16 \\times 3} - \\frac{9}{\\sqrt{3}}\\frac{\\sqrt{3}}{\\sqrt{3}} + \\sqrt{25 \\times 3} \\\\ 4\\sqrt{3} - \\frac{9\\sqrt{3}}{3} + 5\\sqrt{3}  \\\\  9\\sqrt{3} - \\frac{9\\sqrt{3}}{3} \\\\  9\\sqrt{3} - 3\\sqrt{3} = 6\\sqrt{3} `
+      working: `\\sqrt{48} - \\frac{9}{\\sqrt{3}} + \\sqrt{75} \\\\= \\sqrt{16 \\times 3} - \\frac{9}{\\sqrt{3}}\\frac{\\sqrt{3}}{\\sqrt{3}} + \\sqrt{25 \\times 3} \\\\= 4\\sqrt{3} - \\frac{9\\sqrt{3}}{3} + 5\\sqrt{3}   \\\\ = 9\\sqrt{3} - 3\\sqrt{3} = 6\\sqrt{3} `
     },
     {
       id: "Q3",
@@ -69,7 +69,7 @@ const questions = [
         { id: 3, text: "\\frac{19 +2\\sqrt{15}}{19}", isCorrect: false },
       ],
       answer: "\\frac{19 +4\\sqrt{15}}{11}",
-      working:`\\frac{2\\sqrt{3}+3\\sqrt{5}}{3\\sqrt{5}-2\\sqrt{3}} \\\\= \\frac{2\\sqrt{3} + 3\\sqrt{5}}{3\\sqrt{5}-2\\sqrt{3}} \\frac {3\\sqrt{5} + 2\\sqrt{3}}{3\\sqrt{5} + 2\\sqrt{3}}  \\\\ \\text{(Rationalizing the denominator)} \\\\ = \\frac{6\\sqrt{15} + (4 \\times 3) +  (9 \\times 5) + 6\\sqrt{15}} {(9 \\times 5) - (4 \\times 3)} \\\\ \\text{(Difference of two squares was applied to} \\\\ \\text{ the denominator)} \\\\ =\\frac{12\\sqrt{15} + 12 +  45} {45 - 12} \\\\ =\\frac{12\\sqrt{15} + 57} {33} \\\\ =\\frac{12\\sqrt{15} + 57}{33} \\\\ =\\frac{3(4\\sqrt{15} + 19)}{33} \\\\ =\\frac{(4\\sqrt{15} + 19)}{11} \\\\ = \\frac{19 +4\\sqrt{15}}{11}`
+      working:`\\frac{2\\sqrt{3}+3\\sqrt{5}}{3\\sqrt{5}-2\\sqrt{3}} \\\\= \\frac{2\\sqrt{3} + 3\\sqrt{5}}{3\\sqrt{5}-2\\sqrt{3}} \\times \\frac {3\\sqrt{5} + 2\\sqrt{3}}{3\\sqrt{5} + 2\\sqrt{3}}  \\\\ \\text{(Rationalizing the denominator)} \\\\ = \\frac{6\\sqrt{15} + (4 \\times 3) +  (9 \\times 5) + 6\\sqrt{15}} {(9 \\times 5) - (4 \\times 3)} \\\\ \\text{(Difference of two squares was applied to} \\\\ \\text{ the denominators)} \\\\ =\\frac{12\\sqrt{15} + 12 +  45} {45 - 12}  \\\\ =\\frac{12\\sqrt{15} + 57}{33} \\\\ =\\frac{3(4\\sqrt{15} + 19)}{33} \\\\ =\\frac{(4\\sqrt{15} + 19)}{11} \\\\ = \\frac{19 +4\\sqrt{15}}{11}`
     },
     {
       id: "Q6",
@@ -81,12 +81,12 @@ const questions = [
         { id: 3, text: "-2 + \\sqrt{3}", isCorrect: false },
       ],
       answer: "2 - \\sqrt{3}",
-      working:`\\frac{1}{\\sqrt{3} + 2} \\\\ = \\frac{1}{\\sqrt{3} + 2}\\frac{\\sqrt{3} - 2}{\\sqrt{3} - 2}  \\\\ \\text{(Introducing conjugate surd: } \\sqrt{3} - 2 \\\\ = \\frac{\\sqrt{3} - 2}{3 - 2^2} \\\\ =2 - \\sqrt{3}`
+      working:`\\frac{1}{\\sqrt{3} + 2} \\\\ = \\frac{1}{\\sqrt{3} + 2} \\times \\frac{\\sqrt{3} - 2}{\\sqrt{3} - 2}  \\\\ \\text{(Introducing conjugate surd: } \\sqrt{3} - 2) \\\\ = \\frac{\\sqrt{3} - 2}{3 - 2^2} \\\\ =2 - \\sqrt{3}`
       
     },
     {
       id: "Q7",
-      text: `\\text{Find the value of x if } \\\\ \\frac{\\sqrt{2}}{x + \\sqrt{2}}  = \\frac{1}{x  - \\sqrt{2} \\text{(UME)}`,
+      text: `\\text{Find the value of x if } \\\\ \\frac{\\sqrt{2}}{x + \\sqrt{2}}  = \\frac{1}{x  - \\sqrt{2}} \\text{(UME)}`,
       options: [
         { id: 0, text: "3\\sqrt{2} + 4", isCorrect: false },
         { id: 1, text: "3\\sqrt{2} - 4", isCorrect: false },
@@ -106,7 +106,7 @@ const questions = [
         { id: 3, text: "2, \\frac{3}{5}", isCorrect: false },
       ],
       answer: "-2, 1",
-      working:`\\text{Working on the left hand side(LHS) first:} \\\\ \\frac{2\\sqrt{3} - \\sqrt{2}}{\\sqrt{3} + 2\\sqrt{2}}\\frac{\\sqrt{3} - 2\\sqrt{2}}{\\sqrt{3} - 2\\sqrt{2}} \\\\ \\text{Introducing the conjugate surd:} \\\\ \\sqrt{3} - 2\\sqrt{2} \\\\= \\frac{2(3) - 4\\sqrt{6} - \\sqrt{6} + 2(2) }{3 - (4 \\times 2)}  \\\\= \\frac{6 - 5\\sqrt{6} + 4 }{3 - 8} \\\\= \\frac{10 - 5\\sqrt{6} }{-5} \\\\ 5\\frac{2 - \\sqrt{6} }{-5} \\\\ = -2 + \\sqrt{6} \\\\ \\text{Comparing with the right hand side(RHS)} \\\\ -2 + \\sqrt{6}= m + n\\sqrt{6} \\\\ \\therefore m  = -2 \\text{ and } n = 1`
+      working:`\\text{Working on the left hand side(LHS) first:} \\\\ \\frac{2\\sqrt{3} - \\sqrt{2}}{\\sqrt{3} + 2\\sqrt{2}} \\times \\frac{\\sqrt{3} - 2\\sqrt{2}}{\\sqrt{3} - 2\\sqrt{2}} \\\\ \\text{Introducing the conjugate surd:} \\\\ \\sqrt{3} - 2\\sqrt{2} \\\\= \\frac{2(3) - 4\\sqrt{6} - \\sqrt{6} + 2(2) }{3 - (4 \\times 2)}  \\\\= \\frac{6 - 5\\sqrt{6} + 4 }{3 - 8} \\\\= \\frac{10 - 5\\sqrt{6} }{-5} \\\\ \\frac{5(2 - \\sqrt{6} )}{-5} \\\\ = -2 + \\sqrt{6} \\\\ \\text{Comparing with the right hand side(RHS)} \\\\ -2 + \\sqrt{6}= m + n\\sqrt{6} \\\\ \\therefore m  = -2 \\text{ and } n = 1`
     },
     {
       id: "Q9",

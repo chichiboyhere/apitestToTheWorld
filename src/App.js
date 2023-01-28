@@ -23,6 +23,8 @@ import PercentagesMisc from "./components/QuantitativeQuizzes/PercentagesMisc";
 import Ratio from "./components/QuantitativeQuizzes/Ratio"
 import Rate from "./components/QuantitativeQuizzes/Rate";
 import Proportion from "./components/QuantitativeQuizzes/Proportion"; 
+import Surd from "./components/QuantitativeQuizzes/Surd";
+import Sets from "./components/QuantitativeQuizzes/Sets";
 
 function App() {
   return (
@@ -49,6 +51,8 @@ function App() {
         <Route path='/quantitativeTestFourteen' component={Indices} />
         <Route path='/quantitativeTestFifteen' component={IndicialEquations} />
         <Route path='/quantitativeTestSixteen' component={Logarithm} />
+        <Route path='/quantitativeTestSeventeen' component={Surd} />
+        <Route path='/quantitativeTestEighteen' component={Sets} />
         <Route path='/numerationTest' component={StartTest} />
         <Route path='/contact' component={ContactPage} />
     </Layout>

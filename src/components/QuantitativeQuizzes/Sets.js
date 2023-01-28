@@ -4,10 +4,11 @@ import Timer from "../Timer/Timer";
 import ControlButtons from "../ControlButtons/ControlButtons";
 import Text from "../AptitudeTests/Text";
 import MathJax from "react-mathjax";
-import GetSolutionThree from "../AptitudeTests/GetSolutionThree";
+import GetSolutionSets from "../AptitudeTests/GetSolutionSets";
 import styles from "../../styles/Global";
 import Card from "../UI/Card";
 import Message from "../UI/Message";
+import assets from "../../assets";
 
 
 const questions = [
@@ -20,80 +21,87 @@ const questions = [
         { id: 2, text: "\\text{{2, 5, 11} and {2}}", isCorrect: false },
         { id: 3, text: "\\text{{2, 3, 5, 11} and {2}}", isCorrect: true },
       ],
-      answer: "88",
-      working: `\\sqrt{31.42 \\times 60.32 } = \\sqrt{1895.2544} \\\\= 43.5345 \\\\= 44 \\text{ (correct to 2 s.f) } \\\\= 43.5 \\text{(correct to 1 d.p) } \\\\  \\therefore \\text{ their sum } = 44 + 43.5 = 87.5 \\\\= 88 \\text{(correct to the nearest whole number) } `
+      answer: "\\text{{2, 3, 5, 11} and {2}}",
+      img: ``,
+      working: `X =\\text{{2, 11}} \\\\ Y= \\text{{2, 3, 5}} \\\\ \\text{So } X \\cup Y \\text{(i.e prime factors of both 44 and 60)} \\\\ = \\text{{2, 3, 5, 11}} \\\\ \\text{And } X \\cap Y \\text{(i.e prime factors common to} \\\\ \\text{both 44 and 60)} \\\\ = \\text{{2}}`
     },
     {
       id: "Q2",
-      text: `\\text{Four members of a school first eleven} \\\\ \\text{cricket team are also members of the} \\\\ \\text{ first fourteen rugby team. How many boys} \\\\ \\text{ play for at least one of the two teams?} \\\\ \\text{  (UME)}`,
+      text: `\\text{Four members of a school first eleven} \\\\ \\text{cricket team are also members of the} \\\\ \\text{first fourteen rugby team. How many boys} \\\\ \\text{ play for at least one of the two teams?} \\\\ \\text{  (UME)}`,
       options: [
         { id: 0, text: "25", isCorrect: false },
-        { id: 1, text: "21", isCorrect: false },
-        { id: 2, text: "16", isCorrect: true },
+        { id: 1, text: "21", isCorrect: true },
+        { id: 2, text: "16", isCorrect: false },
         { id: 3, text: "3", isCorrect: false },
       ],
-      answer: "0.00520",
-      working: `0.0052048 = 0.00520 \\text{ (to 3 s.f)} \\\\ \\text{Here counting starts from 5, being} \\\\ \\text{ the first significant figure, and we count} \\\\ \\text{ three digits, thereby stopping at 0.}`
+      answer: "21",
+      img: <img src={assets.venn2} alt="Venn diagram2" style={{ maxHeight: 150, maxWidth: 250, margin: "0 auto"}}/>,
+      working: `\\text{According to the Venn diagram above } \\\\ \\text{there are four boys in both} \\\\ \\text{the cricket and rugby teams. This} \\\\ \\text{leaves 7 boys who play cricket but not rugby} \\\\ \\text{and 10 boys who play rugby but not cricket} \\\\ \\text{So number of boys who play at least} \\\\ \\text{ one of the games } \\\\ = 7 + 4 + 10 = 21`
     },
     {
       id: "Q3",
-      text: `\\text{If S = } {x : x^2 = 9, x > 4} \\text{, then S}  \\\\ \\text{is equal to (UME)} `,
+      text: `\\text{If S =  } \\{ x : x^2 = 9 \\text{, x } > 4 \\} \\text{, then S}  \\\\ \\text{is equal to (UME)} `,
       options: [
         { id: 0, text: "4", isCorrect: false },
-        { id: 1, text: "{0}", isCorrect: true },
-        { id: 2, text: " \\varnothing", isCorrect: false },
-        { id: 3, text: "{\\varnothing}", isCorrect: false },
+        { id: 1, text: "{0}", isCorrect: false },
+        { id: 2, text: " \\varnothing", isCorrect: true },
+        { id: 3, text: "\\{ \\varnothing \\}", isCorrect: false },
       ],
-      answer: "12.4127",
-      working: `827.51 \\times 0.015 = 12.4127 \\text{ (to 4 d.p.) }`
+      answer: " \\varnothing",
+      img: ``,
+      working: `\\text{If } x^2 = 9 \\\\  \\therefore x = \\sqrt{9} = 3\\\\ \\text{But x > 4 }  \\therefore S = \\text{{}} \\text{ or } \\varnothing`
     },
     {
       id: "Q4",
-      text: `\\text{If U = {s, p, i, e, n, d, o, u, r}\\\\  \\text{, X = {s, p, e, n, d}} \\text{,Y = {s, e, n, o, u}, \\text{,Z = {p, n, o, u, r}} \\\\ \\text{find } X \\cap \\bigl( X \\cup Y\\bigr) \\text{ (UME)}`,
+      text: `\\text{Every one of a group of 12 market women}\\\\  \\text{sells at least one of the following food}\\\\ \\text{items: tomatoes, beans and yam.} \\\\ \\text{Five(5) woman sell tomatoes, 6 sell beans,  }  \\\\ \\text{ 6 sell yam and 2 sell tomatoes and beans} \\\\ \\text{ but none sell tomatoes and yam.} \\\\ \\text{How many women sell beans and yam?} \\\\ \\text{  (UME)}`,
       options: [
-        { id: 0, text: "\\text{{p, o, u, r}}", isCorrect: true },
-        { id: 1, text: "\\text{{s, p, d, r}}", isCorrect: false },
-        { id: 2, text: "\\text{{s, p, n, e}}", isCorrect: false },
-        { id: 3, text: "\\text{{n, d, u}}", isCorrect: false },
+        { id: 0, text: "3", isCorrect: true },
+        { id: 1, text: "4", isCorrect: false },
+        { id: 2, text: "6", isCorrect: false },
+        { id: 3, text: "8", isCorrect: false },
       ],
-      answer: "1",
-      working: `31.4 \\times 38.02 = 1193.828 \\div 40.3 \\\\= 29.623524 \\div 29.62 = 1 `
+      answer: "3",
+      img: <img src={assets.venn3} alt="Venn diagram3" style={{ maxHeight: 250, maxWidth: 250, margin: "0 auto"}}/>,
+      working: `\\text{Based on the Venn diagram above} \\\\ 3 + 2 + 4 -x + x + 6 -x = 12 \\\\ 15 -x = 12 \\\\  \\therefore x = 3`
     },
     {
       id: "Q5",
       text: `\\text{A survey of 100 students in an} \\\\ \\text{institution shows that 80 students speak} \\\\  \\text{ Hausa and 20 students speak Igbo, while} \\\\ \\text{ only 9 students speak both language.} \\\\  \\text{ How many students speak} \\\\  \\text{ neither Hausa nor Igbo?} \\text{ (UME)}`,
       options: [
         { id: 0, text: "0", isCorrect: false },
-        { id: 1, text: "9", isCorrect: false },
-        { id: 2, text: "11", isCorrect: true },
+        { id: 1, text: "9", isCorrect: true },
+        { id: 2, text: "11", isCorrect: false },
         { id: 3, text: "20", isCorrect: false },
       ],
-      answer: "\\frac{1}{3^{10}}",
-      working:`\\frac{0.000 045}{150000} \\\\= \\frac{45 \\times 10 ^{-6}}{15 \\times 10^4} \\\\ = 3 \\times 10^{-6-4} \\\\ = 3 \\times 10 ^{-10} \\\\ \\therefore p = 3 \\text{ and } q = -10 \\\\ \\therefore p^q = 3^{-10} = \\frac{1}{3^{10}}`
+      answer: "9",
+      img: <img src={assets.venn4} alt="Venn diagram4" style={{ maxHeight: 250, maxWidth: 250, margin: "0 auto"}}/>,
+      working:` \\text{According to the Venn diagram above, } \\\\ \\text{The number of students who speak neither} \\\\ \\text{Hausa(H) nor Igbo(I) (i.e.} n(H \\cup I)'=x \\\\ \\text{ is given by:} \\\\  71 + 9 + 11 + x = 100 \\\\ \\therefore x = 100 - 91 = 9`
     },
     {
       id: "Q6",
       text: `\\text{In a school, 220 students offer} \\\\ \\text{Biology or Mathematics or both. 125 offer} \\\\ \\text{ Biology and 110 mathematics. How} \\\\ \\text{ many offer Biology but not Mathematics?} \\\\  \\text{ (UME) }`,
       options: [
-        { id: 0, text: "95", isCorrect: true },
+        { id: 0, text: "95", isCorrect: false },
         { id: 1, text: "80", isCorrect: false },
         { id: 2, text: "125", isCorrect: false },
-        { id: 3, text: "110", isCorrect: false },
+        { id: 3, text: "110", isCorrect: true },
       ],
-      answer: "205",
-      working:`\\sqrt{41830} = 204.5238 = 205 \\text{( correct to 3 s.f)}`
+      answer: "110",
+      img: <img src={assets.venn} alt="Venn diagram" style={{ maxHeight: 150, maxWidth: 300, margin: "0 auto"}}/>,
+      working:`\\text{Let the number of students who take}\\\\ \\text{both Biology(B) and Mathematics(M) be x.}\\\\ \\text{Now according to the Venn diagram above, } \\\\ \\text{the number of students who take } \\\\ \\text{both subjects is given by:} \\\\  125 -x + x + 110 - x = 220 \\\\ \\therefore - x = 220 - 235 = -15 \\\\ x = 15 \\\\ \\text{Hence, the number of students who take} \\\\ \\text{Biology but not Mathematics } \\\\ \\text{i.e } n(B \\cap M') =125 -x= 125 -15 = 110`
     },
     {
       id: "Q7",
-      text: `\\text{In a class of 40 students, 32 offer} \\\\ \\text{ mathematics, 24 offer Physics, and 4} \\\\ \\text{ offer neither Mathematics nor Physics.} \\\\ \\text{ How many offer both Mathematics and Physics?}  \\\\  \\text{ (UME) }`,
+      text: `\\text{A group of market women sell at least} \\\\ \\text{ one of yam, plantain and maize.} \\\\ \\text{12 of them sell maize, 10 sell yam and 14} \\\\ \\text{ sell plantain, 5 sell plantain and maize, }  \\\\  \\text{4 sell yam and maize, 2 sell yam and} \\\\ \\text{plantain only while 3 sell all the three} \\\\ \\text{items. How many women are in the group?} \\\\ \\text{   (UME) }`,
       options: [
-        { id: 0, text: "20", isCorrect: true },
-        { id: 1, text: "16", isCorrect: false },
+        { id: 0, text: "20", isCorrect: false },
+        { id: 1, text: "16", isCorrect: true },
         { id: 2, text: "4", isCorrect: false },
         { id: 3, text: "8", isCorrect: false },
       ],
-      answer: "10^{-5}",
-      working: `0.007685 = 0.00769 \\text{ (to 3 s.f)} \\\\ 0.007685 = 0.0077 \\text{ (to 4 d.p)} \\\\ \\therefore \\text{ the difference} = 0.0077 - 0.00769 \\\\= 0.00001 =10^{-5}  `
+      answer: "16",
+      img: <img src={assets.venn5} alt="Venn diagram5" style={{ maxHeight: 250, maxWidth: 250, margin: "0 auto"}}/>,
+      working: `\\text{Based on the Venn diagram above }\\\\ \\text{Total number of women in the group is}\\\\ 4 + 2 + 7 + 1 + 3 + 2 + 6 = 25 `
     },
     {
       id: "Q8",
@@ -101,39 +109,42 @@ const questions = [
       \\text{U = {Even numbers between 0 and 30}} \\\\
       \\text{P = {Multiples of 6 between 0 and 30}} \\\\
       \\text{Q = {Multiples of 4 between 0 and 30}} \\\\
-      \\text{Find } \\bigl( P \\cup Q \\bigr)^c \\text{ (UME)} `,
+      \\text{Find } ( P \\cup Q )^c \\text{ (UME)} `,
       options: [
-        { id: 0, text: "{2, 10, 14, 22, 26} ", isCorrect: false },
+        { id: 0, text: "{2, 10, 14, 22, 26} ", isCorrect: true },
         { id: 1, text: " {0, 10, 14, 22, 26}", isCorrect: false },
-        { id: 2, text: "{2,4, 14, 18, 26}", isCorrect: true },
+        { id: 2, text: "{2,4, 14, 18, 26}", isCorrect: false },
         { id: 3, text: "{0, 2, 6, 22, 26}", isCorrect: false },
       ],
-      answer: "2.0 \\times 10^{-7} ",
-      working:`\\frac{0.04 \\times 0.123}{0.34 \\times 72000 } \\\\= \\frac{0.00492}{24480 } \\\\= 0.000 000 201 \\\\= 0.000 000 20 \\text{ (to 2 s.f)} \\\\= 2.0 \\times 10^{-7}  \\text{( standard form)} `
+      answer: "\\text{{2, 10, 14, 22, 26}}",
+      img: ``,
+      working:`\\text{U = {2, 4, 6, 8, 10, ...28}} \\\\ \\text{P = {6, 12, 18, 24}} \\\\ \\text{Q = {4, 8, 12, 16, 20, 24, 28}} \\\\ P \\cup Q  = \\text{ {4, 6, 8, 12, 16, 18, 20, 24, 28})} \\\\ \\therefore ( P \\cup Q )^c =  \\text{{2, 10, 14, 22, 26}}`
     },
     {
       id: "Q9",
-      text: `\\text{In a small village of 500 people,}  \\\\ \\text{350 speak the local language while} \\\\ \\text{ 200 speak pidgin English. What percentage} \\\\ \\text{of the population speak both. }  \\text{UME}`,
+      text: `\\text{In a small village of 500 people,}  \\\\ \\text{350 speak the local language while 200} \\\\ \\text{speak pidgin English. What percentage} \\\\ \\text{of the population speak both. }  \\text{(UME)}`,
       options: [
-        { id: 0, text: "30%", isCorrect: false },
-        { id: 1, text: "10%", isCorrect: false },
-        { id: 2, text: "50%", isCorrect: false },
-        { id: 3, text: "14%", isCorrect: true },
+        { id: 0, text: "\\text{ 30 %}", isCorrect: false },
+        { id: 1, text: "\\text{ 10 %}", isCorrect: true },
+        { id: 2, text: "\\text{ 50 %}", isCorrect: false },
+        { id: 3, text: "\\text{ 14 %}", isCorrect: false },
       ],
-      answer: "2 \\times 10^{-2}",
-      working: ` 41.56 \\times 4.12 = 171.2272 \\\\ = 171.2 \\text{(to 4 s.f)} \\\\ = 171.23 \\text{(to 2 d.p)} \\\\ \\text{ And their difference} = 171.23 - 171.2\\\\  = 0.03 = 3 \\times 10^{-2} `
+      answer: "\\text{ 10 %}",
+      img: ``,
+      working: `\\text{Total number who speak the local language} \\\\ \\text{and pidgin English} = 350 + 200 = 550 \\\\ \\text{So the number of those who} \\\\ \\text{ speak both languages } = 550 - 500= 50\\\\ \\text{ And their percentage} = \\frac{50}{500} \\times 100 = \\text{ 10 %}`
     },
     {
       id: "Q10",
-      text: `\\text{X and Y are two sets such that n(X) = 15, n(Y) = 12 and n{X ∩ Y} = 7. Find ∩{X ∪ Y}} UTME`,
+      text: `\\text{X and Y are two sets such that n(X) = 15} \\\\ \\text{n(Y) = 12 and }  n(X \\cap Y) = 7 \\\\ \\text{Find } n(X \\cup Y)  \\text{ (UTME)}`,
       options: [
         { id: 0, text: "21", isCorrect: false },
-        { id: 1, text: "225", isCorrect: true },
+        { id: 1, text: "225", isCorrect: false },
         { id: 2, text: "15", isCorrect: false },
-        { id: 3, text: "20", isCorrect: false },
+        { id: 3, text: "20", isCorrect: true },
       ],
-      answer: "x = 2.31 \\text{ and } y = -9",
-      working:`\\frac{0.000335}{145000} \\\\= \\frac{335 \\times 10 ^{-6}}{145 \\times 10^3} \\\\ = 2.31 \\times 10^{-6-3} \\\\ = 2.31 \\times 10 ^{-9} \\\\ \\therefore x = 2.31 \\text{ and } y = -9`
+      answer: "20",
+      img: <img src={assets.venn6} alt="Venn diagram6" style={{ maxHeight: 150, maxWidth: 250, margin: "0 auto"}}/>,
+      working:`\\text{ According to the Venn diagram above }  \\\\ n(X \\cup Y)  = (15 - 7) + 7 + (12 - 7) \\\\ = 8 + 7 + 5 = 20`
     },
   ];
   
@@ -250,7 +261,7 @@ const Sets = () => {
                   )}
                 </div>
                 {isCorrection && (
-                  <GetSolutionThree
+                  <GetSolutionSets
                     questions={questions}
                     onClose={closeAnswersHandler}
                   />
