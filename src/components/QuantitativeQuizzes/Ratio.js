@@ -97,15 +97,15 @@ const questions = [
     },
     {
       id: "Q8",
-      text: `\\text{The present ages of a father and his} \\\\ \\text{son are in the ratio 10 : 3. If the son is} \\\\ \\text{15 years old now, in how many years} \\\\ \\text{ will the ratio of their ages be} \\\\ \\text{ 2 : 1? }  \\text{ (WASSCE) }  `,
+      text: `\\text{The present ages of a father and his} \\\\ \\text{son are in the ratio 10 : 3. If the son is} \\\\ \\text{18 years old now, in how many years} \\\\ \\text{ will the ratio of their ages be} \\\\ \\text{ 2 : 1? } `,
       options: [
-        { id: 0, text: "chckwassce", isCorrect: false },
-        { id: 1, text: "chckwassce", isCorrect: false },
-        { id: 2, text: "chckwassce", isCorrect: true },
-        { id: 3, text: "chckwassce", isCorrect: false },
+        { id: 0, text: "12", isCorrect: false },
+        { id: 1, text: "6", isCorrect: false },
+        { id: 2, text: "24", isCorrect: true },
+        { id: 3, text: "30", isCorrect: false },
       ],
-      answer: "chckwassce",
-      working:`\\text{Since the son's age is 15 yrs} \\\\ \\therefore 3 \\rightarrow 15 \\text{ yrs} \\\\ 10 \\rightarrow \\frac{10}{3} \\times 15 = 50 \\text{ years} \\\\ \\text{So father's present age is 50 yrs} \\\\ \\therefore \\text{In x years' time:} \\\\ \\frac{\\text{Father's age}}{\\text{son's age}} = \\frac{50 + x}{15 + x} = \\frac{2}{1} \\\\ \\text{Cross-multiplying:} \\\\ 50 + x = 30 + 2x \\\\ \\therefore x = 20 \\text{ years}`
+      answer: "24",
+      working:`\\text{Since the son's age is 18 yrs} \\\\ \\therefore 3 \\rightarrow 18 \\text{ yrs} \\\\ 10 \\rightarrow \\frac{10}{3} \\times 18 = 60 \\text{ years} \\\\ \\text{So father's present age is 60 yrs} \\\\ \\therefore \\text{In x years' time:} \\\\ \\frac{\\text{Father's age}}{\\text{son's age}} = \\frac{60 + x}{18 + x} = \\frac{2}{1} \\\\ \\text{Cross-multiplying:} \\\\ 60 + x = 36 + 2x \\\\ \\therefore x = 24 \\text{ years}`
     },
     {
       id: "Q9",

@@ -40,24 +40,24 @@ const questions = [
       id: "Q3",
       text: `\\text{A train travels 60km in M minutes.} \\\\ \\text{If its average speed is 400km per hour,} \\\\ \\text{ find the value of M } \\\\ \\text{  (WASSCE)}`,
       options: [
-        { id: 0, text: "chk wassce", isCorrect: false },
-        { id: 1, text: "chk wassce", isCorrect: true },
-        { id: 2, text: "chk wassce", isCorrect: false },
-        { id: 3, text: "chk wassce", isCorrect: false },
+        { id: 0, text: "15", isCorrect: false },
+        { id: 1, text: "12", isCorrect: false },
+        { id: 2, text: "10", isCorrect: false },
+        { id: 3, text: "9", isCorrect: true },
       ],
-      answer: "9\\text{ mins}",
+      answer: "9",
       working: `\\text{ time M(mins)} = \\frac{distance}{speed}\\\\= \\frac{60 km}{400 kmh^{-1}} \\\\= 0.15 h \\\\= 0.15 \\times 60  \\\\= 9\\text{ mins}`
     },
     {
       id: "Q4",
       text: `\\text{A man travels at a rate of 25m/sec.} \\\\ \\text{If he travels for } 10 \\frac{1}{2} \\text{ hrs, how many}   \\\\ \\text{kilometres has he covered?  (NECO)}`,
       options: [
-        { id: 0, text: "chk neco", isCorrect: true },
-        { id: 1, text: "chk neco", isCorrect: false },
-        { id: 2, text: "chk neco", isCorrect: false },
-        { id: 3, text: "chk neco", isCorrect: false },
+        { id: 0, text: "262.5", isCorrect: false },
+        { id: 1, text: "945", isCorrect: true },
+        { id: 2, text: "970", isCorrect: false },
+        { id: 3, text: "995", isCorrect: false },
       ],
-      answer: "1",
+      answer: "945",
       working: `\\text{distance = ave. speed } \\times \\text{time} \\\\ \\therefore \\text{distance} = 25 \\text{m}s^{-1} \\times 10 \\frac{1}{2} \\text{ hrs} \\\\ = 25 \\times 3.6 \\text{ km}h^{-1} \\times 10.5 hrs \\\\= 945\\text{ km} \\\\ \\text{Note: A quick way to convert speed(in m/s)} \\\\ \\text{to speed(in km/h) is to multiply by 3.6} \\\\ \\text{While converting from km/h to m/s} \\\\ \\text{requires dividing by 3.6}`
     },
     {

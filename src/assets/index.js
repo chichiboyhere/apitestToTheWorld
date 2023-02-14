@@ -17,6 +17,8 @@ import venn3 from "./venn_3.png";
 import venn4 from "./venn_4.png";
 import venn5 from "./venn_5.png";
 import venn6 from "./venn_6.png";
+import site_pics2 from "./site_pics2.jpg";
+import site_pics4 from "./site_pics4.jpg"
 
 export default {
   contact,
@@ -38,4 +40,6 @@ export default {
   venn4,
   venn5,
   venn6,
+  site_pics2,
+  site_pics4
 };

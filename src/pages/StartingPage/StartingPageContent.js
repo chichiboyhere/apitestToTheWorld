@@ -32,7 +32,7 @@ const StartingPageContent = () => {
       <SectionWrapper
         title="Welcome to Apitest, your One-Stop Online Quantitative, Verbal and Mental aptitude tests."
         description="We are dedicated to bringing you world-class quizzes and tests aimed at bringing out the best in your computational and verbal skills."
-        mockupImg={assets.africanStudent}
+        mockupImg={assets.site_pics2}
         banner="banner"
       />
       <SectionWrapper
@@ -47,7 +47,7 @@ const StartingPageContent = () => {
         basically judges the rate at which you proferred a solution to the
         problems. That is your score divided by the time you spent on the
         test."
-        mockupImg={assets.fullSizeOriginal}
+        mockupImg={assets.site_pics4}
         reverse
       />
       {!isGameStart && !isVerbalGameStart && (
