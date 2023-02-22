@@ -25,6 +25,9 @@ import Rate from "./components/QuantitativeQuizzes/Rate";
 import Proportion from "./components/QuantitativeQuizzes/Proportion"; 
 import Surd from "./components/QuantitativeQuizzes/Surd";
 import Sets from "./components/QuantitativeQuizzes/Sets";
+import VerbalQuizOne  from "./components/AptitudeTests/VerbalQuizOne";
+import VerbalQuizTwo from "./components/AptitudeTests/VerbalQuizTwo";
+import VerbalQuizThree from "./components/AptitudeTests/VerbalQuizThree";
 
 function App() {
   return (
@@ -35,6 +38,9 @@ function App() {
         <Route path='/verbalTestOne' component={VerbalTestOne} />
         <Route path='/verbalTestTwo' component={VerbalTestTwo} />
         <Route path='/verbalTestThree' component={VerbalTestThree} />
+        <Route path='/verbalQuizOne' component={VerbalQuizOne} />
+        <Route path='/verbalQuizTwo' component={VerbalQuizTwo} />
+        <Route path='/verbalQuizThree' component={VerbalQuizThree} />
         <Route path='/quantitativeTestOne' component={NumberBasesAdditionSubtration} />
         <Route path='/quantitativeTestTwo' component={NumberBasesMultiplicationDivision} />
         <Route path='/quantitativeTestThree' component={NumberBasesConversion} />

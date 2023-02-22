@@ -32,7 +32,7 @@ const StartingPageContent = () => {
       <SectionWrapper
         title="Welcome to Apitest, your One-Stop Online Quantitative, Verbal and Mental aptitude tests."
         description="We are dedicated to bringing you world-class quizzes and tests aimed at bringing out the best in your computational and verbal skills."
-        mockupImg={assets.site_pics2}
+        mockupImg={assets.welcome_pic}
         banner="banner"
       />
       <SectionWrapper
@@ -47,7 +47,7 @@ const StartingPageContent = () => {
         basically judges the rate at which you proferred a solution to the
         problems. That is your score divided by the time you spent on the
         test."
-        mockupImg={assets.site_pics4}
+        mockupImg={assets.wlc_pic}
         reverse
       />
       {!isGameStart && !isVerbalGameStart && (
@@ -72,11 +72,11 @@ const StartingPageContent = () => {
         problem within the table limit you specified. You are to type in the
         answer to the problem in the input field below and press the 'Enter'
         button. This process will be repeated till 60 seconds elapses."
-        mockupImg={assets.cov_child_pupils}
+        mockupImg={assets.covenant_child_pupil}
         reverse
         linkMental
       />
-      <SectionWrapper
+      {/* <SectionWrapper
         title="In conclusion"
         description="In all three tests you'll have an option to save your results. This is
         useful if you want to keep track of your performances in the tests."
@@ -84,7 +84,7 @@ const StartingPageContent = () => {
         banner="banner02"
         link
       />
-      <Download />
+      <Download /> */}
     </>
   );
 };

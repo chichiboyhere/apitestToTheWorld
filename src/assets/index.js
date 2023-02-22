@@ -18,7 +18,10 @@ import venn4 from "./venn_4.png";
 import venn5 from "./venn_5.png";
 import venn6 from "./venn_6.png";
 import site_pics2 from "./site_pics2.jpg";
-import site_pics4 from "./site_pics4.jpg"
+import site_pics4 from "./site_pics4.jpg";
+import welcome_pic from "./welcome_pic.png";
+import wlc_pic from "./wlc_pic.png";
+import covenant_child_pupil from "./covenant_child_pupil.jpg"
 
 export default {
   contact,
@@ -41,5 +44,8 @@ export default {
   venn5,
   venn6,
   site_pics2,
-  site_pics4
+  site_pics4,
+  welcome_pic,
+  wlc_pic,
+  covenant_child_pupil
 };

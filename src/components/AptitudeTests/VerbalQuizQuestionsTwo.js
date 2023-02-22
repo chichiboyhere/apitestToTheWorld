@@ -9,6 +9,7 @@ const questions = [
           { id: 3, text: "years/no", isCorrect: false },
         ],
         answer: "yeses/noes.",
+        explanation:`The word 'yes' ends in 's', and the word 'no' ends in 'o' preceded by a consonant sound.`
       },
 
       {
@@ -21,6 +22,7 @@ const questions = [
           { id: 3, text: "Bushes/the Jerrys/summons", isCorrect: false },
         ],
         answer: "the Bushes/the Jerrys/summonses",
+        explanation:`The plural forms of persons' names and the plural form of '(a writ of) summons'. And the 's' is retained in 'summons' ('summonsed) as an element of law register.`
       },
       {
         id: "Q3",
@@ -32,6 +34,7 @@ const questions = [
           { id: 3, text: "contraband/aircraft", isCorrect: false },
         ],
         answer: "contraband/aircraft",
+        explanation:`The former as a plural collective noun does not end in 's', while the latter has its singular form as  as Its plural form.`
       },
       {
         id: "Q4",
@@ -44,11 +47,12 @@ const questions = [
           { id: 3, text: "slang and jargon/wordings/yesteryears", isCorrect: false },
         ],
         answer: "slang and jargon/wording/yesteryear",
+        explanation:`All those are none-count nouns. Hence, they are not marked by a plural marker 's' or any other plural marker.`
       },
 
       {
         id: "Q5",
-        text: `The revered cleric had a large ____ as the Christian ___ .`,
+        text: `The reverred cleric had a large ____ as the Christian ___ .`,
         options: [
           { id: 0, text: "following/faithful", isCorrect: true },
           { id: 1, text: "followership/faithful", isCorrect: false },
@@ -56,6 +60,7 @@ const questions = [
           { id: 3, text: "followership/faithfuls", isCorrect: false },
         ],
         answer: "following/faithful",
+        explanation:`The first refers to followers or members of a group; whereas, 'faithful' is an adjective and should be preceded by 'the".`
       },
       {
         id: "Q6",
@@ -67,6 +72,7 @@ const questions = [
           { id: 3, text: "splinter/posse/blush", isCorrect: true },
         ],
         answer: "splinter/posse/blush",
+        explanation:`So is the 'partitive' for the non- count noun, and the collective nouns for the last two. `
       },
       {
         id: "Q7",
@@ -78,6 +84,7 @@ const questions = [
           { id: 3, text: "Vermin/head of cattle/dozen", isCorrect: true },
         ],
         answer: "Vermin/head of cattle/dozen",
+        explanation:`The first is integrally plural (collective plural) and requires no plural marker, while the last two hint at null pluralisatiion because of the number before them as a set number.`
       },
       {
         id: "Q8",
@@ -89,6 +96,7 @@ const questions = [
           { id: 3, text: "formulae/indexes/appendixes", isCorrect: false },
         ],
         answer: "formulas/indexes/appendices",
+        explanation:`These are a question of foreign plural nouns contextually used.`
       },
       {
         id: "Q9",
@@ -100,6 +108,7 @@ const questions = [
           { id: 3, text: "cups full/runners-ups", isCorrect: false },
         ],
         answer: "cupfuls/runners-up",
+        explanation:`The plural marker 's' is used, unlike 'cups full', and the main noun of a compound noun of irrelevant preposition should be pluralused.`
       },
       {
         id: "Q10",
@@ -112,6 +121,7 @@ const questions = [
           { id: 3, text: "gander/doe/kennel /rustle/clatter/bouquet", isCorrect: false },
         ],
         answer: "fox/mare/stable/rustle/clatter/bouquet",
+        explanation:`All these are predicated on contexts - and basic information.`
       },
 ];
 export default questions;

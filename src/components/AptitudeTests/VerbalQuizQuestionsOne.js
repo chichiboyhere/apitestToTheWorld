@@ -9,6 +9,8 @@ const questions = [
           { id: 3, text: "a/an", isCorrect: false },
         ],
         answer: "a/a",
+        explanation:`A preceding vowel sound in a word begun with a consonant letter is begin with 'a', and vice versa ('an').`
+
       },
       {
         id: "Q2",
@@ -20,6 +22,7 @@ const questions = [
           { id: 3, text: "the/-", isCorrect: false },
         ],
         answer: "-/-",
+        explanation:`The word 'public' in the context of the environment ('in the open') is not preceded by 'the', as is 'space' in the context of 'the universe. Hence choosing the blank options is appropriate, here.`
       },
       {
         id: "Q3",
@@ -32,6 +35,7 @@ const questions = [
           { id: 3, text: "One Miss Sanda", isCorrect: false },
         ],
         answer: "the Miss Sanda",
+        explanation:`In the context of a person known by both the speaker and the listener, unlike that known by either of them.`
       },
       {
         id: "Q4",
@@ -43,6 +47,7 @@ const questions = [
           { id: 3, text: "-/-", isCorrect: false },
         ],
         answer: "the/the",
+        explanation:`A question of convention. Hence, it is fixated.`
       },
       {
         id: "Q5",
@@ -54,6 +59,7 @@ const questions = [
           { id: 3, text: "the/-/a", isCorrect: false },
         ],
         answer: "the/the/-",
+        explanation:`Some specific countries having a plural noun in them are preceded by 'the', with '(the) Gambia' and (the) Hague' as exceptions.`
       },
       {
         id: "Q6",
@@ -65,6 +71,7 @@ const questions = [
           { id: 3, text: "Your car and my", isCorrect: false },
         ],
         answer: "Alice's and my car",
+        explanation:`In the context of the word order of personal pronouns and the nature of 'possessives' as pre-modifiers before nouns. `
       },
       {
         id: "Q7",
@@ -76,6 +83,7 @@ const questions = [
           { id: 3, text: "plenty", isCorrect: false },
         ],
         answer: "some",
+        explanation:`The quantifier 'some' is used in the context of making an offer of something.`
       },
       {
         id: "Q8",
@@ -83,10 +91,11 @@ const questions = [
         options: [
           { id: 0, text: "lesser/lesser/lesser", isCorrect: false },
           { id: 1, text: "less/less/less", isCorrect: false },
-          { id: 2, text: "lesser/less/less", isCorrect: false },
-          { id: 3, text: "less/lesser/less", isCorrect: true },
+          { id: 2, text: "less/lesser/less", isCorrect: false },
+          { id: 3, text: "None of the above", isCorrect: true },
         ],
-        answer: "#",
+        answer: "None of the above",
+        explanation:`In the context of Standard English, 'fewer ' is used with a plural noun, 'lesser' is used as a preceding adjective before a count noun or number.`
       },
       {
         id: "Q9",
@@ -98,6 +107,7 @@ const questions = [
           { id: 3, text: "few/some", isCorrect: false },
         ],
         answer: "a few/some",
+        explanation:`The underlying positive context is that of 'enough' oranges (plural), and 'some' given out.`
       },
       {
         id: "Q10",
@@ -109,6 +119,7 @@ const questions = [
           { id: 3, text: "two first two", isCorrect: false },
         ],
         answer: "two first",
+        explanation:`The phrase 'two first' is appropriate, as against 'first two runners-up' implying second and third position (place).`
       },
 ];
 export default questions;

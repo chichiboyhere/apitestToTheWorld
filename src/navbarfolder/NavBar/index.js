@@ -69,6 +69,9 @@ const Navbar = () => {
                     <Link to="/verbalTestOne" className="dropdown-content-mobile__li">#1 Test</Link><hr></hr>
                     <Link to="/verbalTestTwo"  className="dropdown-content-mobile__li">#2 Test</Link><hr></hr>
                     <Link to="/verbalTestThree"  className="dropdown-content-mobile__li">#3 Test</Link><hr></hr>
+                    <Link to="/verbalQuizOne"  className="dropdown-content-mobile__li">Determiners</Link><hr></hr>
+                    <Link to="/verbalQuizTwo"  className="dropdown-content-mobile__li">Nouns: Types, Pluralsation</Link><hr></hr>
+                    <Link to="/verbalQuizThree"  className="dropdown-content-mobile__li">Verbs: Types, Tenses</Link><hr></hr>
                   </div>}   
                 
               </li>
@@ -132,6 +135,9 @@ const Navbar = () => {
                     <Link to="/verbalTestOne" className="dropdown-content__li">#1 Test</Link>
                     <Link to="/verbalTestTwo"  className="dropdown-content__li">#2 Test</Link>
                     <Link to="/verbalTestThree"  className="dropdown-content__li">#3 Test</Link>
+                    <Link to="/verbalQuizOne"  className="dropdown-content__li">Determiners</Link>
+                    <Link to="/verbalQuizTwo"  className="dropdown-content__li">Nouns: Types, Pluralsation</Link>
+                    <Link to="/verbalQuizThree"  className="dropdown-content__li">Verbs: Types, Tenses</Link>
                   </div>
               </div>
               

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/Global";
 import { Link } from "react-router-dom";
 import { NavBtn, NavBtnLink } from "../navbarfolder/NavBar/NavbarElements";
+
 const SectionWrapper = ({
   title,
   description,

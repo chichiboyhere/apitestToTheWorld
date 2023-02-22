@@ -14,6 +14,9 @@ function GetSolution({ questions, onClose, shortTest }) {
           <div style={{ color: "white", fontSize: 20 }}>
            Ans: {question.answer}
           </div>
+          <div style={{ color: "white", fontSize: 20 }}>
+           Explantion: {question.explanation}
+          </div>
           <hr></hr>
         </div>
       ))}
