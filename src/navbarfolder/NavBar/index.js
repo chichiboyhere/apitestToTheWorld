@@ -167,13 +167,22 @@ const Navbar = () => {
                   </div>
               </div>
               <div className="dropdown">
-                  <button className="dropbtn">Tests
+                  <button className="dropbtn">Quantitative Tests
                     <FontAwesomeIcon icon={{faCaretDown} }></FontAwesomeIcon>
                   </button>
                   <div className="dropdown-content">
                   <Link to="/numerationTest" className="dropdown-content__li">Number and Numeration</Link>
                     <Link to="#"  className="dropdown-content__li">Algebra</Link>
                     <Link to="#"  className="dropdown-content__li">Geometry</Link>
+                  </div>
+              </div>
+              <div className="dropdown">
+                  <button className="dropbtn">Verbal Tests
+                    <FontAwesomeIcon icon={{faCaretDown} }></FontAwesomeIcon>
+                  </button>
+                  <div className="dropdown-content">
+                  <Link to="/numerationTest" className="dropdown-content__li">Grammar</Link>
+                   
                   </div>
               </div>
               

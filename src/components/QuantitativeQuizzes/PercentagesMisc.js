@@ -15,10 +15,10 @@ const questions = [
       id: "Q1",
       text: `\\text{A worker's present salary is} \\\\ \\text{N24,000 per annum. His annual} \\\\ \\text{increment is 10% of his basic salary.} \\\\ \\text{ What would be his annual salary at} \\\\ \\text{the beginning of the third year?} \\\\ \\text{ (UME)}`,
       options: [
-        { id: 0, text: "nill", isCorrect: false },
-        { id: 1, text: "nill", isCorrect: false },
-        { id: 2, text: "nill", isCorrect: false },
-        { id: 3, text: "nill", isCorrect: true },
+        { id: 0, text: "N28,800", isCorrect: false },
+        { id: 1, text: "N29,040", isCorrect: true },
+        { id: 2, text: "N31,200", isCorrect: false },
+        { id: 3, text: "N31,944", isCorrect: false },
       ],
       answer: "N29,040",
       working: `\\text{Year 1: Principal = N24,000}\\\\ \\text{Increase} = +  N2400 \\\\ \\text{(i.e } \\frac{10}{100} of N24,000 = N2400 \\text{)} \\\\ \\text{Year 2: Principal = N26,400 } \\\\  \\text{      Increase} = +  N2640 \\\\ \\text{(i.e } \\frac{10}{100} of N26,400 = N2640 \\text{)} \\\\ \\text{Year 3: Principal = N29,040} \\\\ \\text{Alternatively:} \\\\ A = P(1 + \\frac{r}{100})^n \\\\=24,000(1 + \\frac{10}{100})^2\\\\=24,000(1.1)^2 \\\\=24,000(1.1)^2 = N29,040 `
@@ -75,12 +75,12 @@ const questions = [
       id: "Q6",
       text: `\\text{If 85% of x is N3230, what} \\\\  \\text{is the value of x?} \\text{ (WASSCE) }`,
       options: [
-        { id: 0, text: "nill", isCorrect: true },
-        { id: 1, text: "nill", isCorrect: false },
-        { id: 2, text: "nill", isCorrect: false },
-        { id: 3, text: "nill", isCorrect: false },
+        { id: 0, text: "N2745.50", isCorrect: false },
+        { id: 1, text: "N3714.50", isCorrect: false },
+        { id: 2, text: "N3800.00", isCorrect: true },
+        { id: 3, text: "N4845.00", isCorrect: false },
       ],
-      answer: "205",
+      answer: "N3,800",
       working:`85\\text{% of x} = N3230 \\\\ \\frac{85}{100} \\times x = 3230 \\\\ \\therefore x =  \\frac{3230 \\times 100}{85} = N3,800`
     },
     {
