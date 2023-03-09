@@ -1,17 +1,16 @@
 import { React, useState, useRef, useEffect } from "react";
-import classes from "./AptitudeTests.module.css";
+import classes from "../AptitudeTests/AptitudeTests.module.css";
 import MobileStepper from "@material-ui/core/MobileStepper";
 import Button from "@material-ui/core/Button";
 import SubmissionConfirmer from "../UI/SubmissionConfirmer";
 import Snackbar from "@material-ui/core/Snackbar";
 import MuiAlert from "@material-ui/lab/Alert";
-import Text from "./Text";
-import MathJax from "react-mathjax";
-import SolutionToNumerationTest from "./SolutionToNumerationTest";
+import Text from "../AptitudeTests/Text"
+import SolutionToVerbalTest from "./SolutionToVerbalTest";
 import styles from "../../styles/Global";
 import Message from "../UI/Message";
 
-const TestModel = ({Quiz_Set, test_title }) => {
+const VerbalTestModel = ({Quiz_Set, test_title }) => {
   const [activeStep, setActiveStep] = useState(0);
   const [booleanOnSubmit, setBooleanOnSubmit] = useState(false);
   const [total, setTotal] = useState(0);
@@ -43,7 +42,7 @@ const TestModel = ({Quiz_Set, test_title }) => {
       return {
         ...card,
         options: card.options.map((opt) => {
-          const checked = opt.que_options === e.target.value;
+          const checked = opt.Qu_options === e.target.value;
           return {
             ...opt,
             selected: checked,
@@ -160,8 +159,8 @@ const TestModel = ({Quiz_Set, test_title }) => {
       item.options.map((anslist) => {
         //  console.log("anslist.selected===>",anslist.selected)
         if (anslist.selected === true) {
-          if (anslist.que_options === item.ans) {
-            //   console.log("===>",anslist.que_options,item.ans)
+          if (anslist.Qu_options === item.ans) {
+            //   console.log("===>",anslist.Qu_options,item.ans)
             count = count + 1;
           }
         }
@@ -229,7 +228,7 @@ const TestModel = ({Quiz_Set, test_title }) => {
             
           </div>
           {isCorrection && (
-            <SolutionToNumerationTest
+            <SolutionToVerbalTest
               quizer={quizer}
               onClose={closeAnswersHandler}
             />
@@ -252,9 +251,9 @@ const TestModel = ({Quiz_Set, test_title }) => {
                   <br></br>
 
                   <div className={classes.questioncard}>
-                    <MathJax.Provider>
+                    
                       <h3 className={classes.questiontextThree}>
-                        <MathJax.Node formula={item.que} />
+                      {index + 1}. {item.que}
                       </h3>
                       {item.options.map((ans, index_ans) => {
                         index_ans = index_ans + 1;
@@ -263,14 +262,14 @@ const TestModel = ({Quiz_Set, test_title }) => {
                             key={index_ans}
                             
                           >
-                            <div style={{marginLeft:'40%', display:'flex', flexDirection: 'row'}}>
-                            <MathJax.Node formula={ans.que_options} />
+                            <div style={{marginLeft:'30%', display:'flex', flexDirection: 'row'}}>
+                            {ans.Qu_options}
                                &nbsp;&nbsp;
                               <input
                                 key={index_ans}
                                 type="radio"
                                 name={item.id}
-                                value={ans.que_options}
+                                value={ans.Qu_options}
                                 checked={!!ans.selected}
                                 onChange={onInputChange}
                               />
@@ -279,7 +278,7 @@ const TestModel = ({Quiz_Set, test_title }) => {
                           </div>
                         );
                       })}
-                    </MathJax.Provider>
+                    
                   </div>
                 </div>
               );
@@ -327,4 +326,4 @@ const TestModel = ({Quiz_Set, test_title }) => {
   );
 };
 
-export default TestModel;
+export default VerbalTestModel;

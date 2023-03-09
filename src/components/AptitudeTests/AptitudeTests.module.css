@@ -11,7 +11,13 @@
   max-width: 40rem;
   padding: 10px;
 }
-    
+
+.menuWrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+  
 .questioncard {
   margin: 0 auto;
   width: 90%; 

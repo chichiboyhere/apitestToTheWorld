@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
-import TestModel from './TestModel'
+import React, {useState} from 'react';
+import TestModel from './TestModel';
+import Quiz_Set from "./QuNumberAndNumeration";
 import Card from '../UI/Card'
 import Text from './Text'
 import Buton from '../UI/Button'
 import classes from "./AptitudeTests.module.css";
 
-const StartTest = () => {
-    const[startTest, setStartTest] = useState(false)
-    
 
+const NumberNumerationTest = () => {
+    const[startTest, setStartTest] = useState(false)
     const handleStart = () =>{
         setStartTest(true)
     }
@@ -24,13 +24,13 @@ const StartTest = () => {
       </div>
       :
       <>
-      <TestModel/>
+      <TestModel Quiz_Set={Quiz_Set} test_title={"Number and Numeration"}/>
       </>
      }
      
     </Card>
-    </div>
-  )
+    </div>)
 }
 
-export default StartTest
+export default NumberNumerationTest;
+

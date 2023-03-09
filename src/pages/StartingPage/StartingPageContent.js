@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import VerbalProblems from "../../components/AptitudeShortTests/VerbalProblems";
 import QuantitativeProblems from "../../components/AptitudeShortTests/QuantitativeProblems";
 import Features from "../../components/Features";
-import Download from "../../components/Download";
 import SectionWrapper from "../../components/SectionWrapper";
 import assets from "../../assets";
 
@@ -30,23 +29,21 @@ const StartingPageContent = () => {
   return (
     <>
       <SectionWrapper
-        title="Welcome to Apitest, your One-Stop Online Quantitative, Verbal and Mental aptitude tests."
-        description="We are dedicated to bringing you world-class quizzes and tests aimed at bringing out the best in your computational and verbal skills."
-        mockupImg={assets.welcome_pic}
+        title="Welcome to Apitest, Your Online Centre of Academic Excellence "
+        description="Apitest is an online educational resourse specifically targeted at helping secondary level students ace their final examinations. Our team of vastly experienced teachers boast of world-class teaching techniques which they have put together in concise lesson notes and videos for students imbibe easily."
+        mockupImg={assets.welcome_pic2}
         banner="banner"
       />
       <SectionWrapper
-        title="The Quantitative Aptitude and Verbal Test"
-        description="The Quantitative Aptitude is a test of the student's computational
-        skills.  You will be
-        flashed a mathematical problem with four options from which you're to
+        title="Topical Quizzes and Broad-Branch Tests"
+        description="Learning is never complete without practice. We offer UTME, WASSCE and NECO quizzes, aimed at bringing out the best in the student. Each quiz has ten questions based on a sub-section of a topic in the subject. You will be
+        flashed a problem with four options from which you're to
         pick an answer. If the option picked is correct, your score will be
-        increased by one, else it remains the same. The Verbal Aptitude, on the other hand tests how good the students is in communication,
-        via written words. At the end of each of the tests you will receive a final score in percentage.
+        increased by one, else it remains the same.  At the end of each of quiz you will receive a final score in percentage.
         You will also get your score per second(SPS) -- which
         basically judges the rate at which you proferred a solution to the
         problems. That is your score divided by the time you spent on the
-        test."
+        test. This is then followed by a detailed solution of each of the questions. The tests are not much different from the quizzes except that each test boasts of twenty questions from a branch(not just a topic) of the syllabus. You also get a chance to navigate back and forth to check or uncheck your chosen answers."
         mockupImg={assets.wlc_pic}
         reverse
       />

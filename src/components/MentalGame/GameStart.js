@@ -8,7 +8,7 @@ import styles from "../../styles/Global";
 
 
 
-const GameStart = (props) => {
+const GameStart = () => {
   const [isGameStart, setIsGameStart] = useState(false);
   const [tableIn, setTableIn] = useState("");
   const [gameInstruction, setGameInstruction] = useState("");

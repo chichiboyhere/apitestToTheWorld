@@ -6,7 +6,8 @@ import VerbalTestOne from "./components/AptitudeTests/VerbalTestOne";
 import VerbalTestTwo from "./components/AptitudeTests/VerbalTestTwo";
 import VerbalTestThree from "./components/AptitudeTests/VerbalTestThree";
 import Layout from "./components/UI/Layout";
-import StartTest from "./components/AptitudeTests/StartTest";
+import GrammarTest from "./components/VerbalTests/GrammarTest";
+import NumberNumerationTest from "./components/AptitudeTests/NumberNumerationTest";
 import NumberBasesAdditionSubtration from "./components/QuantitativeQuizzes/NumberBasesAdditionSubtration";
 import NumberBasesMultiplicationDivision from "./components/QuantitativeQuizzes/NumberBasesMultiplicationDivision";
 import NumberBasesConversion from "./components/QuantitativeQuizzes/NumberBasesConversion";
@@ -28,6 +29,9 @@ import Sets from "./components/QuantitativeQuizzes/Sets";
 import VerbalQuizOne  from "./components/AptitudeTests/VerbalQuizOne";
 import VerbalQuizTwo from "./components/AptitudeTests/VerbalQuizTwo";
 import VerbalQuizThree from "./components/AptitudeTests/VerbalQuizThree";
+import MathMenu from "./pages/MathMenu";
+import EnglishMenu from "./pages/EnglishMenu";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
@@ -59,8 +63,12 @@ function App() {
         <Route path='/quantitativeTestSixteen' component={Logarithm} />
         <Route path='/quantitativeTestSeventeen' component={Surd} />
         <Route path='/quantitativeTestEighteen' component={Sets} />
-        <Route path='/numerationTest' component={StartTest} />
+        <Route path='/numerationTest' component={NumberNumerationTest} />
+        <Route path='/grammarTest' component={GrammarTest} />
         <Route path='/contact' component={ContactPage} />
+        <Route path='/aboutus' component={AboutUs} />
+        <Route path='/mathmenu' component={MathMenu} />
+        <Route path='/englishmenu' component={EnglishMenu} />
     </Layout>
     </HashRouter>
   );

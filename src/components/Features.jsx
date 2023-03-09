@@ -16,13 +16,13 @@ const Features = ({startTheGame, startTheVerbalGame}) => {
       <div className={`${styles.subSection} flex-col text-center`}>
         <div>
           <h1 className={`${styles.h1Text} ${styles.whiteText}`}>Aptitude Test Samples</h1>
-          <p className={`${styles.pText} ${styles.whiteText}`}>Click on the buttons below to get a glimpse of what the Quantitative and Verbal
-          Aptitude tests look like. Here are just 5 of such questions in each test.</p>
+          <p className={`${styles.pText} ${styles.whiteText}`}>Click on the buttons below to get a glimpse of what a
+          quiz looks like. </p>
         </div>
 
         <div className={styles.flexWrap}>
-          <FeatureCard iconUrl={assets.logicalIcon} iconText="Quantitative Test" gameStartHandler={startTheGame} />
-          <FeatureCard iconUrl={assets.verbalIcon} iconText="Verbal Test" gameStartHandler={startTheVerbalGame}/> 
+          <FeatureCard iconUrl={assets.logicalIcon} iconText="Mathematics Quiz" gameStartHandler={startTheGame} />
+          <FeatureCard iconUrl={assets.verbalIcon} iconText="English Quiz" gameStartHandler={startTheVerbalGame}/> 
         </div>
       </div>
     </div>
