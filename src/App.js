@@ -32,6 +32,7 @@ import VerbalQuizThree from "./components/AptitudeTests/VerbalQuizThree";
 import MathMenu from "./pages/MathMenu";
 import EnglishMenu from "./pages/EnglishMenu";
 import AboutUs from "./pages/AboutUs";
+import NumberBasesAdditionNotes from "./components/MathLessonNotes/NumberBasesAdditionNotes";
 
 function App() {
   return (
@@ -69,6 +70,7 @@ function App() {
         <Route path='/aboutus' component={AboutUs} />
         <Route path='/mathmenu' component={MathMenu} />
         <Route path='/englishmenu' component={EnglishMenu} />
+        <Route path='/numberBasesAdditionNotes' component={NumberBasesAdditionNotes} />
     </Layout>
     </HashRouter>
   );

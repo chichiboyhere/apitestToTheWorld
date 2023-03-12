@@ -5,7 +5,7 @@ export default function ControlButtons(props) {
 const StartButton = (
 	<div className="btn btn-one"
 		onClick={props.handleStart}>
-	Start
+	Take Quiz
 	</div>
 );
 const ActiveButtons = (

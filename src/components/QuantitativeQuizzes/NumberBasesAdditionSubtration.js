@@ -8,6 +8,10 @@ import GetSolutionThree from "../AptitudeTests/GetSolutionThree";
 import styles from "../../styles/Global";
 import Card from "../UI/Card";
 import Message from "../UI/Message";
+import { Link } from 'react-router-dom';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faVideo } from "@fortawesome/free-solid-svg-icons";
 
 const questions = [
   {
@@ -132,6 +136,10 @@ const questions = [
   },
 ];
 
+const lesson =[
+  {title:"Addition and Subtraction in Number Bases",
+  text: "Blah blah blah"}
+]
 const NumberBasesAdditionSubtration = () => {
   const [isActive, setIsActive] = useState(false);
   const [isPaused, setIsPaused] = useState(true);
@@ -143,6 +151,7 @@ const NumberBasesAdditionSubtration = () => {
   const [score, setScore] = useState(0);
   const [isCorrection, setIsCorrection] = useState(false);
   const [startTest, setStartTest] = useState(false);
+  
 
   useEffect(() => {
     let interval = null;
@@ -199,12 +208,13 @@ const NumberBasesAdditionSubtration = () => {
     setIsCorrection(true);
   };
 
+  
   return (
     <Card className={classes.containerWrapper}>
       {showTime && (
         <>
           <div className={classes.stopwatch}>
-            <Timer time={time} />
+            {startTest? <Timer time={time} /> : ""}
             <Text text={"Number Bases I (Addition and Subtraction)"} />
             <ControlButtons
               active={isActive}
@@ -212,6 +222,9 @@ const NumberBasesAdditionSubtration = () => {
               handleStart={handleStart}
               handleReset={handleReset}
             />
+            <FontAwesomeIcon icon={faVideo}></FontAwesomeIcon>
+            <Link to="/numberBasesAdditionNotes"><div className="btn btn-one">Note</div></Link>
+           
           </div>
         </>
       )}

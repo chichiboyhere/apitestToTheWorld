@@ -27,7 +27,7 @@ const AboutUs = () => {
                 <h1 className={`${styles.h1Text} ${styles.blackText}`}>Excellence</h1>
                 </div>
                 
-                <h3>We offer nothing but the very best services</h3>
+                <h3>For us, it's top notch service or nothing</h3>
           </div>
         </Card>
         <Card className={classes.containerWrapper}>
@@ -35,7 +35,7 @@ const AboutUs = () => {
              <div  className={`${styles.subSection} flex-col text-center`}>
                 <h1 className={`${styles.h1Text} ${styles.blackText}`}>Integrity</h1>
              </div>
-             <h3>We deliver on our promises.</h3>
+             <h3>We deliver on our promises. Always.</h3>
           </div>
         </Card>
         <Card className={classes.containerWrapper}>
@@ -51,7 +51,7 @@ const AboutUs = () => {
           <div  className={`${styles.subSection} flex-col text-center`}>
                 <h1 className={`${styles.h1Text} ${styles.blackText}`}>Progression</h1>
           </div>
-          <h3>We never rest on our oars.</h3>
+          <h3>We never rest on our oars. There's always room for improvement.</h3>
           </div>
         </Card>
       </div>

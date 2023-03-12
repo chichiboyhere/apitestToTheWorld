@@ -24,6 +24,9 @@ import welcome_pic2 from "./welcome_pic2.png";
 import wlc_pic from "./wlc_pic.png";
 import covenant_child_pupil from "./covenant_child_pupil.jpg";
 import site_pics5 from "./site_pics5.jpg";
+import numberAdditionWhite from "./numberadditionwhite.png"
+import numberAdditionWhite2 from "./numberadditionwhite2.png"
+import numberAdditionWhite3 from "./numberadditionwhite3.png"
 
 export default {
   contact,
@@ -45,5 +48,8 @@ export default {
   welcome_pic,
   welcome_pic2,
   wlc_pic,
-  covenant_child_pupil
+  covenant_child_pupil,
+  numberAdditionWhite,
+  numberAdditionWhite2,
+  numberAdditionWhite3
 };
