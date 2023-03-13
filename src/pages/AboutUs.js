@@ -4,7 +4,7 @@ import assets from "../assets";
 import classes from "../components/AptitudeTests/AptitudeTests.module.css";
 import Card from "../components/UI/Card";
 import styles from "../styles/Global";
-import { Link } from "react-router-dom";
+
 
 const AboutUs = () => {
   return (

@@ -2,9 +2,6 @@ import { Route, HashRouter} from "react-router-dom";
 import Api from "./Api";
 import HomePage from "./pages/HomePage";
 import ContactPage from "./pages/ContactPage";
-import VerbalTestOne from "./components/AptitudeTests/VerbalTestOne";
-import VerbalTestTwo from "./components/AptitudeTests/VerbalTestTwo";
-import VerbalTestThree from "./components/AptitudeTests/VerbalTestThree";
 import Layout from "./components/UI/Layout";
 import GrammarTest from "./components/VerbalTests/GrammarTest";
 import NumberNumerationTest from "./components/AptitudeTests/NumberNumerationTest";
@@ -40,9 +37,6 @@ function App() {
     <Layout>
         <Route path='/' component={HomePage} exact/>
         <Route path='/my-app' component={Api} />  
-        <Route path='/verbalTestOne' component={VerbalTestOne} />
-        <Route path='/verbalTestTwo' component={VerbalTestTwo} />
-        <Route path='/verbalTestThree' component={VerbalTestThree} />
         <Route path='/verbalQuizOne' component={VerbalQuizOne} />
         <Route path='/verbalQuizTwo' component={VerbalQuizTwo} />
         <Route path='/verbalQuizThree' component={VerbalQuizThree} />

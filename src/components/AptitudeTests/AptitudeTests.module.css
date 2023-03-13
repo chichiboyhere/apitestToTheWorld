@@ -104,8 +104,19 @@ h2{
   margin-top: 30px;
 }
 
+.displayButtons{
+  background-color: #e42a2a;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 30px; 
+}
 @media (max-width: 768px) {
-  .finalresults button{
+  .finalresults button {
     flex-direction:column;
     display: block;
     border: 5px solid #e78888;
@@ -113,10 +124,19 @@ h2{
     width: 100%;
     font-weight: 800;
     border-radius: 20px;
+  } 
+}
+@media (max-width: 768px) {
+  .displayButtons {
+    flex-direction:column; 
+    display: block; 
+    /* border: 5px solid #e78888; */
+   align-items: center;
+    width: 100%;
+    font-weight: 800;
+    border-radius: 20px;
   }
 }
-
-
 .opt{
   display: table;   
     margin: 0 auto;
@@ -176,9 +196,10 @@ h2{
     margin: 0 auto;
     margin-top: 20px;
     border-radius: 15px;
-    padding-top: 15px;
+    padding: 12px
+    /* padding-top: 15px;
     padding-right: 10px;
-    padding-left: 10px
+    padding-left: 10px */
 }
 
 @media (max-width: 768px) {
@@ -279,8 +300,8 @@ h2{
   .btn-one{
       background-color: #e42a2a;
   }
-  @media (max-width: 768px) {
-      .btn{
-        width: 25vw;
+  /* @media (max-width: 768px) {
+      .btn-one{
+        width: 100vw;
       }
-    }
+    } */

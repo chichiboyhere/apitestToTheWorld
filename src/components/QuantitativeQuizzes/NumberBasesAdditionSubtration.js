@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVideo } from "@fortawesome/free-solid-svg-icons";
+import { faNoteSticky } from "@fortawesome/free-solid-svg-icons";
 
 const questions = [
   {
@@ -214,16 +215,20 @@ const NumberBasesAdditionSubtration = () => {
       {showTime && (
         <>
           <div className={classes.stopwatch}>
-            {startTest? <Timer time={time} /> : ""}
+            {startTest ? <Timer time={time} /> : ""}
             <Text text={"Number Bases I (Addition and Subtraction)"} />
+
+            
             <ControlButtons
               active={isActive}
               isPaused={isPaused}
               handleStart={handleStart}
               handleReset={handleReset}
+              
             />
-            <FontAwesomeIcon icon={faVideo}></FontAwesomeIcon>
-            <Link to="/numberBasesAdditionNotes"><div className="btn btn-one">Note</div></Link>
+            
+            {startTest ? "" :<div className={classes.displayButtons}>Video <FontAwesomeIcon icon={faVideo}></FontAwesomeIcon></div>} 
+            {startTest ? "" : <div className={classes.displayButtons}> <Link to="/numberBasesAdditionNotes">Note</Link> <FontAwesomeIcon icon={faNoteSticky}></FontAwesomeIcon></div>}
            
           </div>
         </>
