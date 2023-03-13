@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d68118b8.css",
+    "main.js": "/static/js/main.992f8d86.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/welcome_pic2.png": "/static/media/welcome_pic2.a1ae138e2c3923aae6bf.png",
+    "static/media/welcome_pic.png": "/static/media/welcome_pic.c52a126506dd4d497a55.png",
+    "static/media/covenant_child_pupil.jpg": "/static/media/covenant_child_pupil.db1f170a7d5f44abf96a.jpg",
+    "static/media/wlc_pic.png": "/static/media/wlc_pic.5ff6a7b352316fc1f2f5.png",
+    "static/media/students_more.jpg": "/static/media/students_more.2808a7339e54f4eac18f.jpg",
+    "static/media/beautiful-african-college-stud.jpg": "/static/media/beautiful-african-college-stud.b6ec3cf615f62ea85f66.jpg",
+    "static/media/venn_3.png": "/static/media/venn_3.6261f8c756877d74c306.png",
+    "static/media/numberadditionwhite.png": "/static/media/numberadditionwhite.2eac334f194c2c6addf1.png",
+    "static/media/venn_5.png": "/static/media/venn_5.df45178d1907c709a5ac.png",
+    "static/media/site_pics5.jpg": "/static/media/site_pics5.2aebebc724c089a44255.jpg",
+    "static/media/venn_4.png": "/static/media/venn_4.81efde963b6ab6bd5432.png",
+    "static/media/contact.jpg": "/static/media/contact.e724fa5335cfd5e3408d.jpg",
+    "static/media/venn.png": "/static/media/venn.f12849a5ec7cb768f34a.png",
+    "static/media/numberadditionwhite3.png": "/static/media/numberadditionwhite3.b76b259df07ae35422aa.png",
+    "static/media/venn_6.png": "/static/media/venn_6.3545b8c6eeffeb7cf1ed.png",
+    "static/media/venn_2.png": "/static/media/venn_2.2b3c31768b296c4c3dcf.png",
+    "static/media/site_pics4.jpg": "/static/media/site_pics4.8929976edc0420a76f81.jpg",
+    "static/media/numberadditionwhite2.png": "/static/media/numberadditionwhite2.35fb1ca31d77d14ae4f6.png",
+    "static/media/logical_reasoning_icon.png": "/static/media/logical_reasoning_icon.a205ac7c962596c57861.png",
+    "static/media/banner02.svg": "/static/media/banner02.2f6ba07c3ed4697086f7.svg",
+    "static/media/banner03.svg": "/static/media/banner03.a278a430daff7d7a2a6e.svg",
+    "static/media/banner.svg": "/static/media/banner.87df7821400c91a368cb.svg",
+    "static/media/banner04.svg": "/static/media/banner04.b43b10b807bb6396ac49.svg",
+    "index.html": "/index.html",
+    "main.d68118b8.css.map": "/static/css/main.d68118b8.css.map",
+    "main.992f8d86.js.map": "/static/js/main.992f8d86.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d68118b8.css",
+    "static/js/main.992f8d86.js"
+  ]
+}

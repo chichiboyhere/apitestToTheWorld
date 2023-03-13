@@ -31,6 +31,9 @@ import EnglishMenu from "./pages/EnglishMenu";
 import AboutUs from "./pages/AboutUs";
 import NumberBasesAdditionNotes from "./components/MathLessonNotes/NumberBasesAdditionNotes";
 
+// https://cra.link/deployment for production
+// //learning how to deploy my react app: https://www.copycat.dev/blog/reactjs-build-production/ 
+
 function App() {
   return (
     <HashRouter>
