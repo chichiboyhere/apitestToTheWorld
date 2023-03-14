@@ -33,6 +33,7 @@ import NumberBasesAdditionNotes from "./components/MathLessonNotes/NumberBasesAd
 
 // https://cra.link/deployment for production
 // //learning how to deploy my react app: https://www.copycat.dev/blog/reactjs-build-production/ 
+// https://app.netlify.com/sites/dainty-begonia-44a668
 
 function App() {
   return (

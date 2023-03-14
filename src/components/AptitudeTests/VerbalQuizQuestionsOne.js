@@ -4,12 +4,12 @@ const questions = [
         text: `I saw ___ MD whom ___ European acknowledged.`,
         options: [
           { id: 0, text: "an/an", isCorrect: false },
-          { id: 1, text: "a/a", isCorrect: true },
-          { id: 2, text: "an/a", isCorrect: false },
+          { id: 1, text: "an/a", isCorrect: true },
+          { id: 2, text: "an/an", isCorrect: false },
           { id: 3, text: "a/an", isCorrect: false },
         ],
-        answer: "a/a",
-        explanation:`A preceding vowel sound in a word begun with a consonant letter is begin with 'a', and vice versa ('an').`
+        answer: "an/a",
+        explanation:`A preceding vowel sound in a word begun with a consonant letter is begin with 'an', and vice versa ('a').`
 
       },
       {
@@ -59,15 +59,15 @@ const questions = [
           { id: 3, text: "the/-/a", isCorrect: false },
         ],
         answer: "the/the/-",
-        explanation:`Some specific countries having a plural noun in them are preceded by 'the', with '(the) Gambia' and (the) Hague' as exceptions.`
+        explanation:`Some specific countries having a plural noun in them are preceded by 'the', with 'the Gambia' and the Hague' as exceptions.`
       },
       {
         id: "Q6",
-        text: `____ can be seen.`,
+        text: `____ car can be seen.`,
         options: [
-          { id: 0, text: "Mine and your car", isCorrect: false },
-          { id: 1, text: "Alice's and my car", isCorrect: true },
-          { id: 2, text: "Yours and my car", isCorrect: false },
+          { id: 0, text: "Mine and your ", isCorrect: false },
+          { id: 1, text: "Alice's and my ", isCorrect: true },
+          { id: 2, text: "Yours and my ", isCorrect: false },
           { id: 3, text: "Your car and my", isCorrect: false },
         ],
         answer: "Alice's and my car",
@@ -111,7 +111,7 @@ const questions = [
       },
       {
         id: "Q10",
-        text: `Both of them emerged second. They are the ___ runners-up.`,
+        text: `Both of them emerged second. They were the ___ runners-up.`,
         options: [
           { id: 0, text: "first two", isCorrect: false },
           { id: 1, text: "two first", isCorrect: true },
